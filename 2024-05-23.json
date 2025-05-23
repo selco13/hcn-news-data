@@ -1,0 +1,61 @@
+{
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
+  "mainStory": {
+    "category": "EXPLORATION",
+    "title": "Historic Jump Point Discovery Links Pyro to Unknown System",
+    "subtitle": "UEE Navy confirms the discovery of a stable jump point leading to an uncharted system designated 'Nexus-7'",
+    "author": "Sarah Chen, Galactic Correspondent",
+    "date": "Star Date: 2954.05.23",
+    "content": "<p>In a groundbreaking development that could reshape interstellar commerce and exploration, the United Empire of Earth Navy announced the discovery of a new jump point in the Pyro system yesterday.</p><p>The jump point, designated JP-PY-07, was first detected by the UEE exploration vessel Pathfinder during a routine deep space patrol. Initial reconnaissance suggests the jump point leads to a previously unknown system with at least four planetary bodies and abundant mineral resources.</p><p>\"This discovery represents one of the most significant finds in the past decade,\" stated Admiral Helena Voss during a press conference at the Naval Command Center on ArcCorp. \"Early scans indicate the system contains rare earth elements and potentially habitable worlds.\"</p><p>The discovery has already sparked interest from major mining corporations and independent prospectors alike. Stock prices for several exploration companies surged following the announcement, with Consolidated Outland seeing a 12% increase in early trading.</p>"
+  },
+  "quickUpdates": [
+    {
+      "title": "Drake Interplanetary Reveals New Ship",
+      "summary": "The Corsair variant promises enhanced exploration capabilities for independent contractors."
+    },
+    {
+      "title": "Stanton System Traffic Alert",
+      "summary": "Heavy congestion reported around Port Olisar due to increased mining operations."
+    },
+    {
+      "title": "Galactic Weather Advisory",
+      "summary": "Solar storm activity expected in Terra system - pilots advised to use caution."
+    }
+  ],
+  "marketWatch": [
+    {
+      "title": "UEC Exchange Rate",
+      "summary": "1 UEC = 1.00 UEC (Stable)"
+    },
+    {
+      "title": "Quantum Fuel Prices",
+      "summary": "↑ 2.3% - High demand due to exploration surge"
+    },
+    {
+      "title": "Medical Supplies",
+      "summary": "↓ 1.1% - Stable supply chains maintained"
+    }
+  ],
+  "secondaryStories": [
+    {
+      "category": "POLITICS",
+      "title": "UEE Senate Debates Mining Rights Legislation",
+      "subtitle": "New bill would regulate asteroid mining claims in contested systems",
+      "author": "Marcus Rodriguez",
+      "date": "2954.05.23",
+      "content": "<p>The UEE Senate continues heated debates over proposed legislation that would establish new frameworks for mining claims in systems with disputed territorial boundaries. The bill, known as the Interstellar Mining Claims Act, has drawn support from major corporations while facing opposition from independent prospectors.</p>"
+    },
+    {
+      "category": "TECHNOLOGY", 
+      "title": "Quantum Drive Efficiency Breakthrough",
+      "subtitle": "New quantum calibration technique reduces fuel consumption by 15%",
+      "author": "Dr. Emily Watson",
+      "date": "2954.05.23",
+      "content": "<p>Researchers at the Applied Sciences Consortium have developed a revolutionary quantum drive calibration method that significantly improves fuel efficiency across all ship classes. The breakthrough could reduce operating costs for both commercial and private vessel operators.</p>"
+    }
+  ]
+}

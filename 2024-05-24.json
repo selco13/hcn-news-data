@@ -1,0 +1,69 @@
+{
+  "breaking": {
+    "active": true,
+    "text": "UEE Fleet Week Begins - New Ship Reveals Expected - Massive Military Parade Through Stanton System - Exclusive Coverage Starting Now",
+    "mainStoryIsBreaking": true
+  },
+  "mainStory": {
+    "category": "BREAKING",
+    "title": "UEE Fleet Week Launches with Unprecedented Display",
+    "subtitle": "Military showcase features new ship classes and tactical demonstrations across multiple systems",
+    "author": "Admiral Sarah Mitchell, Defense Correspondent",
+    "date": "Star Date: 2954.05.24",
+    "content": "<p>The United Empire of Earth's annual Fleet Week commenced today with the largest military display in over a decade, featuring cutting-edge starships and tactical demonstrations across the Stanton system.</p><p>Opening ceremonies at Port Olisar drew millions of spectators both in-person and via holofeed, with UEE Navy showcasing the newly commissioned Javelin-class destroyers and updated Hammerhead corvettes.</p><p>\"This year's Fleet Week represents not just our military might, but our commitment to protecting commerce and exploration throughout the galaxy,\" stated Fleet Admiral Chen Rodriguez during the opening address.</p><p>The week-long event will feature live combat demonstrations, ship tours, and recruitment drives across major landing zones. Economic analysts predict a significant boost to local economies, with hotel bookings up 340% system-wide.</p>"
+  },
+  "quickUpdates": [
+    {
+      "title": "Fleet Week Traffic Advisory",
+      "summary": "Heavy congestion expected around all major ports - allow extra travel time."
+    },
+    {
+      "title": "New Recruitment Drive",
+      "summary": "UEE Navy offering enhanced signing bonuses for qualified pilots."
+    },
+    {
+      "title": "Live Coverage Schedule",
+      "summary": "HCN providing 24/7 coverage of all Fleet Week events and demonstrations."
+    }
+  ],
+  "marketWatch": [
+    {
+      "title": "Defense Stocks",
+      "summary": "↑ 15.7% - Fleet Week announcements drive military contractor surge"
+    },
+    {
+      "title": "Tourism Sector",
+      "summary": "↑ 8.2% - Hotels and entertainment venues see massive bookings"
+    },
+    {
+      "title": "Fuel Prices",
+      "summary": "↑ 3.1% - Increased demand from military and civilian traffic"
+    }
+  ],
+  "secondaryStories": [
+    {
+      "category": "MILITARY",
+      "title": "Behind the Scenes: New Javelin Class Features",
+      "subtitle": "Exclusive look at the enhanced armor and weapon systems of the Navy's newest destroyers",
+      "author": "Tech Specialist Marcus Webb",
+      "date": "2954.05.24",
+      "content": "<p>The latest Javelin-class destroyers represent a significant evolution in UEE naval architecture, featuring modular weapon bays and enhanced shield generators that provide 40% better protection than previous models.</p><p>During our exclusive shipyard tour, Chief Engineer Lisa Park demonstrated the vessel's new automated defense grid and improved crew quarters designed for extended deep-space operations.</p>"
+    },
+    {
+      "category": "ECONOMICS",
+      "title": "Fleet Week Economic Impact Analysis",
+      "subtitle": "Early estimates suggest 2.3 billion UEC boost to Stanton system economy",
+      "author": "Financial Analyst David Chen",
+      "date": "2954.05.24",
+      "content": "<p>Preliminary economic data indicates Fleet Week 2954 could generate the largest single-week economic impact in Stanton system history, with spending across hospitality, retail, and transportation sectors.</p><p>Restaurant chains report 400% increases in reservations, while starship fuel stations are experiencing supply shortages due to unprecedented demand.</p>"
+    },
+    {
+      "category": "COMMUNITY",
+      "title": "Citizens React to Fleet Week Spectacle",
+      "subtitle": "From awe to criticism, public opinion varies on military spending display",
+      "author": "Community Reporter Jane Foster",
+      "date": "2954.05.24",
+      "content": "<p>While many citizens express pride and excitement over Fleet Week's impressive displays, others question the cost of such elaborate military demonstrations during times of economic uncertainty.</p><p>\"It's inspiring to see our defenders in action,\" said Port Olisar resident Maria Santos. However, advocacy groups note the billions spent could address infrastructure needs in outer systems.</p>"
+    }
+  ]
+}
