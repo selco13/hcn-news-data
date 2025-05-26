@@ -1,0 +1,61 @@
+{ 
+  "breaking": { 
+    "active": true, 
+    "text": "Reclaimed Water from Shepherd’s Rest Found Contaminated with Fertilizer", 
+    "mainStoryIsBreaking": true 
+  }, 
+ "mainStory": {
+  "category": "BREAKING",
+  "title": "Reclaimed Water from Shepherd’s Rest Found Contaminated with Fertilizer",
+  "subtitle": "Researchers trace local sickness to contamination in storage tanks",
+  "author": "Micea Dravnic, Technology Correspondent",
+  "date": "Star Date: 2955.05.26",
+  "content": "<p>Independent researchers took water samples of reclaimed water in storage at Shepherd’s Rest on Monday and found unusually high levels of contamination.</p><p>For weeks, traders and haulers who stopped at the location have been making claims on Spectrum of nausea and general feelings of unease after visiting the location. This led a group of independent researchers from Citizens for Prosperity to take a closer look. The researchers posted their findings online on Monday, immediately after finding the cause of the illness. High levels of organic fertilizer were found in the water storage tanks at Shepherd’s Rest. This water was used for both crop irrigation and for drinking, explaining the general nausea of those who visited the location.</p><p>Local inhabitants of Shepherd’s Rest noticed little change in health and expressed minimal concern about the researchers’ findings, but agreed to drain the tanks and refill them with reclaimed water from a secondary source. The researchers urged those who visited the location in the recent past not to drink the water they may have bought here, and to seek medical evaluation from a reputable doctor.</p><p>Sarah Godfreigh, our HLN Comms Network medical correspondent, had much to say on this matter: “Whether the fertilizer was intentional or not, having organics in a water source is incredibly unsanitary, and could lead to significant health concerns. The symptoms include nausea and headaches, but could be more severe and lead to dysentery if consumed in large quantities or frequently.”</p><p>HLN Comms Network insists that if you or someone you know has been to Shepherd’s Rest recently, consult your doctor, and dispose of any water you may have from the location. Citizens for Prosperity are currently working to refill the water tanks and are doing ongoing testing to ensure the water is not contaminated again.</p>"
+}
+  "quickUpdates": [ 
+    { 
+      "title": "Low Hydrogen Fuel Reserves", 
+      "summary": "Due to the increased traffic for Invictus Flight Week Hydrogen fuel reserves are low throughout Stanton." 
+    }, 
+    { 
+      "title": "UEE Navy Conducting Incresed Patrols", 
+      "summary": "After the loss of a Polaris-Class Vessel from a repair dock, the UEE Navy has increased their presence in patrolling shipping lanes." 
+    }, 
+    { 
+      "title": "Weather Alert Active", 
+      "summary": "Ion storms detected in the outer reaches of the Aaron Halo - pilots advised caution." 
+    } 
+  ], 
+  "marketWatch": [ 
+    { 
+      "title": "Construction Materials", 
+      "summary": "↑ 2% - After Repair of Hundreds of vessels in storage at Baijini Point" 
+    }, 
+    { 
+      "title": "Medical Supplies", 
+      "summary": "↑ 8.2% - Increased demand in the Pyro System after Regeneration Issues" 
+    }, 
+    { 
+      "title": "Tungsten", 
+      "summary": "↑ 1.7% - New alloy material utilizes Tungston as primarry ingredient" 
+    } 
+  ], 
+  "secondaryStories": [ 
+    { 
+      "category": "TECHNOLOGY", 
+      "title": "Spectrum Standalone is finally coming to your Mobiglass", 
+      "subtitle": "The long awaited update to your mobiglass is finally around the corner, Spectrum Standalone will be coming to every mobiglass in an upcoming update!", 
+      "author": "Micea Dravnic, Technology Correspondent", 
+      "date": "2955.05.26", 
+      "content": "<p>While there are no dates yet, this news comes as a shock to people around the ‘verse as this wasn’t expected for another six or so months. Spectrum Standalone has been the standard, online, connection for people in the ‘verse for years and years, serving as a hub of information as well as a place for people to air their complaints. With this next mobiglass update you can take some of your communications on the go with you.</p></p>This new update will allow you and your friends to create groups that can communicate via the built in mobiglass comms directly to the standalone users, regardless of location as long as the mobiglass is connected. This change has been talked about for years but is finally being rolled out in phases.</p></p>Phase one of the integration will allow single groups to communicate via mobiglass or standalone. Phase two assumedly will allow for an expanded capability of seeing Spectrum posts from the mobiglass. Phase three may be full integration. This is mostly speculation, but the masses have agreed that this is the most logical rollout plan for the updates.</p></p>The first phase will be limited, it’s already being tested by members of the community that have already been identified, most of these people have signed non-disclosure agreements and are unwilling to speak on the project, but a few have broken the silence on the update. The initial update only allows text to be shared between platforms and most uses of images or standalone based content doesn’t come through correctly. The messages will be displayed on the mobiglass communicator the same as global communications, party communications, or event direct messaging.</p></p>As with many updates in the ‘verse, patience will be key. While the current rollout may be limited and incomplete, it represents a major shift in how people across systems can stay connected. The integration of Spectrum into the mobiglass marks the beginning of a more unified communication network, one that many have been waiting on for years. Whether you’re running security ops on Hurston or hauling cargo across Pyro, your group chats, mission threads, and alerts may soon be just a glance away. For now, all eyes are on Microtech as the quiet testing phase continues, and as we await the moment this long anticipated upgrade goes live for the rest of us.</p>" 
+    }, 
+    { 
+      "category": "BUSINESS", 
+      "title": "Mining Corporations Buy Out Local Hydrogen Reserves", 
+      "subtitle": "Recent increases in mining operations in both the Stanton and Pyro Systems have left hydrogen fuel reserves dangerously low, causing concern for both travellers and the UEE Navy, who need those fuel reserves to ensure continuous fleet operations.", 
+      "author": "Kaveh Virtanen, Military Correspondent",  
+      "date": "2955.05.26", 
+      "content": "<p>With the upcoming Invictus Launch Week, this is usually the time that the UEE Navy fleets dock at various stations to re-arm and resupply their fuel reserves. However, this time, it will be different. The hydrogen fuel reserves in Stanton and Pyro are critically low, with many a Mining Organization burning through the fuel while out to turn a profit at the reactivation of mining platforms.</p></p>These mining platforms were turned off and moved years ago due to their strain on fuel resources in Pyro, but now that they are in the Stanton System, it seems they will not be offline again in the near future. Officials from Crusader Industries are monitoring a large drop in Hydrogen in their atmosphere as well due to illegal fuel scooping from the gas giant. The drop at nearly .01 percent at this time, which may have significant health impacts to the Stormwal populations.</p></p>Officers from the UEE Navy have also indicated that they will have a much larger security presence at this year’s ILW as reports of violent activities in Stanton and Pyro systems have risen significantly since the activation of the mining platforms.</p></p>Though no names are to be shared, we do have one insider who was willing to share the intelligence updates from the UEE Navy, “Intelligence suggests that there are more than 100 organizations in Stanton and Pyro alone that wish to do harm to the UEE Navy, especially to a Carrier Battle Group. You tie that with the mining platforms and the chance for pirates to profit off the ore and you have yourself a problem. With that being said, we are being told to keep on our toes during this shore leave and that we may be recalled to the fleet at a moment’s notice.”</p></p>Some say that these kinds of precautions are unnecessary or overboard, but if the Navy themselves are preparing for the worst then we might actually see an incident at launch week this year. For the citizens hoping to enjoy the celebration, it’s a sobering reminder that even during times of pride and tradition, the realities of galactic tension and corporate ambition are never far away. As fleets gather and warships parade through the skies, the question lingers, are we witnessing strength, or bracing for storm? Only time will tell, but for now, all we can do is watch the skies and hope they stay quiet.</p>" 
+    } 
+  ] 
+}
