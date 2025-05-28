@@ -1,1 +1,10 @@
-
+{
+  "title": "Contract Name",
+  "summary": "Description",
+  "type": "bounty",
+  "reward": "75000",
+  "location": "Pyro System", 
+  "difficulty": "high",
+  "expires": "2025-02-15",
+  "contact": "Anonymous Client"
+}
