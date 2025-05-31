@@ -18,10 +18,13 @@
   "marketWatch": [
     {
       "title": "QFUE",
-      "summary": "↘ Quantum Fuel Prices are not seeing a notable decrease across the Stanton system as the Tourists leave. Wikelo, a banu merchant visiting the system, has been seen purchasing large quantities of Quantanium.",
+      "summary": "↘ Quantum Fuel Prices are not seeing a notable decrease across the Stanton system as the Tourists leave. Wikelo, a banu merchant visiting the system, has been seen purchasing large quantities of Quantanium."
+    },
+    {
       "title": "CMAT",
-      "summary": "↑ Construction Materials are at an all-time high. Invictus has led to a new record in sales of the C2 Hercules Starlifter. Kelly Caplan is expected to make a statement on the state of the market later this week.",
-      "title": "FFOO",
+      "summary": "↑ Construction Materials are at an all-time high. Invictus has led to a new record in sales of the C2 Hercules Starlifter. Kelly Caplan is expected to make a statement on the state of the market later this week."
+    },
+    {  "title": "FFOO",
       "summary": "↘ Fresh Food still, currently, has a substantial margin; however, demand is expected to drop sharply within the coming days."
     }
   ],
