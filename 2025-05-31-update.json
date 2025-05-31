@@ -1,5 +1,9 @@
 {
-  "breaking": null,
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
   "mainStory": null,
   "quickUpdates": [
     {
@@ -21,5 +25,5 @@
       "summary": "↘ Fresh Food still, currently, has a substantial margin; however, demand is expected to drop sharply within the coming days."
     }
   ],
-  "secondaryStories": null
+  "secondaryStories": []
 }
