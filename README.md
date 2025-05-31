@@ -1,3 +1,37 @@
+# Table of Contents
+1. [📰 GUIDE - SIMPLIFIED WORKFLOW](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-hcn-dispatch-reporter-guide---simplified-workflow)
+    1. [🚀 ULTRA-SIMPLE DAILY PROCESS](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-ultra-simple-daily-process)
+    2. [📝 DAILY NEWS TEMPLATE](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-daily-news-template)
+    3. [🚨 FOR BREAKING NEWS](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-for-breaking-news)
+    4. [🎯 APPROVED CATEGORIES](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-approved-categories)
+    5. [✍️ WRITING GUIDELINES](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-writing-guidelines)
+    6. [📅 STREAMLINED DAILY WORKFLOW](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-streamlined-daily-workflow)
+    7. [🔍 QUALITY CHECKLIST](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-quality-checklist)
+2. [🔧 HOW THE AUTO-DISCOVERY WORKS](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-how-the-auto-discovery-works)
+3. [📰 GUIDE - MULTI-REPORTER WORKFLOW](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-hcn-dispatch-reporter-guide---multi-reporter-workflow)
+    1. [🚀 MULTIPLE REPORTERS? NO PROBLEM!](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-multiple-reporters-no-problem)
+    2. [Your File Naming Options](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#your-file-naming-options)
+    3. [How Multi-File Merging Works](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#how-multi-file-merging-works)
+4. [📅 DAILY WORKFLOW OPTIONS](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-daily-workflow-options)
+    1. Solo Reporter Workflow
+    2. Multi-Reporter Workflow
+    3. Breaking News Updates
+5. [📝 FILE TEMPLATES](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-file-templates)
+    1. [Full Daily Edition Template](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#full-daily-edition-template)
+    2. [Breaking News Only Template](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#breaking-news-only-template)
+    3. [Updates Only Template](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#updates-only-template)
+6. [🔄 SMART MERGING RULES](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-smart-merging-rules)
+    1. Priority Order
+    2. Merge Logic
+    3. Content Limits
+7. [💼 NEWSROOM ORGANIZATION EXAMPLES](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-newsroom-organization-examples)
+8. [✅ QUALITY CONTROL](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-quality-control)
+    1. File Naming Rules
+    2. Content Guidelines
+    3. Coordination Tips
+9. [🆘 TROUBLESHOOTING](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-troubleshooting)
+10. [📞 SUPPORT](https://github.com/selco13/hcn-news-data?tab=readme-ov-file#-support)
+---
 # 📰 HCN DISPATCH REPORTER GUIDE - SIMPLIFIED WORKFLOW
 ## 🚀 ULTRA-SIMPLE DAILY PROCESS
 ### Your Only Task - Upload One File Daily
@@ -167,10 +201,10 @@ The system now supports **multiple reporters working on the same day** without c
 * `2024-05-24-evening.json` - Evening update
 * `2024-05-24-update.json` - General updates
 ## How Multi-File Merging Works
-✅ **Automatic Combination** - System merges all files for the same date
-✅ **Smart Prioritization** - Breaking news takes precedence
-✅ **No Duplicates** - Duplicate stories/updates are filtered out
-✅ **Latest Wins** - If same content from multiple reporters, latest version is used
+* ✅ **Automatic Combination** - System merges all files for the same date
+* ✅ **Smart Prioritization** - Breaking news takes precedence
+* ✅ **No Duplicates** - Duplicate stories/updates are filtered out
+* ✅ **Latest Wins** - If same content from multiple reporters, latest version is used
 ---
 # 📅 DAILY WORKFLOW OPTIONS
 ## Solo Reporter Workflow
