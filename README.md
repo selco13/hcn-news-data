@@ -351,7 +351,7 @@ The system now supports **multiple reporters working on the same day** without c
 ## JSON Error
 * Check for missing commas between sections
 * Make sure all quotes are double quotes "
-* Use jsonlint.com to check syntax
+* Use [jsonlint.com](https://jsonlint.com/) to check syntax
 ## File Not Showing
 * Wait 2-3 minutes for auto-discovery to run
 * Check file name uses exact date format (YYYY-MM-DD)
