@@ -1,0 +1,49 @@
+{
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
+  "mainStory": {
+    "category": "MILITARY",
+    "title": "UEE Navy Vessel Destroyed in Joint Rescue Operation",
+    "subtitle": "A group of private contractors rescued the crew of a UEE Navy vessel after it was boarded by pirates.",
+    "author": "Kaveh Virtanen | Military Correspondent",
+    "date": "Stardate: 2955.05.31",
+    "content": "<p>Yesterday, a group of private contractors responded to a private distress call from a UEE Navy vessel in the Stanton System. The vessel, a newly commissioned UEE Navy Polaris, had made an emergency stop to repair a failing environmental array when it was boarded by a hostile force.<p><p>According to sources aboard the Polaris, approximately ten heavily armed individuals infiltrated the ship during the unscheduled stop. The attackers swiftly disabled internal comms and locked down sections of the vessel, isolating the crew. A senior officer managed to trigger an internal alarm and hide the remaining personnel while using a personal comm device to transmit a distress signal to civilian contractors operating within the system.<p><p>Those contractors relayed the situation to UEE Naval Command and were granted emergency authorization to respond. Within minutes, a multi-organization task force was assembled deploying a contracted Polaris-class vessel, a boarding craft, and support personnel toward the last known position of the Navy vessel.<p><p>Upon arrival, the contractors engaged and disabled several unidentified ships in the area. They then targeted the Polaris’ engine nacelles, crippling the vessel to prevent further movement. Hull-mounted weapons were dismantled via the ballistic weaponry aboard the contracted Polaris, and the hangar door was breached in order to insert the boarding team.<p><p>The rescue force advanced room by room, eventually reaching the sealed bridge. While half the team maintained a secure hold at the bridge entrance, the rest escorted surviving Navy crew to the boarding craft and evacuated to the contractor-controlled Polaris. Midway through the extraction, however, the UEE Navy Polaris' self-destruct sequence was activated.<p><p>The order was then given to stand down and to exit the Navy vessel. The contracted Polaris then positioned itself between the Navy Polaris and the remaining contractors that were not able to exit with the boarding craft and put full power to shields.<p><p>The resulting explosion severely damaged the contracted Polaris, but all UEE and contractor personnel were successfully recovered. The Navy has not yet issued an official statement, though internal sources suggest an investigation into how the boarding occurred is already underway.<p>"
+  },
+  "quickUpdates": [
+    {
+      "title": "Traffic Update",
+      "summary": "Pirates are frequenting the Stanton-Pyro Gateways and quantum dampening the normal traffic between systems."
+    },
+    {
+      "title": "Weather Alert",
+      "summary": "Pyro flares have seen a 15% increase in intensity and are causing inconsistent disruptions in quantum travel."
+    }
+  ],
+  "marketWatch": [
+    {
+      "title": "QFUE",
+      "summary": "↘ Quantum Fuel Prices are not seeing a notable decrease across the Stanton system as the Tourists leave. Wikelo, a banu merchant visiting the system, has been seen purchasing large quantities of Quantanium."
+    },
+    {
+      "title": "CMAT",
+      "summary": "↑ Construction Materials are at an all-time high. Invictus has led to a new record in sales of the C2 Hercules Starlifter. Kelly Caplan is expected to make a statement on the state of the market early next week."
+    },
+    {
+      "title": "FFOO",
+      "summary": "↘ Fresh Food still, currently, has a substantial margin; however, demand is expected to drop sharply within the coming days."
+    }
+  ],
+  "secondaryStories": [
+    {
+      "category": "EXPLORATION",
+      "title": "Unknown Organization Mining Cellin for Quantanium",
+      "subtitle": "Large quantities of debris have been reported on Quantum routes between Hurston, Crusader, and Microtech.",
+      "author": "Micea Dravnic | Technology Correspondent",
+      "date": "Stardate: 2955.05.31",
+      "content": "<p>A Local Logistics organization was dispatched by Hurston Dynamics to investigate and clean up a large amount of ship debris on the Quantum lanes between Hurston and Crusader. The head of the contracted organization told HLN that the cleanup operation uncovered far more debris than expected, calling it 'seemingly endless’.<p><p>During the course of their investigation they found evidence of a large scale battle above Magda, near OM-1. From the spread of the debris and the pieces of vessels left behind it was clear that multiple Idris’ fired on each other in close proximity and that there was a skirmish of fighters in the immediate vicinity as well.<p><p>Our Military Correspondent, Kaveh Virtanen, worked with the contracted organization to piece together a timeline of events based on the evidence found.<p><p>Two Idris-P variants were parked approximately 100km from OM-1 when a few fighters must have gotten too close to the vessels and they were engaged. Two more Idris Variants arrived at the location shortly after, one with a railgun, judging by the impact patterns on one of the Idris-P’s found at the site. The four Idris vessels engaged each other, two vs. two, and a fifth jumped in, engaging the two attackers. Meanwhile fighters were engaged around the vessels. The fifth Idris was disabled immediately upon jumping into the area as a slug from the railgun penetrated through their power plant, effectively shutting down the entire vessel. One of the initial Idris-P variants then pushed an attack onto the two attacking Idris and the other Idris-P variant jumped from the location towards Crusader.<p><p>The Idris-P stopped halfway through the jump to make emergency repairs. Evidence was found in the form of many bodies, ship components, destroyed pieces of hull, and a destroyed fighter, all left within the Quantum lane. It appeared that the attacking Idris’ must have jumped ahead of the fleeing Idris-P as there was a significant amount of wreckage at a Quantum lane exit point near Grim Hex. Two Polaris’ and two Idris’ engaged the fleeing Idris-P right outside of Grim Hex. Judging by the grouping of wreckage, the Idris-P attempted to land at Grim Hex and then turned to flee again as it got closer to the asteroid.<p><p>The Idris-P then attempted a jump to Microtech and again stopped the jump midway. The Idris-P was found abandoned and empty at the jump location alongside two destroyed Idris variants and one destroyed Polaris.<p><p>At this time, further details are unknown and everyone is asking the same questions, exactly what happened, who orchestrated the incident, and why were so many vessels destroyed in the relative safety of the Stanton System?<p>"
+    }
+  ]
+}
