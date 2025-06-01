@@ -1,10 +1,10 @@
 {
-  "title": "Contract Name",
-  "summary": "Description",
+  "title": "Vibe_Up",
+  "summary": "This citizen is a known vagrant and beggar, known to be provacative to the UEE and citizenry",
   "type": "bounty",
-  "reward": "75000",
+  "reward": "1000000",
   "location": "Pyro System", 
-  "difficulty": "high",
-  "expires": "2025-02-15",
-  "contact": "Anonymous Client"
+  "difficulty": "low",
+  "expires": "2955-12-20",
+  "contact": "HCN Radio General"
 }
