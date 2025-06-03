@@ -1,0 +1,53 @@
+{
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
+  "mainStory": {
+    "category": "BUSINESS",
+    "title": "Crusader CEO Kelly Caplan Warns of Market Shock After Record C2 Sales",
+    "subtitle": "Crusader Industries intends to ramp up production of C2 variants after record sales during Invictus Launch Week.",
+    "author": "Micea Dravnic | Technology Correspondent",
+    "date": "Stardate: 2955.06.03",
+    "content": "<p>Kelly Caplan, the CEO of Crusader Industries, made a statement on the state of the markets this morning following record sales of C2 variants during Invictus Launch Week.<p><p>‘Markets will absolutely see volatility with this update. Crusader Industries will begin dramatically increasing production rates of the C2 variants. During Invictus Launch Week Crusader Industries sold hundreds of new C2s, compared to our usual dozens, this is an incredible moment in our company’s history. However, salvaging and mining will be unable to keep up with the production of this many vessels in such a short amount of time. We will both be hiring independent contractors and mining corporations that are already established within the Stanton Sectors of space to fulfill these orders. Demand will increase and the market supply will run dry very quickly. Our market analysts suggest that this will likely crash the Recycled Material, Construction Material, and the Gemstone markets within a week. We apologize for the inconvenience that this may cause to smaller organizations or companies out there, but we believe the market will recover within the month once we slow down our production to normal levels.’ - Kelly Caplan.<p><p>This marks the first time that Crusader Industries has acknowledged that their production rates may have a large scale effect on the Stanton economy, especially in a negative manner. This change in the local economic dynamics may have long lasting effects and will certainly be an incentive for salvaging or mining organizations to get more involved with Crusader Industries.<p><p>With no formal contracts or payout values announced, traders and industrialists alike are left watching the market with tense anticipation.<p>"
+  },
+  "quickUpdates": [
+    {
+      "title": "Quantum gateway down for several hours",
+      "summary": "The gateway between Stanton and Pyro was down for approximately half the day yesterday, not allowing travellers through."
+    },
+    {
+      "title": "Contamination removed from Shepherd's Rest reclaimed water",
+      "summary": "A Citizens for Prosperity science team has confirmed that the last traces of fertilizer contamination in Shepherd's Rest reclaimed water tanks has been eradicated and the water is now safe to drink."
+    },
+    {
+      "title": "Initial reports of inhumane testing on Valakkars in Pyro.",
+      "summary": "Rumors of testing on an adult Valakkar in Pyro have been circulating among freighter pilots for days, images of deceased or incapacitated science personnel at an unknown research facility have also been circulating on Spectrum."
+    }
+  ],
+  "marketWatch": [
+    {
+      "title": "METH",
+      "summary": "↑ 12% Methane is up after a storage tank near Crusader burst during a pressure test last month."
+    },
+    {
+      "title": "QUAN",
+      "summary": "→ Quantanium remains one of the most stable commodities in the 'verse despite high mining volume."
+    },
+    {
+      "title": "DIST",
+      "summary": "↓ 1.3% Distilled Spirits is down after the sales from Invictus Launch Week have subsided."
+    }
+  ],
+  "secondaryStories": [
+    {
+      "category": "SECURITY",
+      "title": "Debris Fields Discovered Along Quantum Lanes",
+      "subtitle": "Large quantities of debris have been reported on Quantum routes between Hurston, Crusader, and Microtech.",
+      "author": "Micea Dravnic | Technology Correspondent",
+      "date": "Stardate: 2955.05.31",
+      "content": "<p>A Local Logistics organization was dispatched by Hurston Dynamics to investigate and clean up a large amount of ship debris on the Quantum lanes between Hurston and Crusader. The head of the contracted organization told HLN that the cleanup operation uncovered far more debris than expected, calling it 'seemingly endless’.<p><p>During the course of their investigation they found evidence of a large scale battle above Magda, near OM-1. From the spread of the debris and the pieces of vessels left behind it was clear that multiple Idris’ fired on each other in close proximity and that there was a skirmish of fighters in the immediate vicinity as well.<p><p>Our Military Correspondent, Kaveh Virtanen, worked with the contracted organization to piece together a timeline of events based on the evidence found.<p><p>Two Idris-P variants were parked approximately 100km from OM-1 when a few fighters must have gotten too close to the vessels and they were engaged. Two more Idris Variants arrived at the location shortly after, one with a railgun, judging by the impact patterns on one of the Idris-P’s found at the site. The four Idris vessels engaged each other, two vs. two, and a fifth jumped in, engaging the two attackers. Meanwhile fighters were engaged around the vessels. The fifth Idris was disabled immediately upon jumping into the area as a slug from the railgun penetrated through their power plant, effectively shutting down the entire vessel. One of the initial Idris-P variants then pushed an attack onto the two attacking Idris and the other Idris-P variant jumped from the location towards Crusader.<p><p>The Idris-P stopped halfway through the jump to make emergency repairs. Evidence was found in the form of many bodies, ship components, destroyed pieces of hull, and a destroyed fighter, all left within the Quantum lane. It appeared that the attacking Idris’ must have jumped ahead of the fleeing Idris-P as there was a significant amount of wreckage at a Quantum exit point near Grim Hex. Two Polaris’ and two Idris’ engaged the fleeing Idris-P right outside of Grim Hex. Judging by the grouping of wreckage, the Idris-P attempted to land at Grim Hex and then turned to flee again as it got closer to the asteroid.<p><p>The Idris-P then attempted a jump to Microtech and again stopped the jump midway. The Idris-P was found abandoned and empty at the jump location alongside two destroyed Idris variants and one destroyed Polaris.<p><p>At this time, further details are unknown and everyone is asking the same questions, exactly what happened, who orchestrated the incident, and why were so many vessels destroyed in the relative safety of the Stanton System?<p>"
+    }
+  ]
+}
