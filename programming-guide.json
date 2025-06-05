@@ -1,0 +1,2118 @@
+{
+  "metadata": {
+    "version": "3.0.1",
+    "lastUpdated": "2025-01-20T12:00:00Z",
+    "description": "HCN Radio Programming Guide - Galactic Broadcasting Schedule",
+    "timezone": "UEE Standard Time",
+    "updateFrequency": "weekly",
+    "maintainer": "HCN Programming Department",
+    "notes": "All times are in 24-hour format. Show duration is typically 2 hours unless specified."
+  },
+  "timeSlots": [
+    "00:00", "02:00", "04:00", "06:00", "08:00", "10:00", 
+    "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"
+  ],
+  "days": ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+  "channels": {
+    "hcn-01": {
+      "name": "Radio One",
+      "description": "Voices of the Universe - News, Talk, and Current Affairs",
+      "frequency": "305.5 AM",
+      "programs": {
+        "SUN": {
+          "00:00": {
+            "title": "Sunday Solitude",
+            "dj": "Marcus Webb",
+            "type": "music",
+            "description": "Peaceful ambient music for late night reflection"
+          },
+          "02:00": {
+            "title": "Meditation Station",
+            "dj": "Luna Rodriguez",
+            "type": "cultural",
+            "description": "Guided meditation and calming soundscapes"
+          },
+          "04:00": {
+            "title": "Sunday Service",
+            "dj": "Chaplain Hope",
+            "type": "cultural",
+            "description": "Interfaith spiritual programming and discussion"
+          },
+          "06:00": {
+            "title": "Morning Reflection",
+            "dj": "Dr. Martinez",
+            "type": "interview",
+            "description": "Thoughtful conversations about life in the verse"
+          },
+          "08:00": {
+            "title": "Sunday Markets",
+            "dj": "Viktor Kowalski",
+            "type": "live",
+            "description": "Live trading updates and market analysis"
+          },
+          "10:00": {
+            "title": "Philosophy Hour",
+            "dj": "Professor Kant",
+            "type": "cultural",
+            "description": "Exploring the big questions of existence"
+          },
+          "12:00": {
+            "title": "Sunday Summary",
+            "dj": "Jake Morrison",
+            "type": "newsflash",
+            "description": "Week in review and upcoming events"
+          },
+          "14:00": {
+            "title": "Family Time",
+            "dj": "Various Hosts",
+            "type": "interview",
+            "description": "Stories from families across the galaxy"
+          },
+          "16:00": {
+            "title": "Peaceful Orbit",
+            "dj": "Aria Stone",
+            "type": "music",
+            "description": "Relaxing music for weekend wind-down"
+          },
+          "18:00": {
+            "title": "Week Ahead",
+            "dj": "Diana Cross",
+            "type": "newsflash",
+            "description": "Preview of the coming week's events"
+          },
+          "20:00": {
+            "title": "Sunday Sessions",
+            "dj": "Community Voices",
+            "type": "live",
+            "description": "Open mic and community discussions"
+          },
+          "22:00": {
+            "title": "Night Meditation",
+            "dj": "Zen Master",
+            "type": "music",
+            "description": "Ambient sounds for peaceful sleep"
+          }
+        },
+        "MON": {
+          "00:00": {
+            "title": "Night Shift News",
+            "dj": "Marcus Webb",
+            "type": "newsflash",
+            "description": "Late night breaking news and updates"
+          },
+          "02:00": {
+            "title": "Deep Space Jazz",
+            "dj": "Luna Rodriguez",
+            "type": "music",
+            "description": "Smooth jazz from across the galaxy"
+          },
+          "04:00": {
+            "title": "Morning Briefing",
+            "dj": "Admiral Hayes",
+            "type": "newsflash",
+            "description": "Early morning news and security updates"
+          },
+          "06:00": {
+            "title": "Citizen Commlink",
+            "dj": "Sarah Chen",
+            "type": "interview",
+            "description": "Interviews with notable citizens and leaders"
+          },
+          "08:00": {
+            "title": "Trade Winds",
+            "dj": "Viktor Kowalski",
+            "type": "live",
+            "description": "Live market data and trading opportunities"
+          },
+          "10:00": {
+            "title": "Cultural Exchange",
+            "dj": "Dr. Amara Singh",
+            "type": "cultural",
+            "description": "Exploring diverse cultures across human space"
+          },
+          "12:00": {
+            "title": "Midday Update",
+            "dj": "Jake Morrison",
+            "type": "newsflash",
+            "description": "Noon news roundup and breaking stories"
+          },
+          "14:00": {
+            "title": "Starship Spotlight",
+            "dj": "Captain Torres",
+            "type": "interview",
+            "description": "Featured ships and their crews"
+          },
+          "16:00": {
+            "title": "Ambient Void",
+            "dj": "Echo-7",
+            "type": "music",
+            "description": "Atmospheric music for space travel"
+          },
+          "18:00": {
+            "title": "Evening Report",
+            "dj": "Diana Cross",
+            "type": "newsflash",
+            "description": "End of day news and analysis"
+          },
+          "20:00": {
+            "title": "Live from Stanton",
+            "dj": "Various Reporters",
+            "type": "live",
+            "description": "Live coverage from across the Stanton system"
+          },
+          "22:00": {
+            "title": "Night Frequencies",
+            "dj": "Alex Nova",
+            "type": "music",
+            "description": "Electronic and synthwave for night owls"
+          }
+        },
+        "TUE": {
+          "00:00": {
+            "title": "Graveyard Watch",
+            "dj": "Marcus Webb",
+            "type": "newsflash",
+            "description": "Overnight news monitoring and alerts"
+          },
+          "02:00": {
+            "title": "Quantum Beats",
+            "dj": "DJ Nexus",
+            "type": "music",
+            "description": "Experimental electronic music"
+          },
+          "04:00": {
+            "title": "Dawn Patrol",
+            "dj": "Colonel Pierce",
+            "type": "newsflash",
+            "description": "Military briefings and security reports"
+          },
+          "06:00": {
+            "title": "Pilot's Lounge",
+            "dj": "Ace Thompson",
+            "type": "interview",
+            "description": "Stories from ace pilots and their adventures"
+          },
+          "08:00": {
+            "title": "Market Watch",
+            "dj": "Elena Vasquez",
+            "type": "live",
+            "description": "Real-time market analysis and predictions"
+          },
+          "10:00": {
+            "title": "Xi'an Relations",
+            "dj": "Ambassador Liu",
+            "type": "cultural",
+            "description": "Understanding our alien neighbors"
+          },
+          "12:00": {
+            "title": "System Status",
+            "dj": "Jake Morrison",
+            "type": "newsflash",
+            "description": "System-wide status updates and alerts"
+          },
+          "14:00": {
+            "title": "Cargo Runners",
+            "dj": "Big Mike",
+            "type": "interview",
+            "description": "Tales from the cargo hauling community"
+          },
+          "16:00": {
+            "title": "Stellar Harmonics",
+            "dj": "Aria Stone",
+            "type": "music",
+            "description": "Orchestral and classical music selections"
+          },
+          "18:00": {
+            "title": "Security Brief",
+            "dj": "Officer Kane",
+            "type": "newsflash",
+            "description": "Security updates and safety advisories"
+          },
+          "20:00": {
+            "title": "Open Channel",
+            "dj": "Community Moderators",
+            "type": "live",
+            "description": "Open forum for community discussion"
+          },
+          "22:00": {
+            "title": "Dark Matter",
+            "dj": "DJ Shadow",
+            "type": "music",
+            "description": "Dark ambient and atmospheric compositions"
+          }
+        },
+        "WED": {
+          "00:00": {
+            "title": "Midnight Express",
+            "dj": "Marcus Webb",
+            "type": "newsflash",
+            "description": "Express news updates from across the galaxy"
+          },
+          "02:00": {
+            "title": "Cosmic Chill",
+            "dj": "Luna Rodriguez",
+            "type": "music",
+            "description": "Downtempo and chillout music"
+          },
+          "04:00": {
+            "title": "First Light",
+            "dj": "Admiral Hayes",
+            "type": "newsflash",
+            "description": "First light briefings and morning intel"
+          },
+          "06:00": {
+            "title": "Medic's Corner",
+            "dj": "Dr. Martinez",
+            "type": "interview",
+            "description": "Medical professionals share their stories"
+          },
+          "08:00": {
+            "title": "Trading Post",
+            "dj": "Viktor Kowalski",
+            "type": "live",
+            "description": "Live trading floor coverage"
+          },
+          "10:00": {
+            "title": "Banu Commerce",
+            "dj": "Trader Quesh",
+            "type": "cultural",
+            "description": "Understanding Banu trade customs"
+          },
+          "12:00": {
+            "title": "Noon Nexus",
+            "dj": "Jake Morrison",
+            "type": "newsflash",
+            "description": "Midweek news nexus and updates"
+          },
+          "14:00": {
+            "title": "Miner's Guild",
+            "dj": "Foreman Ross",
+            "type": "interview",
+            "description": "Stories from the mining frontier"
+          },
+          "16:00": {
+            "title": "Nebula Sounds",
+            "dj": "Echo-7",
+            "type": "music",
+            "description": "Spacey ambient and drone music"
+          },
+          "18:00": {
+            "title": "Fleet Update",
+            "dj": "Diana Cross",
+            "type": "newsflash",
+            "description": "UEE Fleet movements and naval news"
+          },
+          "20:00": {
+            "title": "Live Wire",
+            "dj": "Various Hosts",
+            "type": "live",
+            "description": "Live call-in show and discussions"
+          },
+          "22:00": {
+            "title": "Night Shift",
+            "dj": "Alex Nova",
+            "type": "music",
+            "description": "Music for the night shift workers"
+          }
+        },
+        "THU": {
+          "00:00": {
+            "title": "Late Night News",
+            "dj": "Marcus Webb",
+            "type": "newsflash",
+            "description": "Comprehensive late night news coverage"
+          },
+          "02:00": {
+            "title": "Interstellar Mix",
+            "dj": "DJ Cosmos",
+            "type": "music",
+            "description": "Mixed genre music from across the stars"
+          },
+          "04:00": {
+            "title": "Morning Alert",
+            "dj": "Colonel Pierce",
+            "type": "newsflash",
+            "description": "Morning threat assessments and alerts"
+          },
+          "06:00": {
+            "title": "Engineer's Hour",
+            "dj": "Chief O'Brien",
+            "type": "interview",
+            "description": "Technical discussions with engineers"
+          },
+          "08:00": {
+            "title": "Commodity Corner",
+            "dj": "Elena Vasquez",
+            "type": "live",
+            "description": "Commodity prices and trading tips"
+          },
+          "10:00": {
+            "title": "Vanduul Watch",
+            "dj": "Intelligence Officer",
+            "type": "cultural",
+            "description": "Analysis of Vanduul activities and threats"
+          },
+          "12:00": {
+            "title": "Sector Report",
+            "dj": "Jake Morrison",
+            "type": "newsflash",
+            "description": "Multi-sector news and regional updates"
+          },
+          "14:00": {
+            "title": "Explorer's Log",
+            "dj": "Captain Nova",
+            "type": "interview",
+            "description": "Tales from the exploration frontier"
+          },
+          "16:00": {
+            "title": "Pulsar Rhythm",
+            "dj": "Aria Stone",
+            "type": "music",
+            "description": "Rhythmic and percussive music"
+          },
+          "18:00": {
+            "title": "Evening Intel",
+            "dj": "Officer Kane",
+            "type": "newsflash",
+            "description": "Intelligence briefings and security updates"
+          },
+          "20:00": {
+            "title": "Prime Time",
+            "dj": "Community Leaders",
+            "type": "live",
+            "description": "Prime time discussions and debates"
+          },
+          "22:00": {
+            "title": "Void Dreams",
+            "dj": "DJ Shadow",
+            "type": "music",
+            "description": "Dreamy ambient music for space travel"
+          }
+        },
+        "FRI": {
+          "00:00": {
+            "title": "Friday Night Special",
+            "dj": "Marcus Webb",
+            "type": "newsflash",
+            "description": "Special Friday night news roundup"
+          },
+          "02:00": {
+            "title": "Jump Point Jazz",
+            "dj": "Luna Rodriguez",
+            "type": "music",
+            "description": "Upbeat jazz for weekend preparation"
+          },
+          "04:00": {
+            "title": "Weekend Prep",
+            "dj": "Admiral Hayes",
+            "type": "newsflash",
+            "description": "Weekend briefings and preparation"
+          },
+          "06:00": {
+            "title": "Bounty Hunter's Call",
+            "dj": "Zara Cross",
+            "type": "interview",
+            "description": "Stories from the bounty hunting community"
+          },
+          "08:00": {
+            "title": "Friday Markets",
+            "dj": "Viktor Kowalski",
+            "type": "live",
+            "description": "End of week market wrap-up"
+          },
+          "10:00": {
+            "title": "Tevarin History",
+            "dj": "Historian Vale",
+            "type": "cultural",
+            "description": "Exploring ancient Tevarin civilization"
+          },
+          "12:00": {
+            "title": "Weekend Outlook",
+            "dj": "Jake Morrison",
+            "type": "newsflash",
+            "description": "Weekend events and activities preview"
+          },
+          "14:00": {
+            "title": "Racer's Edge",
+            "dj": "Speed Demon",
+            "type": "interview",
+            "description": "Racing community news and interviews"
+          },
+          "16:00": {
+            "title": "Party Prep",
+            "dj": "DJ Nexus",
+            "type": "music",
+            "description": "Upbeat music to start the weekend"
+          },
+          "18:00": {
+            "title": "Friday Wrap",
+            "dj": "Diana Cross",
+            "type": "newsflash",
+            "description": "Week's end summary and highlights"
+          },
+          "20:00": {
+            "title": "Friday Night Live",
+            "dj": "Various Artists",
+            "type": "live",
+            "description": "Live entertainment and performances"
+          },
+          "22:00": {
+            "title": "Weekend Vibes",
+            "dj": "Alex Nova",
+            "type": "music",
+            "description": "Feel-good music for weekend nights"
+          }
+        },
+        "SAT": {
+          "00:00": {
+            "title": "Saturday Night Fever",
+            "dj": "Marcus Webb",
+            "type": "music",
+            "description": "Dance music and party favorites"
+          },
+          "02:00": {
+            "title": "Deep Space Lounge",
+            "dj": "Luna Rodriguez",
+            "type": "music",
+            "description": "Sophisticated lounge music"
+          },
+          "04:00": {
+            "title": "Weekend Warriors",
+            "dj": "Colonel Pierce",
+            "type": "newsflash",
+            "description": "Weekend duty briefings and updates"
+          },
+          "06:00": {
+            "title": "Citizens United",
+            "dj": "Sarah Chen",
+            "type": "interview",
+            "description": "Community leaders and citizen spotlights"
+          },
+          "08:00": {
+            "title": "Weekend Markets",
+            "dj": "Elena Vasquez",
+            "type": "live",
+            "description": "Casual weekend market coverage"
+          },
+          "10:00": {
+            "title": "Alien Cultures",
+            "dj": "Dr. Amara Singh",
+            "type": "cultural",
+            "description": "Deep dive into alien civilizations"
+          },
+          "12:00": {
+            "title": "Saturday Update",
+            "dj": "Jake Morrison",
+            "type": "newsflash",
+            "description": "Relaxed Saturday news update"
+          },
+          "14:00": {
+            "title": "Ship Reviews",
+            "dj": "Captain Torres",
+            "type": "interview",
+            "description": "Comprehensive ship reviews and comparisons"
+          },
+          "16:00": {
+            "title": "Solar Winds",
+            "dj": "Echo-7",
+            "type": "music",
+            "description": "Flowing ambient music like solar winds"
+          },
+          "18:00": {
+            "title": "Weekend Wrap",
+            "dj": "Diana Cross",
+            "type": "newsflash",
+            "description": "Weekend activity summary"
+          },
+          "20:00": {
+            "title": "Saturday Special",
+            "dj": "Featured Guests",
+            "type": "live",
+            "description": "Special Saturday programming with guests"
+          },
+          "22:00": {
+            "title": "Late Night Mix",
+            "dj": "DJ Shadow",
+            "type": "music",
+            "description": "Mixed music for Saturday night"
+          }
+        }
+      }
+    },
+    "hcn-02": {
+      "name": "Radio Two",
+      "description": "Diverse Sounds of the Stars - Alternative and Independent Programming",
+      "frequency": "315.0 AM",
+      "programs": {
+        "SUN": {
+          "00:00": {
+            "title": "Underground Sunday",
+            "dj": "Rebel Rick",
+            "type": "music",
+            "description": "Alternative music for the free-thinking"
+          },
+          "02:00": {
+            "title": "Pirate Frequencies",
+            "dj": "Captain Hook",
+            "type": "music",
+            "description": "Music from the outer rim territories"
+          },
+          "04:00": {
+            "title": "Dawn Rebellion",
+            "dj": "Mad Max",
+            "type": "newsflash",
+            "description": "Independent news and alternative viewpoints"
+          },
+          "06:00": {
+            "title": "Outlaw Interviews",
+            "dj": "Rogue Agent",
+            "type": "interview",
+            "description": "Conversations with independent operators"
+          },
+          "08:00": {
+            "title": "Gray Market",
+            "dj": "Smuggler Sam",
+            "type": "live",
+            "description": "Alternative trading and opportunities"
+          },
+          "10:00": {
+            "title": "Fringe Science",
+            "dj": "Dr. Strange",
+            "type": "cultural",
+            "description": "Exploring unconventional theories"
+          },
+          "12:00": {
+            "title": "Independent Report",
+            "dj": "Free Press",
+            "type": "newsflash",
+            "description": "Unfiltered independent journalism"
+          },
+          "14:00": {
+            "title": "Mercenary Talk",
+            "dj": "Blade Runner",
+            "type": "interview",
+            "description": "Stories from hired guns and mercs"
+          },
+          "16:00": {
+            "title": "Industrial Noise",
+            "dj": "Machine Head",
+            "type": "music",
+            "description": "Heavy industrial and metal music"
+          },
+          "18:00": {
+            "title": "Evening Chaos",
+            "dj": "Anarchy Ann",
+            "type": "newsflash",
+            "description": "Alternative take on current events"
+          },
+          "20:00": {
+            "title": "Live Rebellion",
+            "dj": "Various Rebels",
+            "type": "live",
+            "description": "Live alternative programming"
+          },
+          "22:00": {
+            "title": "Night Riders",
+            "dj": "Ghost Rider",
+            "type": "music",
+            "description": "Music for the night wanderers"
+          }
+        },
+        "MON": {
+          "00:00": {
+            "title": "Alternative News",
+            "dj": "Rebel Rick",
+            "type": "newsflash",
+            "description": "News from an alternative perspective"
+          },
+          "02:00": {
+            "title": "Underground Beats",
+            "dj": "Bass Hunter",
+            "type": "music",
+            "description": "Underground electronic and bass music"
+          },
+          "04:00": {
+            "title": "Pirate Broadcast",
+            "dj": "Captain Hook",
+            "type": "newsflash",
+            "description": "Uncensored news from the outer rim"
+          },
+          "06:00": {
+            "title": "Outlaw Interviews",
+            "dj": "Mad Max",
+            "type": "interview",
+            "description": "Interviews with society's outliers"
+          },
+          "08:00": {
+            "title": "Black Market Watch",
+            "dj": "Smuggler Sam",
+            "type": "live",
+            "description": "Alternative market analysis"
+          },
+          "10:00": {
+            "title": "Fringe Science",
+            "dj": "Dr. Strange",
+            "type": "cultural",
+            "description": "Theoretical science and conspiracies"
+          },
+          "12:00": {
+            "title": "Midday Mayhem",
+            "dj": "Chaos Control",
+            "type": "newsflash",
+            "description": "Chaotic take on daily news"
+          },
+          "14:00": {
+            "title": "Mercenary Talk",
+            "dj": "Blade Runner",
+            "type": "interview",
+            "description": "Professional soldiers share stories"
+          },
+          "16:00": {
+            "title": "Industrial Noise",
+            "dj": "Machine Head",
+            "type": "music",
+            "description": "Industrial and aggressive music"
+          },
+          "18:00": {
+            "title": "Evening Chaos",
+            "dj": "Anarchy Ann",
+            "type": "newsflash",
+            "description": "Unconventional evening news"
+          },
+          "20:00": {
+            "title": "Live Rebellion",
+            "dj": "Various",
+            "type": "live",
+            "description": "Live alternative content and discussions"
+          },
+          "22:00": {
+            "title": "Night Riders",
+            "dj": "Ghost Rider",
+            "type": "music",
+            "description": "Dark and moody music for night travel"
+          }
+        },
+        "TUE": {
+          "00:00": {
+            "title": "Midnight Madness",
+            "dj": "Rebel Rick",
+            "type": "music",
+            "description": "Wild music for the midnight hour"
+          },
+          "02:00": {
+            "title": "Cyber Punk",
+            "dj": "Neon Knight",
+            "type": "music",
+            "description": "Cyberpunk and synthwave music"
+          },
+          "04:00": {
+            "title": "Dawn Raid",
+            "dj": "Strike Force",
+            "type": "newsflash",
+            "description": "Tactical news and security breaches"
+          },
+          "06:00": {
+            "title": "Rogue Agents",
+            "dj": "Shadow Ops",
+            "type": "interview",
+            "description": "Stories from intelligence operatives"
+          },
+          "08:00": {
+            "title": "Contraband Corner",
+            "dj": "Black Market Bob",
+            "type": "live",
+            "description": "Alternative goods and services"
+          },
+          "10:00": {
+            "title": "Conspiracy Hour",
+            "dj": "Truth Seeker",
+            "type": "cultural",
+            "description": "Exploring hidden truths and conspiracies"
+          },
+          "12:00": {
+            "title": "Rebel Report",
+            "dj": "Freedom Fighter",
+            "type": "newsflash",
+            "description": "News from the resistance perspective"
+          },
+          "14:00": {
+            "title": "Nomad Tales",
+            "dj": "Wanderer",
+            "type": "interview",
+            "description": "Stories from space nomads and drifters"
+          },
+          "16:00": {
+            "title": "Punk Rock",
+            "dj": "Riot Grrrl",
+            "type": "music",
+            "description": "Punk and alternative rock music"
+          },
+          "18:00": {
+            "title": "Underground Intel",
+            "dj": "Deep Throat",
+            "type": "newsflash",
+            "description": "Intelligence from underground sources"
+          },
+          "20:00": {
+            "title": "Anarchy Hour",
+            "dj": "Chaos Coordinator",
+            "type": "live",
+            "description": "Unstructured discussion and debate"
+          },
+          "22:00": {
+            "title": "Dark Wave",
+            "dj": "Night Crawler",
+            "type": "music",
+            "description": "Dark electronic and wave music"
+          }
+        },
+        "WED": {
+          "00:00": {
+            "title": "Midnight Resistance",
+            "dj": "Rebel Rick",
+            "type": "newsflash",
+            "description": "Resistance news and underground activities"
+          },
+          "02:00": {
+            "title": "Electronic Underground",
+            "dj": "Circuit Breaker",
+            "type": "music",
+            "description": "Underground electronic music scene"
+          },
+          "04:00": {
+            "title": "Hack the System",
+            "dj": "Zero Cool",
+            "type": "cultural",
+            "description": "Tech culture and hacking discussions"
+          },
+          "06:00": {
+            "title": "Street Stories",
+            "dj": "Urban Legend",
+            "type": "interview",
+            "description": "Tales from the streets and slums"
+          },
+          "08:00": {
+            "title": "Grey Economy",
+            "dj": "Fence Master",
+            "type": "live",
+            "description": "Alternative economic opportunities"
+          },
+          "10:00": {
+            "title": "Alien Underground",
+            "dj": "Xenophile",
+            "type": "cultural",
+            "description": "Underground alien culture and contact"
+          },
+          "12:00": {
+            "title": "Hacker News",
+            "dj": "Anonymous",
+            "type": "newsflash",
+            "description": "Tech and security news from hackers"
+          },
+          "14:00": {
+            "title": "Criminal Chronicles",
+            "dj": "Crime Boss",
+            "type": "interview",
+            "description": "Stories from the criminal underworld"
+          },
+          "16:00": {
+            "title": "Garage Rock",
+            "dj": "Grease Monkey",
+            "type": "music",
+            "description": "Raw garage rock and indie music"
+          },
+          "18:00": {
+            "title": "Shadow Report",
+            "dj": "Phantom",
+            "type": "newsflash",
+            "description": "News from the shadows and margins"
+          },
+          "20:00": {
+            "title": "Pirate Radio",
+            "dj": "Radio Free",
+            "type": "live",
+            "description": "Unregulated pirate radio programming"
+          },
+          "22:00": {
+            "title": "Noise Floor",
+            "dj": "Static",
+            "type": "music",
+            "description": "Experimental noise and ambient music"
+          }
+        },
+        "THU": {
+          "00:00": {
+            "title": "After Hours",
+            "dj": "Night Owl",
+            "type": "music",
+            "description": "After hours club music and beats"
+          },
+          "02:00": {
+            "title": "Glitch",
+            "dj": "Error 404",
+            "type": "music",
+            "description": "Glitch hop and broken beat music"
+          },
+          "04:00": {
+            "title": "Black Ops",
+            "dj": "Classified",
+            "type": "newsflash",
+            "description": "Leaked intelligence and black operations"
+          },
+          "06:00": {
+            "title": "Exile Stories",
+            "dj": "Outcast",
+            "type": "interview",
+            "description": "Stories from exiles and outcasts"
+          },
+          "08:00": {
+            "title": "Underground Economy",
+            "dj": "Shadow Trader",
+            "type": "live",
+            "description": "Underground trading and economics"
+          },
+          "10:00": {
+            "title": "Forbidden Knowledge",
+            "dj": "Heretic",
+            "type": "cultural",
+            "description": "Banned books and forbidden knowledge"
+          },
+          "12:00": {
+            "title": "Leak Report",
+            "dj": "Whistleblower",
+            "type": "newsflash",
+            "description": "Government and corporate leaks"
+          },
+          "14:00": {
+            "title": "Drifter Diaries",
+            "dj": "Space Hobo",
+            "type": "interview",
+            "description": "Chronicles from space drifters"
+          },
+          "16:00": {
+            "title": "Alternative Rock",
+            "dj": "Rock Rebel",
+            "type": "music",
+            "description": "Alternative and indie rock music"
+          },
+          "18:00": {
+            "title": "Counter Intel",
+            "dj": "Double Agent",
+            "type": "newsflash",
+            "description": "Counter-intelligence and espionage news"
+          },
+          "20:00": {
+            "title": "Free Speech",
+            "dj": "Liberty Voice",
+            "type": "live",
+            "description": "Uncensored discussion and debate"
+          },
+          "22:00": {
+            "title": "Void Music",
+            "dj": "Empty Space",
+            "type": "music",
+            "description": "Minimalist and void-like ambient music"
+          }
+        },
+        "FRI": {
+          "00:00": {
+            "title": "Friday Underground",
+            "dj": "Weekend Warrior",
+            "type": "music",
+            "description": "Underground music to start the weekend"
+          },
+          "02:00": {
+            "title": "Bass Drop",
+            "dj": "Sub Woofer",
+            "type": "music",
+            "description": "Heavy bass and electronic music"
+          },
+          "04:00": {
+            "title": "Dawn Break",
+            "dj": "Early Bird",
+            "type": "newsflash",
+            "description": "Early morning alternative news"
+          },
+          "06:00": {
+            "title": "Freelancer Files",
+            "dj": "Solo Operator",
+            "type": "interview",
+            "description": "Stories from independent contractors"
+          },
+          "08:00": {
+            "title": "Weekend Black Market",
+            "dj": "Weekend Dealer",
+            "type": "live",
+            "description": "Weekend alternative trading"
+          },
+          "10:00": {
+            "title": "Counter Culture",
+            "dj": "Culture Jammer",
+            "type": "cultural",
+            "description": "Alternative culture and movements"
+          },
+          "12:00": {
+            "title": "Friday Exposé",
+            "dj": "Muckraker",
+            "type": "newsflash",
+            "description": "Weekly exposé and investigations"
+          },
+          "14:00": {
+            "title": "Runner's High",
+            "dj": "Speed Runner",
+            "type": "interview",
+            "description": "Data runners and courier stories"
+          },
+          "16:00": {
+            "title": "Party Crasher",
+            "dj": "Gate Crasher",
+            "type": "music",
+            "description": "Party music for the rebellious"
+          },
+          "18:00": {
+            "title": "Friday Revolt",
+            "dj": "Revolutionary",
+            "type": "newsflash",
+            "description": "Revolutionary news and calls to action"
+          },
+          "20:00": {
+            "title": "Underground Live",
+            "dj": "Various Underground",
+            "type": "live",
+            "description": "Live underground music and performances"
+          },
+          "22:00": {
+            "title": "Night Shift",
+            "dj": "Graveyard DJ",
+            "type": "music",
+            "description": "Music for the late night crowd"
+          }
+        },
+        "SAT": {
+          "00:00": {
+            "title": "Saturday Mayhem",
+            "dj": "Chaos King",
+            "type": "music",
+            "description": "Chaotic and energetic weekend music"
+          },
+          "02:00": {
+            "title": "Rave Cave",
+            "dj": "Cave Dweller",
+            "type": "music",
+            "description": "Underground rave and techno music"
+          },
+          "04:00": {
+            "title": "Weekend Warriors",
+            "dj": "Battle Ready",
+            "type": "newsflash",
+            "description": "Weekend security and conflict news"
+          },
+          "06:00": {
+            "title": "Rebel Alliance",
+            "dj": "Alliance Leader",
+            "type": "interview",
+            "description": "Interviews with resistance leaders"
+          },
+          "08:00": {
+            "title": "Saturday Smugglers",
+            "dj": "Weekend Runner",
+            "type": "live",
+            "description": "Weekend smuggling and transportation"
+          },
+          "10:00": {
+            "title": "Punk Philosophy",
+            "dj": "Punk Professor",
+            "type": "cultural",
+            "description": "Philosophy of rebellion and punk culture"
+          },
+          "12:00": {
+            "title": "Weekend Wrap",
+            "dj": "Saturday Special",
+            "type": "newsflash",
+            "description": "Weekend alternative news wrap-up"
+          },
+          "14:00": {
+            "title": "Mechanic's Corner",
+            "dj": "Wrench Turner",
+            "type": "interview",
+            "description": "Stories from ship mechanics and techs"
+          },
+          "16:00": {
+            "title": "Metal Mayhem",
+            "dj": "Head Banger",
+            "type": "music",
+            "description": "Heavy metal and aggressive music"
+          },
+          "18:00": {
+            "title": "Saturday Sabotage",
+            "dj": "Saboteur",
+            "type": "newsflash",
+            "description": "Sabotage and resistance activities"
+          },
+          "20:00": {
+            "title": "Underground Arena",
+            "dj": "Fight Club",
+            "type": "live",
+            "description": "Underground sports and competitions"
+          },
+          "22:00": {
+            "title": "Night Stalker",
+            "dj": "Predator",
+            "type": "music",
+            "description": "Dark and predatory music for night hunters"
+          }
+        }
+      }
+    },
+    "hcn-03": {
+      "name": "HCN Investigative",
+      "description": "Uncovering the Truth - Investigative Journalism and Deep Dives",
+      "frequency": "319.7 AM",
+      "programs": {
+        "SUN": {
+          "00:00": {
+            "title": "Sunday Secrets",
+            "dj": "Deep Throat",
+            "type": "interview",
+            "description": "Uncovering secrets and hidden truths"
+          },
+          "02:00": {
+            "title": "Classified Files",
+            "dj": "File Cabinet",
+            "type": "cultural",
+            "description": "Exploring classified government documents"
+          },
+          "04:00": {
+            "title": "Dawn Investigation",
+            "dj": "Early Investigator",
+            "type": "newsflash",
+            "description": "Breaking investigative news"
+          },
+          "06:00": {
+            "title": "Whistleblower's Hour",
+            "dj": "Source Protection",
+            "type": "interview",
+            "description": "Protecting and interviewing whistleblowers"
+          },
+          "08:00": {
+            "title": "Follow the Money",
+            "dj": "Financial Investigator",
+            "type": "live",
+            "description": "Financial investigations and corruption"
+          },
+          "10:00": {
+            "title": "Historical Mysteries",
+            "dj": "History Detective",
+            "type": "cultural",
+            "description": "Unsolved historical mysteries and investigations"
+          },
+          "12:00": {
+            "title": "Sunday Exposé",
+            "dj": "Truth Teller",
+            "type": "newsflash",
+            "description": "Weekly exposé of corruption and crime"
+          },
+          "14:00": {
+            "title": "Corporate Crimes",
+            "dj": "Corporate Watchdog",
+            "type": "interview",
+            "description": "Investigating corporate malfeasance"
+          },
+          "16:00": {
+            "title": "Cold Cases",
+            "dj": "Cold Case Detective",
+            "type": "cultural",
+            "description": "Revisiting unsolved crimes and mysteries"
+          },
+          "18:00": {
+            "title": "Sunday Investigation",
+            "dj": "Weekend Investigator",
+            "type": "newsflash",
+            "description": "Investigative news and breaking stories"
+          },
+          "20:00": {
+            "title": "Truth Seekers",
+            "dj": "Community Investigators",
+            "type": "live",
+            "description": "Community-driven investigations"
+          },
+          "22:00": {
+            "title": "Night Files",
+            "dj": "Night Investigator",
+            "type": "interview",
+            "description": "Late night investigative interviews"
+          }
+        },
+        "MON": {
+          "00:00": {
+            "title": "Deep Dive",
+            "dj": "Reporter X",
+            "type": "newsflash",
+            "description": "Deep investigative reporting"
+          },
+          "02:00": {
+            "title": "Conspiracy Files",
+            "dj": "Truth Seeker",
+            "type": "interview",
+            "description": "Investigating conspiracy theories"
+          },
+          "04:00": {
+            "title": "Classified Leaks",
+            "dj": "Whistleblower",
+            "type": "newsflash",
+            "description": "Leaked documents and classified information"
+          },
+          "06:00": {
+            "title": "Exposé Hour",
+            "dj": "Investigator Jane",
+            "type": "interview",
+            "description": "In-depth interviews and investigations"
+          },
+          "08:00": {
+            "title": "Corporate Corruption",
+            "dj": "Muckraker Mike",
+            "type": "live",
+            "description": "Live investigation of corporate crimes"
+          },
+          "10:00": {
+            "title": "Hidden History",
+            "dj": "Archivist Ada",
+            "type": "cultural",
+            "description": "Uncovering hidden historical truths"
+          },
+          "12:00": {
+            "title": "Breaking Investigation",
+            "dj": "News Hound",
+            "type": "newsflash",
+            "description": "Breaking investigative news and updates"
+          },
+          "14:00": {
+            "title": "Insider Access",
+            "dj": "Deep Throat",
+            "type": "interview",
+            "description": "Exclusive insider interviews"
+          },
+          "16:00": {
+            "title": "Documentary Hour",
+            "dj": "Film Maker",
+            "type": "cultural",
+            "description": "Investigative documentaries and analysis"
+          },
+          "18:00": {
+            "title": "Evening Exposé",
+            "dj": "Prime Time",
+            "type": "newsflash",
+            "description": "Evening investigative news"
+          },
+          "20:00": {
+            "title": "Live Investigation",
+            "dj": "Various Investigators",
+            "type": "live",
+            "description": "Live investigative reporting"
+          },
+          "22:00": {
+            "title": "Shadow Files",
+            "dj": "Night Owl",
+            "type": "interview",
+            "description": "Late night investigative interviews"
+          }
+        },
+        "TUE": {
+          "00:00": {
+            "title": "Midnight Mysteries",
+            "dj": "Mystery Solver",
+            "type": "cultural",
+            "description": "Solving mysteries and cold cases"
+          },
+          "02:00": {
+            "title": "Government Secrets",
+            "dj": "Freedom Fighter",
+            "type": "newsflash",
+            "description": "Exposing government cover-ups"
+          },
+          "04:00": {
+            "title": "Dawn Revelations",
+            "dj": "Truth Revealer",
+            "type": "interview",
+            "description": "Early morning truth revelations"
+          },
+          "06:00": {
+            "title": "Corruption Watch",
+            "dj": "Corruption Hunter",
+            "type": "live",
+            "description": "Live corruption investigations"
+          },
+          "08:00": {
+            "title": "Money Trail",
+            "dj": "Financial Forensics",
+            "type": "newsflash",
+            "description": "Following the money in investigations"
+          },
+          "10:00": {
+            "title": "Alien Cover-ups",
+            "dj": "UFO Investigator",
+            "type": "cultural",
+            "description": "Investigating alien contact cover-ups"
+          },
+          "12:00": {
+            "title": "Noon Investigation",
+            "dj": "Midday Muckraker",
+            "type": "interview",
+            "description": "Midday investigative interviews"
+          },
+          "14:00": {
+            "title": "Criminal Networks",
+            "dj": "Crime Fighter",
+            "type": "newsflash",
+            "description": "Investigating criminal organizations"
+          },
+          "16:00": {
+            "title": "Data Mining",
+            "dj": "Data Detective",
+            "type": "cultural",
+            "description": "Using data to uncover truths"
+          },
+          "18:00": {
+            "title": "Evening Truth",
+            "dj": "Truth Broadcaster",
+            "type": "live",
+            "description": "Evening live truth broadcasting"
+          },
+          "20:00": {
+            "title": "Citizen Investigators",
+            "dj": "Citizen Reporters",
+            "type": "interview",
+            "description": "Citizen journalism and investigations"
+          },
+          "22:00": {
+            "title": "Underground Intel",
+            "dj": "Intelligence Agent",
+            "type": "newsflash",
+            "description": "Underground intelligence reports"
+          }
+        },
+        "WED": {
+          "00:00": {
+            "title": "Midnight Exposé",
+            "dj": "Midnight Muckraker",
+            "type": "interview",
+            "description": "Late night investigative exposés"
+          },
+          "02:00": {
+            "title": "Secret Societies",
+            "dj": "Society Infiltrator",
+            "type": "cultural",
+            "description": "Investigating secret societies and cults"
+          },
+          "04:00": {
+            "title": "Leak Central",
+            "dj": "Leak Coordinator",
+            "type": "newsflash",
+            "description": "Central hub for leaked information"
+          },
+          "06:00": {
+            "title": "Undercover Hour",
+            "dj": "Undercover Agent",
+            "type": "interview",
+            "description": "Stories from undercover investigations"
+          },
+          "08:00": {
+            "title": "War Crimes",
+            "dj": "War Correspondent",
+            "type": "live",
+            "description": "Investigating war crimes and atrocities"
+          },
+          "10:00": {
+            "title": "Archaeological Mysteries",
+            "dj": "Space Archaeologist",
+            "type": "cultural",
+            "description": "Mysterious archaeological discoveries"
+          },
+          "12:00": {
+            "title": "Hump Day Headlines",
+            "dj": "Headline Hunter",
+            "type": "newsflash",
+            "description": "Breaking investigative headlines"
+          },
+          "14:00": {
+            "title": "Pharmaceutical Fraud",
+            "dj": "Medical Investigator",
+            "type": "interview",
+            "description": "Investigating medical and pharmaceutical fraud"
+          },
+          "16:00": {
+            "title": "Environmental Crimes",
+            "dj": "Eco Warrior",
+            "type": "cultural",
+            "description": "Environmental destruction and cover-ups"
+          },
+          "18:00": {
+            "title": "Wednesday Watchdog",
+            "dj": "Watchdog Reporter",
+            "type": "live",
+            "description": "Watchdog journalism and accountability"
+          },
+          "20:00": {
+            "title": "Truth Network",
+            "dj": "Network Coordinator",
+            "type": "newsflash",
+            "description": "Network of truth-telling journalists"
+          },
+          "22:00": {
+            "title": "Deep Background",
+            "dj": "Background Checker",
+            "type": "interview",
+            "description": "Deep background investigations"
+          }
+        },
+        "THU": {
+          "00:00": {
+            "title": "Thursday Throwthroughs",
+            "dj": "Breakthrough Reporter",
+            "type": "newsflash",
+            "description": "Breakthrough investigative reporting"
+          },
+          "02:00": {
+            "title": "Black Projects",
+            "dj": "Black Project Hunter",
+            "type": "cultural",
+            "description": "Investigating secret military projects"
+          },
+          "04:00": {
+            "title": "Dawn Disclosure",
+            "dj": "Disclosure Agent",
+            "type": "interview",
+            "description": "Early morning truth disclosure"
+          },
+          "06:00": {
+            "title": "Organized Crime",
+            "dj": "Crime Boss Hunter",
+            "type": "live",
+            "description": "Investigating organized crime syndicates"
+          },
+          "08:00": {
+            "title": "Financial Fraud",
+            "dj": "Fraud Investigator",
+            "type": "newsflash",
+            "description": "Exposing financial fraud and schemes"
+          },
+          "10:00": {
+            "title": "Scientific Misconduct",
+            "dj": "Science Watchdog",
+            "type": "cultural",
+            "description": "Investigating scientific fraud and misconduct"
+          },
+          "12:00": {
+            "title": "Noon Revelations",
+            "dj": "Revelation Reporter",
+            "type": "interview",
+            "description": "Midday truth revelations"
+          },
+          "14:00": {
+            "title": "Political Scandals",
+            "dj": "Political Watchdog",
+            "type": "newsflash",
+            "description": "Exposing political corruption and scandals"
+          },
+          "16:00": {
+            "title": "Human Trafficking",
+            "dj": "Human Rights Investigator",
+            "type": "cultural",
+            "description": "Investigating human trafficking networks"
+          },
+          "18:00": {
+            "title": "Evening Investigation",
+            "dj": "Evening Investigator",
+            "type": "live",
+            "description": "Live evening investigations"
+          },
+          "20:00": {
+            "title": "Transparency Hour",
+            "dj": "Transparency Advocate",
+            "type": "interview",
+            "description": "Advocating for government transparency"
+          },
+          "22:00": {
+            "title": "Night Investigations",
+            "dj": "Night Detective",
+            "type": "newsflash",
+            "description": "Late night investigative work"
+          }
+        },
+        "FRI": {
+          "00:00": {
+            "title": "Friday Files",
+            "dj": "File Keeper",
+            "type": "interview",
+            "description": "Weekly investigative file reviews"
+          },
+          "02:00": {
+            "title": "Weekend Warriors",
+            "dj": "Weekend Investigator",
+            "type": "cultural",
+            "description": "Weekend investigative preparations"
+          },
+          "04:00": {
+            "title": "Friday Leaks",
+            "dj": "Friday Leaker",
+            "type": "newsflash",
+            "description": "End of week document leaks"
+          },
+          "06:00": {
+            "title": "Corporate Whistleblowers",
+            "dj": "Whistleblower Protector",
+            "type": "interview",
+            "description": "Protecting corporate whistleblowers"
+          },
+          "08:00": {
+            "title": "Friday Fraud",
+            "dj": "Fraud Friday",
+            "type": "live",
+            "description": "Friday fraud investigations and exposés"
+          },
+          "10:00": {
+            "title": "Media Manipulation",
+            "dj": "Media Critic",
+            "type": "cultural",
+            "description": "Exposing media bias and manipulation"
+          },
+          "12:00": {
+            "title": "Friday Facts",
+            "dj": "Fact Checker",
+            "type": "newsflash",
+            "description": "Friday fact-checking and verification"
+          },
+          "14:00": {
+            "title": "Tech Surveillance",
+            "dj": "Privacy Advocate",
+            "type": "interview",
+            "description": "Investigating tech surveillance and privacy"
+          },
+          "16:00": {
+            "title": "Weekend Preparation",
+            "dj": "Prep Reporter",
+            "type": "cultural",
+            "description": "Preparing weekend investigative work"
+          },
+          "18:00": {
+            "title": "Friday Night Files",
+            "dj": "Night Filer",
+            "type": "live",
+            "description": "Live Friday night file reviews"
+          },
+          "20:00": {
+            "title": "Community Investigation",
+            "dj": "Community Investigator",
+            "type": "newsflash",
+            "description": "Community-driven investigations"
+          },
+          "22:00": {
+            "title": "Friday Night Truth",
+            "dj": "Truth Teller",
+            "type": "interview",
+            "description": "Friday night truth-telling sessions"
+          }
+        },
+        "SAT": {
+          "00:00": {
+            "title": "Saturday Secrets",
+            "dj": "Secret Keeper",
+            "type": "cultural",
+            "description": "Weekend secret investigations"
+          },
+          "02:00": {
+            "title": "Deep State",
+            "dj": "Deep State Hunter",
+            "type": "newsflash",
+            "description": "Investigating deep state activities"
+          },
+          "04:00": {
+            "title": "Saturday Surveillance",
+            "dj": "Surveillance Spotter",
+            "type": "interview",
+            "description": "Weekend surveillance investigations"
+          },
+          "06:00": {
+            "title": "Criminal Justice",
+            "dj": "Justice Seeker",
+            "type": "live",
+            "description": "Criminal justice investigations"
+          },
+          "08:00": {
+            "title": "Saturday Scoop",
+            "dj": "Scoop Getter",
+            "type": "newsflash",
+            "description": "Weekend investigative scoops"
+          },
+          "10:00": {
+            "title": "Academic Fraud",
+            "dj": "Academic Investigator",
+            "type": "cultural",
+            "description": "Investigating academic fraud and misconduct"
+          },
+          "12:00": {
+            "title": "Saturday Special",
+            "dj": "Special Investigator",
+            "type": "interview",
+            "description": "Special weekend investigations"
+          },
+          "14:00": {
+            "title": "Sports Corruption",
+            "dj": "Sports Investigator",
+            "type": "newsflash",
+            "description": "Investigating sports corruption and doping"
+          },
+          "16:00": {
+            "title": "Religious Scandals",
+            "dj": "Religious Investigator",
+            "type": "cultural",
+            "description": "Investigating religious fraud and scandals"
+          },
+          "18:00": {
+            "title": "Saturday Night Investigation",
+            "dj": "Saturday Investigator",
+            "type": "live",
+            "description": "Live Saturday night investigations"
+          },
+          "20:00": {
+            "title": "Truth and Reconciliation",
+            "dj": "Reconciliation Reporter",
+            "type": "interview",
+            "description": "Truth and reconciliation processes"
+          },
+          "22:00": {
+            "title": "Saturday Night Files",
+            "dj": "Night File Keeper",
+            "type": "newsflash",
+            "description": "Saturday night file reviews and updates"
+          }
+        }
+      }
+    },
+    "hcn-04": {
+      "name": "HCN Music",
+      "description": "Galactic Groove - Music from Across the Universe",
+      "frequency": "320.0 AM",
+      "programs": {
+        "SUN": {
+          "00:00": {
+            "title": "Sunday Symphony",
+            "dj": "Maestro Echo",
+            "type": "music",
+            "description": "Classical and orchestral music for peaceful Sundays"
+          },
+          "02:00": {
+            "title": "Ambient Cosmos",
+            "dj": "Stellar Drift",
+            "type": "music",
+            "description": "Ambient and atmospheric music for space travel"
+          },
+          "04:00": {
+            "title": "Dawn Chorus",
+            "dj": "Morning Star",
+            "type": "music",
+            "description": "Nature sounds and peaceful music for dawn"
+          },
+          "06:00": {
+            "title": "Coffee Shop Classics",
+            "dj": "Barista Beth",
+            "type": "music",
+            "description": "Easy listening and café music"
+          },
+          "08:00": {
+            "title": "Sunday Morning Jazz",
+            "dj": "Jazz Master",
+            "type": "music",
+            "description": "Smooth jazz for Sunday morning relaxation"
+          },
+          "10:00": {
+            "title": "Galactic Genres",
+            "dj": "Genre Hopper",
+            "type": "cultural",
+            "description": "Exploring music genres from across the galaxy"
+          },
+          "12:00": {
+            "title": "Lunch Break Beats",
+            "dj": "Midday Mike",
+            "type": "music",
+            "description": "Upbeat music for Sunday afternoon"
+          },
+          "14:00": {
+            "title": "Classical Crossover",
+            "dj": "Orchestra One",
+            "type": "music",
+            "description": "Classical music with modern interpretations"
+          },
+          "16:00": {
+            "title": "Peaceful Orbit",
+            "dj": "Harmony Host",
+            "type": "music",
+            "description": "Peaceful and harmonious music"
+          },
+          "18:00": {
+            "title": "Evening Elegance",
+            "dj": "Classy Kate",
+            "type": "music",
+            "description": "Elegant and sophisticated music"
+          },
+          "20:00": {
+            "title": "Sunday Night Sessions",
+            "dj": "Session Leader",
+            "type": "live",
+            "description": "Live music sessions and performances"
+          },
+          "22:00": {
+            "title": "Lullabies from Space",
+            "dj": "Dream Weaver",
+            "type": "music",
+            "description": "Soothing music for peaceful sleep"
+          }
+        },
+        "MON": {
+          "00:00": {
+            "title": "Midnight Symphonies",
+            "dj": "Maestro Echo",
+            "type": "music",
+            "description": "Classical music for the midnight hour"
+          },
+          "02:00": {
+            "title": "Electronic Dreams",
+            "dj": "Synth Master",
+            "type": "music",
+            "description": "Electronic and synthesizer music"
+          },
+          "04:00": {
+            "title": "Dawn Melodies",
+            "dj": "Morning Star",
+            "type": "music",
+            "description": "Gentle melodies to start the day"
+          },
+          "06:00": {
+            "title": "Commuter Classics",
+            "dj": "Traffic Jammer",
+            "type": "music",
+            "description": "Classic hits for the morning commute"
+          },
+          "08:00": {
+            "title": "Workday Rhythms",
+            "dj": "Productivity Pete",
+            "type": "music",
+            "description": "Energizing music for the workday"
+          },
+          "10:00": {
+            "title": "Genre Spotlight",
+            "dj": "Music Scholar",
+            "type": "cultural",
+            "description": "Deep dive into specific music genres"
+          },
+          "12:00": {
+            "title": "Lunch Break Beats",
+            "dj": "Midday Mike",
+            "type": "music",
+            "description": "Upbeat music for lunch break"
+          },
+          "14:00": {
+            "title": "Afternoon Flow",
+            "dj": "Smooth Operator",
+            "type": "music",
+            "description": "Smooth music for afternoon productivity"
+          },
+          "16:00": {
+            "title": "Rush Hour Remix",
+            "dj": "Beat Master B",
+            "type": "music",
+            "description": "Energetic remixes for rush hour"
+          },
+          "18:00": {
+            "title": "Evening Wind Down",
+            "dj": "Relax Master",
+            "type": "music",
+            "description": "Relaxing music to end the workday"
+          },
+          "20:00": {
+            "title": "Prime Time Party",
+            "dj": "Party Paul",
+            "type": "live",
+            "description": "Live party music and DJ sets"
+          },
+          "22:00": {
+            "title": "Late Night Lounge",
+            "dj": "Lounge Lizard",
+            "type": "music",
+            "description": "Lounge music for late night relaxation"
+          }
+        },
+        "TUE": {
+          "00:00": {
+            "title": "Tuesday Tunes",
+            "dj": "Tune Master",
+            "type": "music",
+            "description": "The best tunes to start Tuesday"
+          },
+          "02:00": {
+            "title": "Synthwave Nights",
+            "dj": "Neon Nights",
+            "type": "music",
+            "description": "Retro synthwave and 80s-inspired music"
+          },
+          "04:00": {
+            "title": "Morning Motivation",
+            "dj": "Motivator Mike",
+            "type": "music",
+            "description": "Motivational music to energize your morning"
+          },
+          "06:00": {
+            "title": "Folk Fusion",
+            "dj": "Folk Master",
+            "type": "music",
+            "description": "Traditional and modern folk music"
+          },
+          "08:00": {
+            "title": "Pop Perfection",
+            "dj": "Pop Princess",
+            "type": "music",
+            "description": "The perfect pop hits for any mood"
+          },
+          "10:00": {
+            "title": "World Music Wednesday",
+            "dj": "Global Grooves",
+            "type": "cultural",
+            "description": "Music from different planets and cultures"
+          },
+          "12:00": {
+            "title": "Rock Rotation",
+            "dj": "Rock God",
+            "type": "music",
+            "description": "Rock classics and new favorites"
+          },
+          "14:00": {
+            "title": "Indie Insights",
+            "dj": "Indie Expert",
+            "type": "music",
+            "description": "Independent music and underground artists"
+          },
+          "16:00": {
+            "title": "Classical Crossroads",
+            "dj": "Classical Kate",
+            "type": "music",
+            "description": "Where classical meets contemporary"
+          },
+          "18:00": {
+            "title": "Jazz Journey",
+            "dj": "Jazz Explorer",
+            "type": "music",
+            "description": "A journey through jazz history and styles"
+          },
+          "20:00": {
+            "title": "Live Sessions",
+            "dj": "Session Host",
+            "type": "live",
+            "description": "Live musical performances and sessions"
+          },
+          "22:00": {
+            "title": "Chill Zone",
+            "dj": "Chill Master",
+            "type": "music",
+            "description": "Relaxing and chill music for the evening"
+          }
+        },
+        "WED": {
+          "00:00": {
+            "title": "Wednesday Wind Down",
+            "dj": "Wind Down Willie",
+            "type": "music",
+            "description": "Relaxing music for midweek unwinding"
+          },
+          "02:00": {
+            "title": "Experimental Sounds",
+            "dj": "Sound Explorer",
+            "type": "music",
+            "description": "Experimental and avant-garde music"
+          },
+          "04:00": {
+            "title": "Acoustic Sessions",
+            "dj": "Acoustic Andy",
+            "type": "music",
+            "description": "Stripped-down acoustic performances"
+          },
+          "06:00": {
+            "title": "Country Roads",
+            "dj": "Country Kate",
+            "type": "music",
+            "description": "Country and western music from the frontier"
+          },
+          "08:00": {
+            "title": "Electronic Energy",
+            "dj": "E-Music Master",
+            "type": "music",
+            "description": "High-energy electronic music"
+          },
+          "10:00": {
+            "title": "Composer Spotlight",
+            "dj": "Composition Expert",
+            "type": "cultural",
+            "description": "Featuring specific composers and their works"
+          },
+          "12:00": {
+            "title": "Hump Day Hits",
+            "dj": "Hit Maker",
+            "type": "music",
+            "description": "The biggest hits to get over the hump"
+          },
+          "14:00": {
+            "title": "R&B Rhythms",
+            "dj": "Rhythm Master",
+            "type": "music",
+            "description": "Soul, R&B, and rhythm music"
+          },
+          "16:00": {
+            "title": "Progressive Patterns",
+            "dj": "Prog Master",
+            "type": "music",
+            "description": "Progressive rock and complex compositions"
+          },
+          "18:00": {
+            "title": "Blues & Soul",
+            "dj": "Soul Sister",
+            "type": "music",
+            "description": "Blues and soul music from the heart"
+          },
+          "20:00": {
+            "title": "Instrumental Immersion",
+            "dj": "Instrumental Ian",
+            "type": "live",
+            "description": "Live instrumental music and performances"
+          },
+          "22:00": {
+            "title": "Ambient Adventures",
+            "dj": "Ambient Explorer",
+            "type": "music",
+            "description": "Ambient music for space exploration"
+          }
+        },
+        "THU": {
+          "00:00": {
+            "title": "Thursday Themes",
+            "dj": "Theme Master",
+            "type": "music",
+            "description": "Thematic music collections and playlists"
+          },
+          "02:00": {
+            "title": "Retro Revival",
+            "dj": "Retro Rick",
+            "type": "music",
+            "description": "Classic hits from decades past"
+          },
+          "04:00": {
+            "title": "Morning Meditations",
+            "dj": "Meditation Master",
+            "type": "music",
+            "description": "Meditative and spiritual music"
+          },
+          "06:00": {
+            "title": "Hip-Hop Heights",
+            "dj": "Hip-Hop Hero",
+            "type": "music",
+            "description": "Hip-hop and rap music from across the galaxy"
+          },
+          "08:00": {
+            "title": "Dance Floor Dynamics",
+            "dj": "Dance Master",
+            "type": "music",
+            "description": "Dance music and club beats"
+          },
+          "10:00": {
+            "title": "Musical History",
+            "dj": "Music Historian",
+            "type": "cultural",
+            "description": "The history and evolution of music"
+          },
+          "12:00": {
+            "title": "Throwback Thursday",
+            "dj": "Throwback Tom",
+            "type": "music",
+            "description": "Classic throwback hits and nostalgia"
+          },
+          "14:00": {
+            "title": "Metal Mayhem",
+            "dj": "Metal Mike",
+            "type": "music",
+            "description": "Heavy metal and hard rock music"
+          },
+          "16:00": {
+            "title": "Funk & Groove",
+            "dj": "Funk Master",
+            "type": "music",
+            "description": "Funky grooves and rhythmic music"
+          },
+          "18:00": {
+            "title": "Alternative Angles",
+            "dj": "Alt Rock Alice",
+            "type": "music",
+            "description": "Alternative rock and indie music"
+          },
+          "20:00": {
+            "title": "Concert Hall",
+            "dj": "Concert Curator",
+            "type": "live",
+            "description": "Live concert recordings and performances"
+          },
+          "22:00": {
+            "title": "Night Jazz",
+            "dj": "Night Owl Jazz",
+            "type": "music",
+            "description": "Smooth jazz for late night listening"
+          }
+        },
+        "FRI": {
+          "00:00": {
+            "title": "Friday Night Fever",
+            "dj": "Fever Master",
+            "type": "music",
+            "description": "High-energy music to start the weekend"
+          },
+          "02:00": {
+            "title": "Late Night Legends",
+            "dj": "Legend Keeper",
+            "type": "music",
+            "description": "Music from legendary artists and performers"
+          },
+          "04:00": {
+            "title": "Dawn Dance",
+            "dj": "Dawn Dancer",
+            "type": "music",
+            "description": "Upbeat dance music for early risers"
+          },
+          "06:00": {
+            "title": "Friday Favorites",
+            "dj": "Favorite Finder",
+            "type": "music",
+            "description": "Personal favorites and listener requests"
+          },
+          "08:00": {
+            "title": "Weekend Warm-Up",
+            "dj": "Warm-Up Willie",
+            "type": "music",
+            "description": "Getting warmed up for the weekend"
+          },
+          "10:00": {
+            "title": "Artist Spotlight",
+            "dj": "Artist Advocate",
+            "type": "cultural",
+            "description": "Featuring specific artists and their careers"
+          },
+          "12:00": {
+            "title": "Friday Freedom",
+            "dj": "Freedom Fighter",
+            "type": "music",
+            "description": "Music celebrating freedom and liberation"
+          },
+          "14:00": {
+            "title": "Party Prep",
+            "dj": "Party Planner",
+            "type": "music",
+            "description": "Getting ready for Friday night parties"
+          },
+          "16:00": {
+            "title": "Feel Good Friday",
+            "dj": "Good Vibes Guru",
+            "type": "music",
+            "description": "Feel-good music to end the work week"
+          },
+          "18:00": {
+            "title": "Happy Hour Harmonies",
+            "dj": "Happy Hour Host",
+            "type": "music",
+            "description": "Music for after-work relaxation"
+          },
+          "20:00": {
+            "title": "Friday Night Live",
+            "dj": "Live Music Leader",
+            "type": "live",
+            "description": "Live music performances and DJ sets"
+          },
+          "22:00": {
+            "title": "Night Club Anthems",
+            "dj": "Club King",
+            "type": "music",
+            "description": "Club music and dance anthems"
+          }
+        },
+        "SAT": {
+          "00:00": {
+            "title": "Saturday Night Special",
+            "dj": "Special DJ",
+            "type": "music",
+            "description": "Special music programming for Saturday night"
+          },
+          "02:00": {
+            "title": "Midnight Moves",
+            "dj": "Move Master",
+            "type": "music",
+            "description": "Music that makes you want to move"
+          },
+          "04:00": {
+            "title": "Saturday Sunrise",
+            "dj": "Sunrise Sam",
+            "type": "music",
+            "description": "Beautiful music for Saturday morning"
+          },
+          "06:00": {
+            "title": "Weekend Warriors",
+            "dj": "Warrior DJ",
+            "type": "music",
+            "description": "Energetic music for weekend adventures"
+          },
+          "08:00": {
+            "title": "Saturday Selections",
+            "dj": "Selection Master",
+            "type": "music",
+            "description": "Carefully selected music for Saturday"
+          },
+          "10:00": {
+            "title": "Music Education",
+            "dj": "Music Teacher",
+            "type": "cultural",
+            "description": "Educational content about music theory and history"
+          },
+          "12:00": {
+            "title": "Saturday Soundtrack",
+            "dj": "Soundtrack Sam",
+            "type": "music",
+            "description": "Music from movies, games, and shows"
+          },
+          "14:00": {
+            "title": "Covers & Originals",
+            "dj": "Cover Artist",
+            "type": "music",
+            "description": "Comparing cover versions with original songs"
+          },
+          "16:00": {
+            "title": "Vinyl Vault",
+            "dj": "Vinyl Victor",
+            "type": "music",
+            "description": "Classic tracks from the vinyl era"
+          },
+          "18:00": {
+            "title": "Saturday Symphony",
+            "dj": "Symphony Conductor",
+            "type": "music",
+            "description": "Orchestral and symphonic music"
+          },
+          "20:00": {
+            "title": "Live From The Venue",
+            "dj": "Venue Host",
+            "type": "live",
+            "description": "Live performances from music venues"
+          },
+          "22:00": {
+            "title": "Saturday Night Soul",
+            "dj": "Soul Master",
+            "type": "music",
+            "description": "Soulful music for Saturday night"
+          }
+        }
+      }
+    }
+  }
+}
