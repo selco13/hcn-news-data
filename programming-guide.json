@@ -1,7 +1,7 @@
 {
   "metadata": {
     "version": "3.0.1",
-    "lastUpdated": "2025-01-20T12:00:00Z",
+    "lastUpdated": "2025-06-05T15:56:12.376154Z",
     "description": "HCN Radio Programming Guide - Galactic Broadcasting Schedule",
     "timezone": "UEE Standard Time",
     "updateFrequency": "weekly",
@@ -9,10 +9,28 @@
     "notes": "All times are in 24-hour format. Show duration is typically 2 hours unless specified."
   },
   "timeSlots": [
-    "00:00", "02:00", "04:00", "06:00", "08:00", "10:00", 
-    "12:00", "14:00", "16:00", "18:00", "20:00", "22:00"
+    "00:00",
+    "02:00",
+    "04:00",
+    "06:00",
+    "08:00",
+    "10:00",
+    "12:00",
+    "14:00",
+    "16:00",
+    "18:00",
+    "20:00",
+    "22:00"
   ],
-  "days": ["SUN", "MON", "TUE", "WED", "THU", "FRI", "SAT"],
+  "days": [
+    "SUN",
+    "MON",
+    "TUE",
+    "WED",
+    "THU",
+    "FRI",
+    "SAT"
+  ],
   "channels": {
     "hcn-01": {
       "name": "Radio One",
@@ -21,28 +39,28 @@
       "programs": {
         "SUN": {
           "00:00": {
-            "title": "Sunday Solitude",
-            "dj": "Marcus Webb",
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
             "type": "music",
-            "description": "Peaceful ambient music for late night reflection"
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "02:00": {
-            "title": "Meditation Station",
-            "dj": "Luna Rodriguez",
-            "type": "cultural",
-            "description": "Guided meditation and calming soundscapes"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "04:00": {
-            "title": "Sunday Service",
-            "dj": "Chaplain Hope",
-            "type": "cultural",
-            "description": "Interfaith spiritual programming and discussion"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "06:00": {
-            "title": "Morning Reflection",
-            "dj": "Dr. Martinez",
-            "type": "interview",
-            "description": "Thoughtful conversations about life in the verse"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "08:00": {
             "title": "Sunday Markets",
@@ -69,16 +87,16 @@
             "description": "Stories from families across the galaxy"
           },
           "16:00": {
-            "title": "Peaceful Orbit",
-            "dj": "Aria Stone",
+            "title": "Ska/Punk Hour",
+            "dj": "DJ Orbit",
             "type": "music",
-            "description": "Relaxing music for weekend wind-down"
+            "description": "High-energy ska and punk tracks to keep your spirits charged."
           },
           "18:00": {
-            "title": "Week Ahead",
-            "dj": "Diana Cross",
-            "type": "newsflash",
-            "description": "Preview of the coming week's events"
+            "title": "Ska/Punk Hour",
+            "dj": "DJ Orbit",
+            "type": "music",
+            "description": "High-energy ska and punk tracks to keep your spirits charged."
           },
           "20:00": {
             "title": "Sunday Sessions",
@@ -87,36 +105,36 @@
             "description": "Open mic and community discussions"
           },
           "22:00": {
-            "title": "Night Meditation",
-            "dj": "Zen Master",
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
             "type": "music",
-            "description": "Ambient sounds for peaceful sleep"
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           }
         },
         "MON": {
           "00:00": {
-            "title": "Night Shift News",
-            "dj": "Marcus Webb",
-            "type": "newsflash",
-            "description": "Late night breaking news and updates"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "02:00": {
-            "title": "Deep Space Jazz",
-            "dj": "Luna Rodriguez",
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
             "type": "music",
-            "description": "Smooth jazz from across the galaxy"
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "04:00": {
-            "title": "Morning Briefing",
-            "dj": "Admiral Hayes",
-            "type": "newsflash",
-            "description": "Early morning news and security updates"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "06:00": {
-            "title": "Citizen Commlink",
-            "dj": "Sarah Chen",
-            "type": "interview",
-            "description": "Interviews with notable citizens and leaders"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "08:00": {
             "title": "Trade Winds",
@@ -143,16 +161,16 @@
             "description": "Featured ships and their crews"
           },
           "16:00": {
-            "title": "Ambient Void",
-            "dj": "Echo-7",
+            "title": "Ska/Punk Hour",
+            "dj": "DJ Orbit",
             "type": "music",
-            "description": "Atmospheric music for space travel"
+            "description": "High-energy ska and punk tracks to keep your spirits charged."
           },
           "18:00": {
-            "title": "Evening Report",
-            "dj": "Diana Cross",
-            "type": "newsflash",
-            "description": "End of day news and analysis"
+            "title": "Ska/Punk Hour",
+            "dj": "DJ Orbit",
+            "type": "music",
+            "description": "High-energy ska and punk tracks to keep your spirits charged."
           },
           "20:00": {
             "title": "Live from Stanton",
@@ -161,36 +179,36 @@
             "description": "Live coverage from across the Stanton system"
           },
           "22:00": {
-            "title": "Night Frequencies",
-            "dj": "Alex Nova",
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
             "type": "music",
-            "description": "Electronic and synthwave for night owls"
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           }
         },
         "TUE": {
           "00:00": {
-            "title": "Graveyard Watch",
-            "dj": "Marcus Webb",
-            "type": "newsflash",
-            "description": "Overnight news monitoring and alerts"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "02:00": {
-            "title": "Quantum Beats",
-            "dj": "DJ Nexus",
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
             "type": "music",
-            "description": "Experimental electronic music"
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "04:00": {
-            "title": "Dawn Patrol",
-            "dj": "Colonel Pierce",
-            "type": "newsflash",
-            "description": "Military briefings and security reports"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "06:00": {
-            "title": "Pilot's Lounge",
-            "dj": "Ace Thompson",
-            "type": "interview",
-            "description": "Stories from ace pilots and their adventures"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "08:00": {
             "title": "Market Watch",
@@ -217,16 +235,16 @@
             "description": "Tales from the cargo hauling community"
           },
           "16:00": {
-            "title": "Stellar Harmonics",
-            "dj": "Aria Stone",
+            "title": "Ska/Punk Hour",
+            "dj": "DJ Orbit",
             "type": "music",
-            "description": "Orchestral and classical music selections"
+            "description": "High-energy ska and punk tracks to keep your spirits charged."
           },
           "18:00": {
-            "title": "Security Brief",
-            "dj": "Officer Kane",
-            "type": "newsflash",
-            "description": "Security updates and safety advisories"
+            "title": "Ska/Punk Hour",
+            "dj": "DJ Orbit",
+            "type": "music",
+            "description": "High-energy ska and punk tracks to keep your spirits charged."
           },
           "20:00": {
             "title": "Open Channel",
@@ -235,36 +253,36 @@
             "description": "Open forum for community discussion"
           },
           "22:00": {
-            "title": "Dark Matter",
-            "dj": "DJ Shadow",
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
             "type": "music",
-            "description": "Dark ambient and atmospheric compositions"
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           }
         },
         "WED": {
           "00:00": {
-            "title": "Midnight Express",
-            "dj": "Marcus Webb",
-            "type": "newsflash",
-            "description": "Express news updates from across the galaxy"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "02:00": {
-            "title": "Cosmic Chill",
-            "dj": "Luna Rodriguez",
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
             "type": "music",
-            "description": "Downtempo and chillout music"
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "04:00": {
-            "title": "First Light",
-            "dj": "Admiral Hayes",
-            "type": "newsflash",
-            "description": "First light briefings and morning intel"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "06:00": {
-            "title": "Medic's Corner",
-            "dj": "Dr. Martinez",
-            "type": "interview",
-            "description": "Medical professionals share their stories"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "08:00": {
             "title": "Trading Post",
@@ -291,16 +309,16 @@
             "description": "Stories from the mining frontier"
           },
           "16:00": {
-            "title": "Nebula Sounds",
-            "dj": "Echo-7",
+            "title": "Ska/Punk Hour",
+            "dj": "DJ Orbit",
             "type": "music",
-            "description": "Spacey ambient and drone music"
+            "description": "High-energy ska and punk tracks to keep your spirits charged."
           },
           "18:00": {
-            "title": "Fleet Update",
-            "dj": "Diana Cross",
-            "type": "newsflash",
-            "description": "UEE Fleet movements and naval news"
+            "title": "Ska/Punk Hour",
+            "dj": "DJ Orbit",
+            "type": "music",
+            "description": "High-energy ska and punk tracks to keep your spirits charged."
           },
           "20:00": {
             "title": "Live Wire",
@@ -309,36 +327,36 @@
             "description": "Live call-in show and discussions"
           },
           "22:00": {
-            "title": "Night Shift",
-            "dj": "Alex Nova",
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
             "type": "music",
-            "description": "Music for the night shift workers"
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           }
         },
         "THU": {
           "00:00": {
-            "title": "Late Night News",
-            "dj": "Marcus Webb",
-            "type": "newsflash",
-            "description": "Comprehensive late night news coverage"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "02:00": {
-            "title": "Interstellar Mix",
-            "dj": "DJ Cosmos",
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
             "type": "music",
-            "description": "Mixed genre music from across the stars"
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "04:00": {
-            "title": "Morning Alert",
-            "dj": "Colonel Pierce",
-            "type": "newsflash",
-            "description": "Morning threat assessments and alerts"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "06:00": {
-            "title": "Engineer's Hour",
-            "dj": "Chief O'Brien",
-            "type": "interview",
-            "description": "Technical discussions with engineers"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "08:00": {
             "title": "Commodity Corner",
@@ -365,16 +383,16 @@
             "description": "Tales from the exploration frontier"
           },
           "16:00": {
-            "title": "Pulsar Rhythm",
-            "dj": "Aria Stone",
+            "title": "Ska/Punk Hour",
+            "dj": "DJ Orbit",
             "type": "music",
-            "description": "Rhythmic and percussive music"
+            "description": "High-energy ska and punk tracks to keep your spirits charged."
           },
           "18:00": {
-            "title": "Evening Intel",
-            "dj": "Officer Kane",
-            "type": "newsflash",
-            "description": "Intelligence briefings and security updates"
+            "title": "Ska/Punk Hour",
+            "dj": "DJ Orbit",
+            "type": "music",
+            "description": "High-energy ska and punk tracks to keep your spirits charged."
           },
           "20:00": {
             "title": "Prime Time",
@@ -383,36 +401,36 @@
             "description": "Prime time discussions and debates"
           },
           "22:00": {
-            "title": "Void Dreams",
-            "dj": "DJ Shadow",
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
             "type": "music",
-            "description": "Dreamy ambient music for space travel"
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           }
         },
         "FRI": {
           "00:00": {
-            "title": "Friday Night Special",
-            "dj": "Marcus Webb",
-            "type": "newsflash",
-            "description": "Special Friday night news roundup"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "02:00": {
-            "title": "Jump Point Jazz",
-            "dj": "Luna Rodriguez",
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
             "type": "music",
-            "description": "Upbeat jazz for weekend preparation"
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "04:00": {
-            "title": "Weekend Prep",
-            "dj": "Admiral Hayes",
-            "type": "newsflash",
-            "description": "Weekend briefings and preparation"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "06:00": {
-            "title": "Bounty Hunter's Call",
-            "dj": "Zara Cross",
-            "type": "interview",
-            "description": "Stories from the bounty hunting community"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "08:00": {
             "title": "Friday Markets",
@@ -439,16 +457,16 @@
             "description": "Racing community news and interviews"
           },
           "16:00": {
-            "title": "Party Prep",
-            "dj": "DJ Nexus",
+            "title": "Ska/Punk Hour",
+            "dj": "DJ Orbit",
             "type": "music",
-            "description": "Upbeat music to start the weekend"
+            "description": "High-energy ska and punk tracks to keep your spirits charged."
           },
           "18:00": {
-            "title": "Friday Wrap",
-            "dj": "Diana Cross",
-            "type": "newsflash",
-            "description": "Week's end summary and highlights"
+            "title": "Ska/Punk Hour",
+            "dj": "DJ Orbit",
+            "type": "music",
+            "description": "High-energy ska and punk tracks to keep your spirits charged."
           },
           "20:00": {
             "title": "Friday Night Live",
@@ -457,36 +475,36 @@
             "description": "Live entertainment and performances"
           },
           "22:00": {
-            "title": "Weekend Vibes",
-            "dj": "Alex Nova",
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
             "type": "music",
-            "description": "Feel-good music for weekend nights"
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           }
         },
         "SAT": {
           "00:00": {
-            "title": "Saturday Night Fever",
-            "dj": "Marcus Webb",
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
             "type": "music",
-            "description": "Dance music and party favorites"
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "02:00": {
-            "title": "Deep Space Lounge",
-            "dj": "Luna Rodriguez",
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
             "type": "music",
-            "description": "Sophisticated lounge music"
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "04:00": {
-            "title": "Weekend Warriors",
-            "dj": "Colonel Pierce",
-            "type": "newsflash",
-            "description": "Weekend duty briefings and updates"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "06:00": {
-            "title": "Citizens United",
-            "dj": "Sarah Chen",
-            "type": "interview",
-            "description": "Community leaders and citizen spotlights"
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
+            "type": "music",
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           },
           "08:00": {
             "title": "Weekend Markets",
@@ -513,16 +531,16 @@
             "description": "Comprehensive ship reviews and comparisons"
           },
           "16:00": {
-            "title": "Solar Winds",
-            "dj": "Echo-7",
+            "title": "Ska/Punk Hour",
+            "dj": "DJ Orbit",
             "type": "music",
-            "description": "Flowing ambient music like solar winds"
+            "description": "High-energy ska and punk tracks to keep your spirits charged."
           },
           "18:00": {
-            "title": "Weekend Wrap",
-            "dj": "Diana Cross",
-            "type": "newsflash",
-            "description": "Weekend activity summary"
+            "title": "Ska/Punk Hour",
+            "dj": "DJ Orbit",
+            "type": "music",
+            "description": "High-energy ska and punk tracks to keep your spirits charged."
           },
           "20:00": {
             "title": "Saturday Special",
@@ -531,10 +549,10 @@
             "description": "Special Saturday programming with guests"
           },
           "22:00": {
-            "title": "Late Night Mix",
-            "dj": "DJ Shadow",
+            "title": "Midnight Lounge",
+            "dj": "Vice Admiral Fishbowl",
             "type": "music",
-            "description": "Mixed music for Saturday night"
+            "description": "Smooth late-night tunes to wind down your day aboard the stars."
           }
         }
       }
@@ -952,10 +970,10 @@
             "description": "Alternative culture and movements"
           },
           "12:00": {
-            "title": "Friday Exposé",
+            "title": "Friday Expos\u00e9",
             "dj": "Muckraker",
             "type": "newsflash",
-            "description": "Weekly exposé and investigations"
+            "description": "Weekly expos\u00e9 and investigations"
           },
           "14:00": {
             "title": "Runner's High",
@@ -1107,16 +1125,16 @@
             "description": "Unsolved historical mysteries and investigations"
           },
           "12:00": {
-            "title": "Sunday Exposé",
+            "title": "Sunday Expos\u00e9",
             "dj": "Truth Teller",
             "type": "newsflash",
-            "description": "Weekly exposé of corruption and crime"
+            "description": "Weekly expos\u00e9 of corruption and crime"
           },
           "14:00": {
-            "title": "Corporate Crimes",
-            "dj": "Corporate Watchdog",
+            "title": "Beyond the Horizon",
+            "dj": "Aleric \"Deep Dive\" Jonas",
             "type": "interview",
-            "description": "Investigating corporate malfeasance"
+            "description": "Deep-dive discussions with experts and whistleblowers uncovering truths beyond the known."
           },
           "16:00": {
             "title": "Cold Cases",
@@ -1163,7 +1181,7 @@
             "description": "Leaked documents and classified information"
           },
           "06:00": {
-            "title": "Exposé Hour",
+            "title": "Expos\u00e9 Hour",
             "dj": "Investigator Jane",
             "type": "interview",
             "description": "In-depth interviews and investigations"
@@ -1187,10 +1205,10 @@
             "description": "Breaking investigative news and updates"
           },
           "14:00": {
-            "title": "Insider Access",
-            "dj": "Deep Throat",
+            "title": "Beyond the Horizon",
+            "dj": "Aleric \"Deep Dive\" Jonas",
             "type": "interview",
-            "description": "Exclusive insider interviews"
+            "description": "Deep-dive discussions with experts and whistleblowers uncovering truths beyond the known."
           },
           "16:00": {
             "title": "Documentary Hour",
@@ -1199,7 +1217,7 @@
             "description": "Investigative documentaries and analysis"
           },
           "18:00": {
-            "title": "Evening Exposé",
+            "title": "Evening Expos\u00e9",
             "dj": "Prime Time",
             "type": "newsflash",
             "description": "Evening investigative news"
@@ -1261,10 +1279,10 @@
             "description": "Midday investigative interviews"
           },
           "14:00": {
-            "title": "Criminal Networks",
-            "dj": "Crime Fighter",
-            "type": "newsflash",
-            "description": "Investigating criminal organizations"
+            "title": "Beyond the Horizon",
+            "dj": "Aleric \"Deep Dive\" Jonas",
+            "type": "interview",
+            "description": "Deep-dive discussions with experts and whistleblowers uncovering truths beyond the known."
           },
           "16:00": {
             "title": "Data Mining",
@@ -1293,10 +1311,10 @@
         },
         "WED": {
           "00:00": {
-            "title": "Midnight Exposé",
+            "title": "Midnight Expos\u00e9",
             "dj": "Midnight Muckraker",
             "type": "interview",
-            "description": "Late night investigative exposés"
+            "description": "Late night investigative expos\u00e9s"
           },
           "02:00": {
             "title": "Secret Societies",
@@ -1335,10 +1353,10 @@
             "description": "Breaking investigative headlines"
           },
           "14:00": {
-            "title": "Pharmaceutical Fraud",
-            "dj": "Medical Investigator",
+            "title": "Beyond the Horizon",
+            "dj": "Aleric \"Deep Dive\" Jonas",
             "type": "interview",
-            "description": "Investigating medical and pharmaceutical fraud"
+            "description": "Deep-dive discussions with experts and whistleblowers uncovering truths beyond the known."
           },
           "16:00": {
             "title": "Environmental Crimes",
@@ -1409,10 +1427,10 @@
             "description": "Midday truth revelations"
           },
           "14:00": {
-            "title": "Political Scandals",
-            "dj": "Political Watchdog",
-            "type": "newsflash",
-            "description": "Exposing political corruption and scandals"
+            "title": "Beyond the Horizon",
+            "dj": "Aleric \"Deep Dive\" Jonas",
+            "type": "interview",
+            "description": "Deep-dive discussions with experts and whistleblowers uncovering truths beyond the known."
           },
           "16:00": {
             "title": "Human Trafficking",
@@ -1468,7 +1486,7 @@
             "title": "Friday Fraud",
             "dj": "Fraud Friday",
             "type": "live",
-            "description": "Friday fraud investigations and exposés"
+            "description": "Friday fraud investigations and expos\u00e9s"
           },
           "10:00": {
             "title": "Media Manipulation",
@@ -1483,10 +1501,10 @@
             "description": "Friday fact-checking and verification"
           },
           "14:00": {
-            "title": "Tech Surveillance",
-            "dj": "Privacy Advocate",
+            "title": "Beyond the Horizon",
+            "dj": "Aleric \"Deep Dive\" Jonas",
             "type": "interview",
-            "description": "Investigating tech surveillance and privacy"
+            "description": "Deep-dive discussions with experts and whistleblowers uncovering truths beyond the known."
           },
           "16:00": {
             "title": "Weekend Preparation",
@@ -1557,10 +1575,10 @@
             "description": "Special weekend investigations"
           },
           "14:00": {
-            "title": "Sports Corruption",
-            "dj": "Sports Investigator",
-            "type": "newsflash",
-            "description": "Investigating sports corruption and doping"
+            "title": "Beyond the Horizon",
+            "dj": "Aleric \"Deep Dive\" Jonas",
+            "type": "interview",
+            "description": "Deep-dive discussions with experts and whistleblowers uncovering truths beyond the known."
           },
           "16:00": {
             "title": "Religious Scandals",
@@ -1617,7 +1635,7 @@
             "title": "Coffee Shop Classics",
             "dj": "Barista Beth",
             "type": "music",
-            "description": "Easy listening and café music"
+            "description": "Easy listening and caf\u00e9 music"
           },
           "08:00": {
             "title": "Sunday Morning Jazz",
