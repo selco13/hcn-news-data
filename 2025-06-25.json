@@ -1,0 +1,61 @@
+{
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
+  "mainStory": {
+    "category": "SECURITY",
+    "title": "The UEE Navy and The Advocacy are investigating Wikelo on grounds of causing instability within the Stanton System",
+    "subtitle": "A leaked report from intelligence assets within the UEE Navy indicates that Wikelo is under investigation for triggering widespread instability in Stanton, following the reactivation of Hathor Orbital Laser Platforms.",
+    "author": "Kaveh Virtanen | Military Correspondent",
+    "date": "Stardate: 2955.06.26",
+    "content": "<p>HCN News was able to get a copy of a leaked intelligence report from the UEE Navy that has evidence of Wikelo purposefully creating havoc within Stanton in order to stave off the introduction of proper Banu trade routes. By cornering the regional markets and monopolizing key resource contracts, Wikelo has amassed substantial influence and profit.<p><p>According to the report, Wikelo could be facing charges through the Advocacy should this behavior continue, rumors surrounding the issue indicate that Wikelo has been in contact with certain UEE officials who have already given him warning for causing instability within UEE controlled space. Further, one source within the UEE Intelligence Corps informed us at HCN News the Banu Trade Representatives are afraid that instability will harm the official trade treaty between the UEE and Banu Protectorate.<p><p>During the last few months, specifically after Invictus Launch Week, the UEE Navy presence within Stanton has visibly increased. UEE Navy patrols have been frequently spotted along trade routes and near the jump gates. This is due to the instability that the Hathor Platforms have brought to Stanton, as well as the few pirate incursions from Pyro. Civilians across the system have begun fleeing major cities for remote outposts, awaiting the reopening of jump gates to safer UEE space. Analysts warn that this heightened military posture may unintentionally provoke a coordinated pirate response, echoing the events of the 2953 Siege of Orison.<p><p>Economists now suggest the Banu may avoid trading in Stanton altogether, citing unacceptable risk. Some believe this is exactly the outcome Wikelo intended, shutting out Protectorate influence and cementing his economic hold on the system.<p><p>Whether through action by the Advocacy or diplomatic pressure from the Banu Protectorate, citizens across Stanton and Pyro alike await a resolution and hope for stability.<p>"
+  },
+  "quickUpdates": [
+    {
+      "title": "UEE Naval Assets Depart Rhetor System in Coordinated Movement",
+      "summary": "Multiple capital-class vessels were observed departing the UEE fleetyards in the Magnus system in formation this morning towards the jump gates towards Stanton. Official sources have declined to comment."
+    },
+    {
+      "title": "Civilian Convoy Intercepted by Unmarked Vessels Near Pyro Jump Gates",
+      "summary": "A civilian trade convoy enroute to Pyro from Stanton was stopped by multiple unmarked vessels and scanned thoroughly before the vessels turned off their interdiction device and jumped out of the area."
+    },
+    {
+      "title": "Cleanup Continues at the Crusader Luxury Platforms Involved in an Attack Earlier this Month",
+      "summary": "Details are still scarce regarding an attack that occurred between two parties on the Crusader luxury platforms earlier this month. Crusader Security has yet to release a public statement, but the platforms have been closed for weeks."
+    }
+  ],
+  "marketWatch": [
+    {
+      "title": "COPP",
+      "summary": "↓ 2.3% - Copper has declined once again after a large spike in demand last month."
+    },
+    {
+      "title": "NITR",
+      "summary": "↑ 15.6% - Nitrogen prices increased six months ago and has increased again due to a loss of storage capacity within Stanton"
+    },
+    {
+      "title": "LARA",
+      "summary": "→ 0% - Laranite remains particularily steady despite the increase in local instability"
+    }
+  ],
+  "secondaryStories": [
+    {
+      "category": "SECURITY",
+      "title": "Increase in Conflicts Throughout Pyro as the Eye of the UEE Shifts onto Illegal Research Facilities",
+      "subtitle": "As UEE attention turns from pirate incursions into Stanton to potentially illegal experiments at an Associated Science and Development (ASD) facility, previously dormant pirate factions in Pyro have renewed their operations with conviction.",
+      "author": "Ragaar Ashnod | Pyro Correspondent",
+      "date": "Stardate: 2955.06.26",
+      "content": "<p>Traders have reported a significant increase in interdictions and cargo theft throughout the Pyro trade routes. While most incidents are attributed to known Pyro pirate groups, a growing number of reports describe unidentified factions carrying out the attacks.<p><p>Pyro jump point traffic control personnel were able to comment on this issue as well, citing record numbers of vessels transiting through the gate;<p><p>‘We’ve never seen traffic like this. I’ve got vessels backed up for hours, and half of them, or more, are flagged as mercenary or private military affiliated vessels. We’re talking hundreds of ships here, gunboats, haulers, medics, and even some science vessels who are streaming into Pyro like the gold rush of Terra’s past. If this keeps up too much longer we’ll need a second control tower down here.’<p><p>Senior Jump Controller Arlan Meyer, Pyro Jump Gate Operations<p><p>Despite the chaos, haulers across Pyro echo a shared warning: there's an unspoken no-fly zone, one that has nothing to do with the radiation storms on Pyro I. Pirate crews from Stanton, Nyx, and beyond have taken up position around the moon, waiting to prey on mercenaries and science vessels inbound for Lazarus, the ASD research facility.<p><p>Haulers indicated that no one has flown near Pyro I for approximately two weeks after a rumor from a rather well-known hauler was spreading on the logistics stations around Pyro. They informed our correspondents to stay away as well, even though there might be a story to find there.<p><p>With surging mercenary traffic and escalating pirate activity, the threat of large-scale conflict in Pyro is growing by the day. The UEE Navy is doing what they can to assist with the backlog at the Pyro jump point due to the travel, but without having jurisdiction in Pyro, there is little they can do about the violence on the other side of the gate.<p>"
+    },
+    {
+      "category": "POLITICS",
+      "title": "ASD Accused of Illegal Experiments as Protests and Leaks Mount",
+      "subtitle": "Protesters have gathered outside Associated Science and Development’s (ASD) headquarters in Rhetor for the second consecutive week, following an information leak suggesting the company is conducting illegal experiments in Pyro.",
+      "author": "Micea Dravnic | Technology Correspondent",
+      "date": "Stardate: 2955.06.23",
+      "content": "<p>The crowd outside ASD’s HQ has grown steadily, with company security being spotted while posted behind the reflective glass of the main entrance.<p><p>Rumors run rampant through the crowd of protestors, walking through you can hear anything from ASD conducting human experimentation to them finding a resource so valuable that they will crash the UEE economy completely. Luckily, HCN News has some insight on the matter at hand.<p><p>This all started when reports surfaced that Logan Joritt, the Chief Scientist of ASD, was involved in undisclosed experimentation of an irradiated creature hidden somewhere on Pyro I. This report was linked to Imperator Laylanis Addison’s push to solve the regen crisis that is plaguing all of the UEE. Addison, the current Imperator of the United earth Empire, served previously as a scientist and professor of Integrated Science and Xenotechnology, then later as the dean of the University of Mentor.<p><p>These connections sparked the interest of many who now sought answers and led to the protests that we are seeing today. The major theories at the moment are that ASD is conducting experiments on a weakened adult Valakaar, as there have been numerous images that have surfaced of documents from the Lazarus facility portraying Valakaar and other alien species. The second theory is that the Valakaar documents are a cover-up for much worse experimentation being conducted at the facility.<p><p>For now, one fact remains: the Lazarus facility is non-operational, reportedly due to a severe radiation storm over Pyro I. No vessels have landed safely without assistance from the facility itself, fueling more speculation and keeping the protest fires burning at ASD HQ. Neither ASD nor the UEE Advocacy responded to HCN News requests for comment.<p>"
+    }
+  ]
+}
