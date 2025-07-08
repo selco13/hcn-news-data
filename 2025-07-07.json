@@ -1,0 +1,54 @@
+{
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
+  "mainStory": {
+    "category": "POLITICS",
+    "title": "Flickering Lives or Flickering Lies: Regeneration Failures Continue to Plague Outer UEE Clinics",
+    "subtitle": "The outer systems of the United Earth Empire (UEE) are reporting a staggering increase in malfunctioning clones after regeneration, including fainting and sometimes even death before they can even leave the clinics.",
+    "author": "Ragaar Ashnod | Pyro Correspondent",
+    "date": "Stardate: 2955.07.06",
+    "content": "<p>In response to the growing number of reports from the outer UEE systems, the Advocacy has ensured the population that the problems are being investigated at the highest levels. These problems seem to happen at random and to a large number of clones at one time. In Stanton, local medical personnel have reported that hundreds of clones have been regenerated, only to collapse moments later, again and again, in what clinic personnel are now calling a ‘looped regen’. Some reports indicate up to seven failures before a stable imprint is regenerated. This is something that the Advocacy and the creators of the regen technology had never thought possible. The UEE released a blanket statement regarding the increase in incidents that answered no more questions than it created.<p><p>“Our office has been working diligently to understand the regen crisis that is at hand, weeks of research has found that there have been faulty medical beds as well as second rate medical supplies being transported to some facilities, which our investigators have linked to the earliest malfunction reports. This new development is well within our ability to solve and we have the finest people working on it as we speak here today. Once we have the answers Imperator Addison will release an official statement.”<p><p>Electronic Press Release, Office of the Imperator<p><p>The UEE Senate met sometime last week to discuss the regeneration issues as well. Speaker Marshall Madrigal warned of immense consequences for those in scientific research positions in the event that answers are not found in a timely manner. Though speaker Madrigal did not go into detail about the consequences he ensured to put weight behind them by mentioning the removal of licensing or certification if they worked within a university inside the UEE. Furthermore, some believe that Addison’s office is working to cover up the issue, rather than find solutions for it.<p><p>A certain sect of the Church of the Journey have been vocal in admonishing humanity and the UEE for utilizing the regeneration technology. The sect, dubbed the Order of the Sovereign Soul, believes that the human spirit is only meant to belong to the body that you are born in and nothing more. Religious leaders have dubbed this an incident of the hubris of man and that their practitioners have been wholly unaffected by this crisis. The sect is a small branch of the Church of the Journey but they have been increasingly vocal as the death toll has increased.<p><p>Science teams across the UEE are working diligently but silently on the issue, corporations are scrambling to ensure that they have enough labor to continue operations, and the public has fewer answers today than they did yesterday as the issues surrounding regeneration mount. Death has not been something to fear for centuries, but that certainty is wavering under the shadow of the regen crisis.<p>"
+  },
+  "quickUpdates": [
+    {
+      "title": "Concerns of Another Jumptown Surge",
+      "summary": "The UEE Advocacy made a statement that another illicit drug trade has made its way to the Stanton System, this sparked fears of another Jumptown scenario appearing in the near future."
+    },
+    {
+      "title": "No Update on the Stanton Comms Disruption",
+      "summary": "There is no update on the communications outage that fell across the Stanton System last week, but a small faciton of local codebreakers have claimed they activated Security Post Kareah's security system remotely."
+    },
+    {
+      "title": "MicroTech Weather Alert",
+      "summary": "MicroTech is expecting a large snowstorm over New Babbage that will last for multiple days, this storm system may cause minor shipping delays of goods from the city."
+    }
+  ],
+  "marketWatch": [
+    {
+      "title": "MEDS",
+      "summary": "↑ 2.1% - Medical supplies are up again as the regen crisis continues to escalate."
+    },
+    {
+      "title": "COBA",
+      "summary": "↓ 5.5% - Cobalt demand is down after a new vein is found in the asteroid fields of Yela."
+    },
+    {
+      "title": "CORU",
+      "summary": "→ 0% - Corrundum remains steady at the bottom of the market."
+    }
+  ],
+  "secondaryStories": [
+    {
+      "category": "MILITARY",
+      "title": "The UEE Navy 12th Battle Group Made a Second Incursion onto Pyro I to Investigate Associated Sciences and Development",
+      "subtitle": "After last month’s assault, the UEE Navy’s 12th Battle Group (CVBG12) deployed a specialized team down to the surface of Pyro I to retrieve the remains of the first expedition and further investigate site Lazarus.",
+      "author": "Kaveh Virtanen | Military Correspondent",
+      "date": "Stardate: 2955.07.07",
+      "content": "<p>Last month the CVBG12 was ordered by the UEE Advocacy to investigate an Associated Sciences and Development (ASD) research facility named: Lazarus. CVBG 12, alongside the civilian mercenary group Nightingale Industries (NGI) and the logistics agency Virtanen Intergalactic (VGAL), assaulted the Lazarus research facility and were able to extract precious little information from the site due to hostile pirate actors in the area. The strike force, dubbed the Nightfall Initiative, was forced to draw back and regroup for a later date.<p><p>Sometime last week, without any prior notice, CVBG12 took a specialized internal force to Pyro I to assault the Lazarus research facility once again. The force engaged numerous fighter craft and was able to quickly establish air superiority over the research facility for the duration of the operation. They then landed a small group of marines on the surface to take the facility on foot. This group secured the landing platforms, the tram platforms, then the research facility itself. The force met resistance at every step of the operation and once cleared of mercenaries they engaged with facility security and multiple fighter craft that arrived after the operation began.<p><p>The ground force began detaining the remaining facility workers and collecting hard drives and research notes from the science labs. Once collected, a few on-site analysts reviewed the notes and spoke with the captives to form an idea of the research being conducted at Lazarus on Pyro I.<p><p>At the suggestion of some of the captured scientists, the ground force found an irradiated Valakaar egg, which was placed in its incubator and activated. While unusual, sources from within CVBG12 that were present during the assault made it clear that the research done at the facility was incomplete and that this was the last step yet to be completed by the scientists. The ground shook underneath their feet and an irradiated and sick adult Valakaar sprung from the ground just in front of the facility. The ground force weathered the storm and subdued the adult Valakaar. They then collected specimens from the Valakaar and brought all of the captured evidence and personnel back to their dropship at the landing pad of the facility. They then left the Pyro system and returned to Stanton airspace to await further orders on the matter.<p><p>In total, the two assaults on the Lazarus research facility resulted in the loss of 35 Marines, 4 Pilots, and 1 Dropship. A capital class vessel was also downed on Pyro I but was evacuated long before it was destroyed. Approximately 85 security personnel, 50 mercenary personnel, and 12 pirate vessels, Capital class to Fighters, were destroyed in the vicinity of Pyro I over the course of the two weeks and two assaults.<p><p>Though this does not answer the average citizen’s questions about the research being done at the facility, it does speak volumes to the tenacity and the operational security of the UEE Navy units throughout the civilized systems. It also provides closure for the families of those involved in the previous assault onto Pyro I, as well as a sense of completion to the piecemeal information that was gained during the initial assault. Although it remains unclear who was defending the research facility, it was very clear that the UEE Navy and Advocacy valued the timely intelligence to be gained from the site. UEE Navy analysts are likely going over the collected intelligence at this very moment and many await the answers that their work will bring. The Advocacy has yet to issue an official statement regarding the operation.<p>"
+    }
+  ]
+}
+
