@@ -1,0 +1,54 @@
+{
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
+  "mainStory": {
+    "category": "TECHNOLOGY",
+    "title": "Mobiglass Outages Point to Technology Failures Everywhere",
+    "subtitle": "Systemic Glitches Raise Alarm Across the ‘Verse",
+    "author": "C. Althane | Independent Journalist, Micea Dravic | Technology Correspondent",
+    "date": "Stardate: 2955.07.09",
+    "content": "<p>Recent tech failures everywhere spark concern about other technological issues throughout the known universe; Mobiglass outages, inventory glitches, black market gear somehow slipping into certified shops, even digital wallet issues.</p><p>Citizens across the ‘verse have reported failures with equipment purchased from shops that have high ratings. After investigating the failed pieces of equipment they have been shocked to find that the serial numbers have been removed or that critical pieces of the equipment have just been missing. Some of these purchases have been traced back to the suppliers for the shops and inventory glitches have seen cargo replaced by black market cargo. Weapons have jammed during intense firefights, quantum drives have failed mid-jump and left pilots stranded in deep space, even medical devices have failed on occasion. A lot of these have been independently traced back to digital inventory glitches.</p><p>Digital Inventory systems in Stations and large Cities have been compromised in the past, but never to the degree that has been seen in recent weeks. Station and City inventory databases and management systems have been suffering frequent sync issues which have transferred ownership of items, or had items duplicated or destroyed completely. While it is currently unknown, many officials fear that this is some form of cyber attack on the database systems themselves that is specifically for the gain of some faction or group. Many civilians have lost access to treasured items and family heirlooms due to the glitches, often these glitches have focused on expensive items rather than the mundane. This has led some to believe that the issue is widespread to hide the thefts of specific items from targeted people.</p><p>To compound the issue, Mobiglass itself has reported that there is an issue with their wallet service. Mobiglass has assured users that their funds are kept securely within their bank of choice, just that the wallet application has experienced issues correctly displaying balances. The issue has displayed hugely inflated amounts in some individual accounts and some with a balance of zero aUEC, the amounts displayed during the outages have been largely randomized. This has also caused issues with digitally sending funds between the digital wallets, sometimes losing whole transactions without allowing the sender or the recipient access to the sent aUEC.</p><p>Micea Dravnic, our Technology Correspondent, gave some context to the issue: “These systems have been stable for years. Their security protocols make external access virtually impossible. That leaves either an internal update, something pushed to each of the systems, or a coordinated exploit of an attached program. This update must have had an exploit or some overlooked deficiency that is now being abused. The fact that these issues arrived at nearly the same time lends credibility to an update theory or a bad actor theory, though both are currently unconfirmed.”</p><p>UEE infrastructure has held solid for years and now there are subtle indications that it may be failing. As the technology is seemingly coming undone, so is public trust in the companies who provide the coding and expertise for these systems. This leaves the question of who is really in control of the empire’s digital infrastructure, the UEE or some other party?</p>"
+  },
+  "quickUpdates": [
+    {
+      "title": "ArcCorp Refinery Reports Output Spike",
+      "summary": "Industrial output from Refinery Platform Orison-4A has increased by 27% this cycle, prompting speculation about upcoming ship or station construction efforts within the system."
+    },
+    {
+      "title": "Crusader Security Requests Civilian Cooperation",
+      "summary": "Crusader Security issued a bulletin asking citizens to report any unregistered salvage vessels operating near Yela’s outer rings, citing several cases of false transponder codes."
+    },
+    {
+      "title": "Severe Dust Storm Predicted on Hurston",
+      "summary": "Meteorological teams on Hurston have forecast a wide-area dust storm near Lorville that may last 48 hours. Travelers should avoid surface routes and expect limited visibility."
+    }
+  ],
+  "marketWatch": [
+    {
+      "title": "OSOH",
+      "summary": "↑ 2.1% - Osoian hides jump as CRUS issues a press announcement requesting more."
+    },
+    {
+      "title": "WAST",
+      "summary": "↑ 5.5% - Waste at another all-time record high."
+    },
+    {
+      "title": "RMC",
+      "summary": "↑ 10% - CRUS is creating heavy demand as they are still filling orders."
+    }
+  ],
+  "secondaryStories": [
+    {
+      "category": "BUSINESS",
+      "title": "Industrial Corporations Throughout Stanton Increase Operations",
+      "subtitle": "Over 80 Corps File for Clearances Amid Tightening Security and Economic Boom",
+      "author": "Micea Dravnic | Technology Correspondent",
+      "date": "Stardate: 2955.07.09",
+      "content": "<p>Industrial Corporations throughout the Stanton System are increasing their operational tempo due to significant construction demands in the local economies.</p><p>A number of large Industrial Corporations have increased logistics, mining, and salvage operations from Crusader to ArcCorp. Changes in the local economy, especially with Crusader Industries’ announcement from mid-June, have prompted local organizations to change the way that they operate.</p><p>Previous accounts of strip mining on Cellin and large salvage operations in the asteroid rings around Yela have all pointed at an increase in Industry in the relatively remote Star System, but until recently those reports seemed isolated. A large number of industrial organizations, over 80, have begun submitting clearance requests for the moons and quantum lanes now that the security situation in Stanton is becoming less stable.</p><p>Clearance requests are specific pieces of paperwork informing the local authorities where a corporation will be operating and for what purpose. This is meant to inform local security as well as standard UEE Navy patrols so that the groups are not mis-identified as pirates or investigated under suspicion of illegal activity, if observed from afar. It is also to assist with security or medical responses in the event of an emergency, as location is a mandatory field on the paperwork.</p><p>Many organizations were opposed to this increase in administrative documents but have conceded their opposition for the increase in security coverage that has come along with the new method. This new method is one of the first steps towards the increase in the Stanton Space Readiness Level that was discussed by the advocacy and local leaders last week. The increase in paperwork submissions have coincided with a two digit percentage drop in pirate activity and fewer incident reports of salvagers or miners being subject to erroneous security stops.</p>"
+
+    }
+  ]
+}
