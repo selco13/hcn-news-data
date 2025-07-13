@@ -36,7 +36,7 @@
             height: 100vh;
         }
 
-        /* Retro CRT Effect */
+        /* Subtle CRT Effect - keeping your original feel */
         body::before {
             content: '';
             position: fixed;
@@ -61,14 +61,8 @@
             100% { transform: translateY(4px); }
         }
 
-        /* Screen flicker effect */
-        @keyframes flicker {
-            0%, 100% { opacity: 1; }
-            50% { opacity: 0.98; }
-        }
-
+        /* Keeping your original grid layout */
         .container {
-            animation: flicker 3s infinite;
             height: 100vh;
             display: grid;
             grid-template-areas: 
@@ -82,12 +76,12 @@
             background: var(--border-color);
         }
 
-        /* Header */
+        /* Header - refined but keeping your style */
         .header {
             grid-area: header;
             background: var(--bg-panel);
             border: 2px solid var(--border-color);
-            padding: 10px;
+            padding: 15px;
             text-align: center;
             position: relative;
             overflow: hidden;
@@ -100,9 +94,8 @@
             left: -100%;
             width: 100%;
             height: 100%;
-            background: linear-gradient(90deg, transparent, var(--primary-green), transparent);
-            opacity: 0.1;
-            animation: sweep 4s infinite;
+            background: linear-gradient(90deg, transparent, rgba(0, 255, 65, 0.1), transparent);
+            animation: sweep 6s infinite;
         }
 
         @keyframes sweep {
@@ -114,7 +107,7 @@
             font-family: 'Orbitron', monospace;
             font-size: 2.5em;
             font-weight: 900;
-            text-shadow: 0 0 20px var(--primary-green);
+            text-shadow: 0 0 15px var(--primary-green);
             margin-bottom: 5px;
             letter-spacing: 3px;
         }
@@ -125,7 +118,7 @@
             letter-spacing: 2px;
         }
 
-        /* Breaking News Ticker */
+        /* Breaking News - keeping your ticker */
         .breaking-news {
             position: absolute;
             bottom: 0;
@@ -149,7 +142,7 @@
             100% { transform: translateX(-100%); }
         }
 
-        /* Panel Styles */
+        /* Panel Styles - keeping your original design */
         .panel {
             background: var(--bg-panel);
             border: 2px solid var(--border-color);
@@ -186,38 +179,39 @@
             padding-bottom: 8px;
         }
 
-        /* News Panel */
+        /* News Panel - keeping your style */
         .news-panel {
             grid-area: news;
         }
 
         .news-item {
-            margin-bottom: 15px;
+            margin-bottom: 12px;
             padding: 8px;
             border-left: 3px solid var(--blue);
             background: rgba(0, 153, 255, 0.05);
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
 
         .news-item:hover {
             background: rgba(0, 153, 255, 0.1);
-            transform: translateX(5px);
+            transform: translateX(3px);
         }
 
         .news-title {
             font-weight: bold;
             color: var(--blue);
-            font-size: 0.9em;
-            margin-bottom: 5px;
+            font-size: 0.85em;
+            margin-bottom: 4px;
+            line-height: 1.2;
         }
 
         .news-summary {
-            font-size: 0.8em;
+            font-size: 0.75em;
             color: var(--text-dim);
             line-height: 1.3;
         }
 
-        /* Player Panel */
+        /* Player Panel - keeping your centered design */
         .player-panel {
             grid-area: player;
             display: flex;
@@ -230,90 +224,92 @@
         .player-display {
             background: var(--bg-dark);
             border: 3px solid var(--border-color);
-            padding: 30px;
-            margin-bottom: 20px;
-            width: 80%;
-            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 15px;
+            width: 85%;
+            border-radius: 8px;
             box-shadow: 
-                inset 0 0 20px var(--dark-green),
-                0 0 30px var(--primary-green);
+                inset 0 0 15px var(--dark-green),
+                0 0 20px rgba(0, 255, 65, 0.3);
         }
 
         .now-playing {
             font-family: 'Orbitron', monospace;
-            font-size: 1.5em;
+            font-size: 1.4em;
             font-weight: 700;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             color: var(--amber);
-            text-shadow: 0 0 15px var(--amber);
+            text-shadow: 0 0 12px var(--amber);
         }
 
         .track-info {
-            font-size: 1.1em;
-            margin-bottom: 20px;
+            font-size: 1em;
+            margin-bottom: 18px;
             color: var(--primary-green);
         }
 
         .controls {
             display: flex;
-            gap: 15px;
+            gap: 12px;
             justify-content: center;
-            margin-bottom: 20px;
+            margin-bottom: 15px;
+            flex-wrap: wrap;
         }
 
         .control-btn {
             background: var(--bg-dark);
             border: 2px solid var(--border-color);
             color: var(--primary-green);
-            padding: 12px 20px;
+            padding: 10px 18px;
             font-family: 'Orbitron', monospace;
             font-weight: 700;
             cursor: pointer;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             text-transform: uppercase;
             letter-spacing: 1px;
+            font-size: 0.9em;
         }
 
         .control-btn:hover {
             background: var(--border-color);
             color: var(--bg-dark);
-            box-shadow: 0 0 20px var(--primary-green);
-            transform: scale(1.05);
+            box-shadow: 0 0 15px var(--primary-green);
         }
 
         .control-btn.active {
             background: var(--primary-green);
             color: var(--bg-dark);
-            box-shadow: 0 0 25px var(--primary-green);
+            box-shadow: 0 0 20px var(--primary-green);
         }
 
         .volume-control {
             display: flex;
             align-items: center;
             gap: 10px;
-            margin-top: 15px;
+            margin-top: 12px;
         }
 
         .volume-slider {
-            width: 150px;
-            height: 5px;
+            width: 140px;
+            height: 4px;
             background: var(--dark-green);
             border: 1px solid var(--border-color);
             outline: none;
             cursor: pointer;
+            appearance: none;
         }
 
         .volume-slider::-webkit-slider-thumb {
             appearance: none;
-            width: 15px;
-            height: 15px;
+            width: 14px;
+            height: 14px;
             background: var(--primary-green);
             border: 1px solid var(--border-color);
             cursor: pointer;
-            box-shadow: 0 0 10px var(--primary-green);
+            box-shadow: 0 0 8px var(--primary-green);
         }
 
-        /* Market Panel */
+        /* Market Panel - keeping your layout */
         .market-panel {
             grid-area: market;
         }
@@ -322,11 +318,11 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
-            padding: 8px;
-            margin-bottom: 8px;
+            padding: 6px 8px;
+            margin-bottom: 6px;
             background: rgba(0, 255, 65, 0.05);
             border: 1px solid var(--dark-green);
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
 
         .market-item:hover {
@@ -335,18 +331,22 @@
         }
 
         .market-name {
-            font-size: 0.8em;
+            font-size: 0.75em;
             font-weight: bold;
+            flex: 1;
         }
 
         .market-price {
             color: var(--amber);
-            font-size: 0.8em;
+            font-size: 0.75em;
+            margin: 0 8px;
         }
 
         .market-change {
             font-size: 0.7em;
             font-weight: bold;
+            min-width: 45px;
+            text-align: right;
         }
 
         .market-change.positive {
@@ -357,7 +357,7 @@
             color: var(--red);
         }
 
-        /* Trade Panel */
+        /* Trade Panel - keeping your style */
         .trade-panel {
             grid-area: trade;
         }
@@ -367,16 +367,16 @@
             margin-bottom: 8px;
             background: rgba(255, 170, 0, 0.05);
             border-left: 3px solid var(--amber);
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
 
         .trade-item:hover {
             background: rgba(255, 170, 0, 0.1);
-            transform: translateX(3px);
+            transform: translateX(2px);
         }
 
         .trade-route {
-            font-size: 0.8em;
+            font-size: 0.75em;
             color: var(--amber);
             font-weight: bold;
             margin-bottom: 3px;
@@ -387,36 +387,37 @@
             color: var(--text-dim);
         }
 
-        /* Missions Panel */
+        /* Missions Panel - keeping your design */
         .missions-panel {
             grid-area: missions;
         }
 
         .mission-item {
             padding: 8px;
-            margin-bottom: 10px;
+            margin-bottom: 8px;
             background: rgba(255, 51, 51, 0.05);
             border: 1px solid var(--red);
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
         }
 
         .mission-item:hover {
             background: rgba(255, 51, 51, 0.1);
             border-color: var(--red);
-            box-shadow: 0 0 10px rgba(255, 51, 51, 0.3);
+            box-shadow: 0 0 8px rgba(255, 51, 51, 0.2);
         }
 
         .mission-title {
-            font-size: 0.8em;
+            font-size: 0.75em;
             color: var(--red);
             font-weight: bold;
-            margin-bottom: 5px;
+            margin-bottom: 4px;
+            line-height: 1.2;
         }
 
         .mission-reward {
             font-size: 0.7em;
             color: var(--amber);
-            margin-bottom: 3px;
+            margin-bottom: 2px;
         }
 
         .mission-location {
@@ -424,7 +425,7 @@
             color: var(--text-dim);
         }
 
-        /* Scrollable content */
+        /* Scrollable content - keeping your scrollbars */
         .scrollable {
             max-height: calc(100vh - 200px);
             overflow-y: auto;
@@ -433,7 +434,7 @@
         }
 
         .scrollable::-webkit-scrollbar {
-            width: 8px;
+            width: 6px;
         }
 
         .scrollable::-webkit-scrollbar-track {
@@ -442,14 +443,14 @@
 
         .scrollable::-webkit-scrollbar-thumb {
             background: var(--border-color);
-            border-radius: 4px;
+            border-radius: 3px;
         }
 
         .scrollable::-webkit-scrollbar-thumb:hover {
             background: var(--primary-green);
         }
 
-        /* Status indicators */
+        /* Status indicators - keeping your style */
         .status-indicator {
             display: inline-block;
             width: 8px;
@@ -461,24 +462,29 @@
 
         .status-online {
             background: var(--primary-green);
-            box-shadow: 0 0 10px var(--primary-green);
+            box-shadow: 0 0 8px var(--primary-green);
         }
 
         .status-offline {
             background: var(--red);
-            box-shadow: 0 0 10px var(--red);
+            box-shadow: 0 0 8px var(--red);
+        }
+
+        .status-loading {
+            background: var(--amber);
+            box-shadow: 0 0 8px var(--amber);
         }
 
         @keyframes blink {
             0%, 50% { opacity: 1; }
-            51%, 100% { opacity: 0.3; }
+            51%, 100% { opacity: 0.4; }
         }
 
-        /* Loading animation */
+        /* Loading animation - keeping simple */
         .loading {
             display: inline-block;
-            width: 20px;
-            height: 20px;
+            width: 18px;
+            height: 18px;
             border: 2px solid var(--dark-green);
             border-radius: 50%;
             border-top-color: var(--primary-green);
@@ -489,7 +495,7 @@
             to { transform: rotate(360deg); }
         }
 
-        /* Responsive design */
+        /* Responsive design - keeping your breakpoints */
         @media (max-width: 1200px) {
             .container {
                 grid-template-areas: 
@@ -520,44 +526,45 @@
             }
             
             .station-title {
-                font-size: 1.5em;
+                font-size: 1.6em;
             }
             
             .controls {
-                flex-wrap: wrap;
-                gap: 10px;
+                gap: 8px;
             }
             
             .control-btn {
-                padding: 8px 15px;
-                font-size: 0.9em;
+                padding: 8px 14px;
+                font-size: 0.8em;
             }
         }
 
-        /* Error states */
+        /* Error states - keeping minimal */
         .error-message {
             color: var(--red);
             text-align: center;
-            padding: 20px;
+            padding: 15px;
             font-style: italic;
+            font-size: 0.8em;
         }
 
         .retry-btn {
             background: var(--red);
             color: var(--bg-dark);
             border: none;
-            padding: 8px 16px;
-            margin-top: 10px;
+            padding: 6px 12px;
+            margin-top: 8px;
             cursor: pointer;
             font-family: 'Orbitron', monospace;
             font-weight: 700;
             text-transform: uppercase;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
+            font-size: 0.7em;
         }
 
         .retry-btn:hover {
             background: var(--primary-green);
-            box-shadow: 0 0 15px var(--primary-green);
+            box-shadow: 0 0 10px var(--primary-green);
         }
     </style>
 </head>
@@ -575,7 +582,7 @@
         <!-- News Panel -->
         <div class="panel news-panel">
             <div class="panel-title">
-                <span class="status-indicator status-online"></span>
+                <span class="status-indicator status-loading" id="newsStatus"></span>
                 GALACTIC NEWS FEED
             </div>
             <div class="scrollable" id="newsContent">
@@ -600,7 +607,7 @@
                 </div>
             </div>
             <div style="text-align: center; color: var(--text-dim); font-size: 0.8em;">
-                <span class="status-indicator" id="streamStatus"></span>
+                <span class="status-indicator status-loading" id="streamStatus"></span>
                 <span id="statusText">INITIALIZING STREAM...</span>
             </div>
         </div>
@@ -608,7 +615,7 @@
         <!-- Market Panel -->
         <div class="panel market-panel">
             <div class="panel-title">
-                <span class="status-indicator status-online"></span>
+                <span class="status-indicator status-loading" id="marketStatus"></span>
                 MARKET WATCH
             </div>
             <div class="scrollable" id="marketContent">
@@ -619,7 +626,7 @@
         <!-- Trade Panel -->
         <div class="panel trade-panel">
             <div class="panel-title">
-                <span class="status-indicator status-online"></span>
+                <span class="status-indicator status-loading" id="tradeStatus"></span>
                 TRADE ROUTES
             </div>
             <div class="scrollable" id="tradeContent">
@@ -630,7 +637,7 @@
         <!-- Missions Panel -->
         <div class="panel missions-panel">
             <div class="panel-title">
-                <span class="status-indicator status-online"></span>
+                <span class="status-indicator status-loading" id="missionsStatus"></span>
                 ACTIVE CONTRACTS
             </div>
             <div class="scrollable" id="missionsContent">
@@ -756,6 +763,13 @@
                 this.streamStatus.className = `status-indicator status-${status}`;
             }
 
+            updatePanelStatus(panelId, status) {
+                const indicator = document.getElementById(panelId);
+                if (indicator) {
+                    indicator.className = `status-indicator status-${status}`;
+                }
+            }
+
             async loadData() {
                 await Promise.all([
                     this.loadNews(),
@@ -767,45 +781,57 @@
 
             async loadNews() {
                 try {
+                    this.updatePanelStatus('newsStatus', 'loading');
                     const response = await fetch('/api/news');
                     const data = await response.json();
                     this.displayNews(data);
+                    this.updatePanelStatus('newsStatus', 'online');
                 } catch (error) {
                     console.error('Failed to load news:', error);
                     this.displayError('newsContent', 'News feed temporarily unavailable');
+                    this.updatePanelStatus('newsStatus', 'offline');
                 }
             }
 
             async loadMarket() {
                 try {
+                    this.updatePanelStatus('marketStatus', 'loading');
                     const response = await fetch('/api/market');
                     const data = await response.json();
                     this.displayMarket(data);
+                    this.updatePanelStatus('marketStatus', 'online');
                 } catch (error) {
                     console.error('Failed to load market:', error);
                     this.displayError('marketContent', 'Market data temporarily unavailable');
+                    this.updatePanelStatus('marketStatus', 'offline');
                 }
             }
 
             async loadTrade() {
                 try {
+                    this.updatePanelStatus('tradeStatus', 'loading');
                     const response = await fetch('/api/trade');
                     const data = await response.json();
                     this.displayTrade(data);
+                    this.updatePanelStatus('tradeStatus', 'online');
                 } catch (error) {
                     console.error('Failed to load trade:', error);
                     this.displayError('tradeContent', 'Trade routes temporarily unavailable');
+                    this.updatePanelStatus('tradeStatus', 'offline');
                 }
             }
 
             async loadMissions() {
                 try {
+                    this.updatePanelStatus('missionsStatus', 'loading');
                     const response = await fetch('/api/missions');
                     const data = await response.json();
                     this.displayMissions(data);
+                    this.updatePanelStatus('missionsStatus', 'online');
                 } catch (error) {
                     console.error('Failed to load missions:', error);
                     this.displayError('missionsContent', 'Contract database temporarily unavailable');
+                    this.updatePanelStatus('missionsStatus', 'offline');
                 }
             }
 
@@ -856,12 +882,12 @@
                 let html = '';
 
                 if (Array.isArray(data) && data.length > 0) {
-                    data.slice(0, 8).forEach(item => {
+                    data.slice(0, 10).forEach(item => {
                         const changeClass = item.change && item.change.startsWith('+') ? 'positive' : 'negative';
                         html += `
                             <div class="market-item">
                                 <div class="market-name">${this.escapeHtml(item.name || 'Unknown')}</div>
-                                <div class="market-price">${this.escapeHtml(item.price || 'N/A')} aUEC</div>
+                                <div class="market-price">${this.escapeHtml(item.price || 'N/A')}</div>
                                 <div class="market-change ${changeClass}">${this.escapeHtml(item.change || '0.0')}%</div>
                             </div>
                         `;
@@ -876,7 +902,7 @@
                 let html = '';
 
                 if (Array.isArray(data) && data.length > 0) {
-                    data.slice(0, 6).forEach(item => {
+                    data.slice(0, 8).forEach(item => {
                         html += `
                             <div class="trade-item">
                                 <div class="trade-route">${this.escapeHtml(item.route || 'Unknown Route')}</div>
@@ -894,7 +920,7 @@
                 let html = '';
 
                 if (Array.isArray(data) && data.length > 0) {
-                    data.slice(0, 6).forEach(item => {
+                    data.slice(0, 8).forEach(item => {
                         html += `
                             <div class="mission-item">
                                 <div class="mission-title">${this.escapeHtml(item.title || 'Unknown Mission')}</div>
