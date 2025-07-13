@@ -1,0 +1,4316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HCN Radio - Star Citizen Universe Player</title>
+    <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono:wght@400&family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* ===================================================================
+           ENHANCED RETRO COMPUTER FOUNDATION - APPLE II / AMIGA INSPIRED
+           =================================================================== */
+        
+        :root {
+            --amber: #ffaa00;
+            --amber-bright: #ffcc00;
+            --amber-dark: #cc8800;
+            --amber-glow: rgba(255, 170, 0, 0.8);
+            --amber-soft: rgba(255, 170, 0, 0.4);
+            --screen-bg: #0a0800;
+            --screen-dark: #050400;
+            --border-amber: #cc7700;
+            --text-amber: #ffaa00;
+            --success: #00ff00;
+            --danger: #ff4400;
+            --warning: #ffaa00;
+            --info: #0088ff;
+            --panel-bg: rgba(10, 8, 0, 0.95);
+            --panel-border: rgba(255, 170, 0, 0.6);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Share Tech Mono', monospace;
+            background: #000;
+            color: var(--text-amber);
+            overflow: hidden;
+            height: 100vh;
+            user-select: none;
+            cursor: default;
+        }
+
+        /* ===================================================================
+           ENHANCED CRT MONITOR CONTAINER
+           =================================================================== */
+
+        .monitor-container {
+            width: 100vw;
+            height: 100vh;
+            background: radial-gradient(ellipse at center, #111 0%, #000 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            padding: 20px;
+        }
+
+        .crt-monitor {
+            width: 95vw;
+            height: 95vh;
+            max-width: 1400px;
+            max-height: 900px;
+            background: linear-gradient(135deg, var(--screen-bg) 0%, var(--screen-dark) 100%);
+            border: 6px solid var(--amber);
+            border-radius: 25px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 
+                0 0 60px var(--amber-glow),
+                inset 0 0 120px rgba(255, 170, 0, 0.08),
+                0 25px 50px rgba(0, 0, 0, 0.9);
+            animation: monitorGlow 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes monitorGlow {
+            0% { box-shadow: 0 0 60px var(--amber-glow), inset 0 0 120px rgba(255, 170, 0, 0.08), 0 25px 50px rgba(0, 0, 0, 0.9); }
+            100% { box-shadow: 0 0 80px var(--amber-glow), inset 0 0 140px rgba(255, 170, 0, 0.12), 0 25px 50px rgba(0, 0, 0, 0.9); }
+        }
+
+        /* Enhanced CRT Effects */
+        .crt-monitor::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: repeating-linear-gradient(
+                0deg,
+                transparent,
+                transparent 2px,
+                rgba(255, 170, 0, 0.04) 2px,
+                rgba(255, 170, 0, 0.04) 4px
+            );
+            pointer-events: none;
+            z-index: 1000;
+            animation: scanlines 0.1s linear infinite;
+        }
+
+        @keyframes scanlines {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(4px); }
+        }
+
+        .crt-monitor::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(
+                ellipse at center,
+                transparent 0%,
+                transparent 60%,
+                rgba(0, 0, 0, 0.3) 100%
+            );
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        /* Screen flicker effect */
+        .crt-monitor {
+            animation: 
+                monitorGlow 3s ease-in-out infinite alternate,
+                flicker 0.15s linear infinite;
+        }
+
+        @keyframes flicker {
+            0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+            20%, 24%, 55% { opacity: 0.99; }
+        }
+
+        /* ===================================================================
+           SIMPLIFIED BOOT SEQUENCE
+           =================================================================== */
+
+        .boot-sequence {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            color: var(--text-amber);
+            font-family: 'Share Tech Mono', monospace;
+            font-size: 12px;
+            line-height: 1.4;
+            padding: 30px;
+            overflow-y: auto;
+            z-index: 100;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.5s ease;
+            border-radius: 15px;
+            display: none;
+        }
+        
+        .boot-sequence.active {
+            opacity: 1;
+            display: block;
+        }
+        
+        .boot-header {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        .boot-header h1 {
+            font-size: 16px;
+            font-weight: normal;
+            margin-bottom: 8px;
+            letter-spacing: 2px;
+            font-family: 'Orbitron', monospace;
+            font-weight: 700;
+            text-transform: uppercase;
+            animation: bootGlow 2s ease-in-out infinite alternate;
+        }
+        
+        @keyframes bootGlow {
+            0% { text-shadow: 0 0 15px var(--amber-glow); }
+            100% { text-shadow: 0 0 25px var(--amber-glow); }
+        }
+        
+        .boot-content {
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+        
+        .boot-line {
+            display: none;
+            font-size: 10px;
+            opacity: 0.9;
+        }
+        
+        .boot-line.active {
+            display: block;
+            animation: typewriter 0.5s ease-out;
+        }
+        
+        @keyframes typewriter {
+            from { opacity: 0; }
+            to { opacity: 0.9; }
+        }
+
+        /* ===================================================================
+           ENHANCED SCREEN CONTENT
+           =================================================================== */
+
+        .screen-content {
+            width: 100%;
+            height: 100%;
+            padding: 25px;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 10;
+            overflow: hidden;
+            box-sizing: border-box;
+        }
+
+        /* ===================================================================
+           ENHANCED HEADER SECTION
+           =================================================================== */
+
+        .header-section {
+            background: linear-gradient(135deg, rgba(255, 170, 0, 0.12) 0%, rgba(255, 170, 0, 0.06) 100%);
+            border: 3px solid var(--amber);
+            border-radius: 12px;
+            padding: 18px 30px;
+            margin-bottom: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 
+                0 0 25px rgba(255, 170, 0, 0.4),
+                inset 0 2px 0 rgba(255, 170, 0, 0.3),
+                inset 0 -2px 0 rgba(255, 170, 0, 0.1);
+            position: relative;
+        }
+
+        .header-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255, 170, 0, 0.05), transparent);
+            animation: headerSweep 4s ease-in-out infinite;
+            border-radius: 8px;
+        }
+
+        @keyframes headerSweep {
+            0%, 100% { transform: translateX(-100%); }
+            50% { transform: translateX(100%); }
+        }
+
+        .logo-section {
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            z-index: 1;
+        }
+
+        .hcn-logo {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, var(--amber) 0%, var(--amber-bright) 100%);
+            color: #000;
+            font-family: 'Orbitron', monospace;
+            font-weight: 900;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            box-shadow: 
+                0 0 20px var(--amber-glow),
+                inset 0 3px 6px rgba(255, 255, 255, 0.4),
+                inset 0 -3px 6px rgba(0, 0, 0, 0.3);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+            animation: logoGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes logoGlow {
+            0% { box-shadow: 0 0 20px var(--amber-glow), inset 0 3px 6px rgba(255, 255, 255, 0.4), inset 0 -3px 6px rgba(0, 0, 0, 0.3); }
+            100% { box-shadow: 0 0 30px var(--amber-glow), inset 0 3px 6px rgba(255, 255, 255, 0.5), inset 0 -3px 6px rgba(0, 0, 0, 0.3); }
+        }
+
+        .logo-text h1 {
+            font-family: 'Orbitron', monospace;
+            font-size: 32px;
+            font-weight: 700;
+            color: var(--amber);
+            letter-spacing: 4px;
+            margin: 0;
+            text-shadow: 
+                0 0 25px var(--amber-glow),
+                0 2px 4px rgba(0, 0, 0, 0.5);
+            animation: titleGlow 2.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes titleGlow {
+            0% { text-shadow: 0 0 25px var(--amber-glow), 0 2px 4px rgba(0, 0, 0, 0.5); }
+            100% { text-shadow: 0 0 35px var(--amber-glow), 0 2px 4px rgba(0, 0, 0, 0.5); }
+        }
+
+        .logo-text .subtitle {
+            font-size: 12px;
+            color: var(--amber-dark);
+            letter-spacing: 2px;
+            opacity: 0.9;
+            font-weight: 400;
+            margin-top: 4px;
+            animation: subtitleFlicker 3s ease-in-out infinite;
+        }
+
+        @keyframes subtitleFlicker {
+            0%, 100% { opacity: 0.9; }
+            50% { opacity: 0.6; }
+        }
+
+        .system-status {
+            display: flex;
+            gap: 35px;
+            align-items: center;
+            z-index: 1;
+        }
+
+        .status-item {
+            text-align: right;
+            font-size: 12px;
+            position: relative;
+        }
+
+        .status-label {
+            color: var(--amber-dark);
+            text-transform: uppercase;
+            font-size: 10px;
+            letter-spacing: 1px;
+            display: block;
+            opacity: 0.8;
+        }
+
+        .status-value {
+            color: var(--amber-bright);
+            font-weight: bold;
+            font-size: 14px;
+            text-shadow: 0 0 12px var(--amber-glow);
+            display: block;
+            margin-top: 3px;
+            font-family: 'Orbitron', monospace;
+            animation: valueFlicker 2s ease-in-out infinite;
+        }
+
+        @keyframes valueFlicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.8; }
+        }
+
+        /* ===================================================================
+           ENHANCED LED STATUS BAR
+           =================================================================== */
+
+        .led-status-bar {
+            background: linear-gradient(90deg, var(--screen-dark) 0%, var(--screen-bg) 50%, var(--screen-dark) 100%);
+            border: 2px solid var(--border-amber);
+            border-radius: 6px;
+            padding: 12px 30px;
+            margin-bottom: 18px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 
+                inset 0 2px 4px rgba(0, 0, 0, 0.6),
+                0 0 10px rgba(255, 170, 0, 0.2);
+        }
+
+        .led-group {
+            display: flex;
+            gap: 25px;
+            align-items: center;
+        }
+
+        .led-indicator {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .led {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #1a1000;
+            border: 2px solid var(--border-amber);
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
+            transition: all 0.4s ease;
+            position: relative;
+        }
+
+        .led.active {
+            background: radial-gradient(circle at 30% 30%, var(--amber-bright) 20%, var(--amber) 100%);
+            border-color: var(--amber);
+            box-shadow: 
+                0 0 15px var(--amber-glow),
+                inset 0 2px 4px rgba(255, 255, 255, 0.5),
+                inset 0 -2px 4px rgba(0, 0, 0, 0.3);
+            animation: ledPulse 2s infinite ease-in-out;
+        }
+
+        .led.active::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.8);
+            animation: ledHighlight 2s infinite ease-in-out;
+        }
+
+        @keyframes ledPulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.7; transform: scale(1.05); }
+        }
+
+        @keyframes ledHighlight {
+            0%, 100% { opacity: 0.8; }
+            50% { opacity: 0.4; }
+        }
+
+        .led-label {
+            font-size: 10px;
+            color: var(--amber-dark);
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            opacity: 0.9;
+        }
+
+        /* ===================================================================
+           ENHANCED MAIN INTERFACE GRID
+           =================================================================== */
+
+        .main-interface {
+            flex: 1;
+            display: grid;
+            grid-template-columns: 1.2fr 1fr 320px;
+            grid-template-rows: 220px 1fr 90px;
+            gap: 18px;
+            grid-template-areas:
+                "analyzer equalizer controls"
+                "tuner stations controls"
+                "player player controls";
+            width: 100%;
+            min-height: 650px;
+            overflow: hidden;
+        }
+
+        /* ===================================================================
+           ENHANCED ANALYZER SECTION
+           =================================================================== */
+
+        .analyzer-section {
+            grid-area: analyzer;
+            background: linear-gradient(135deg, rgba(255, 170, 0, 0.08) 0%, rgba(255, 170, 0, 0.04) 100%);
+            border: 3px solid var(--amber);
+            border-radius: 12px;
+            padding: 20px;
+            position: relative;
+            box-shadow: 
+                0 0 20px rgba(255, 170, 0, 0.3),
+                inset 0 2px 0 rgba(255, 170, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border-amber);
+            flex-shrink: 0;
+        }
+
+        .section-title {
+            font-size: 14px;
+            color: var(--amber);
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-family: 'Orbitron', monospace;
+            text-shadow: 0 0 10px var(--amber-glow);
+        }
+
+        .section-stats {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            font-size: 10px;
+            color: var(--amber-dark);
+            opacity: 0.9;
+        }
+
+        .stat-value {
+            color: var(--amber-bright);
+            font-weight: bold;
+            text-shadow: 0 0 12px var(--amber-glow);
+            animation: statFlicker 1.5s ease-in-out infinite;
+        }
+
+        @keyframes statFlicker {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.7; }
+        }
+
+        .oscilloscope {
+            height: 160px;
+            background: linear-gradient(135deg, #000 0%, #111 100%);
+            border: 3px inset var(--border-amber);
+            border-radius: 6px;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            box-shadow: 
+                inset 0 4px 8px rgba(0, 0, 0, 0.8),
+                0 0 15px rgba(255, 170, 0, 0.2);
+            flex: 1;
+        }
+
+        .scope-display {
+            flex: 2;
+            height: 100%;
+            position: relative;
+            border-right: 2px solid var(--border-amber);
+        }
+
+        .spectrum-display {
+            flex: 1;
+            height: 100%;
+            position: relative;
+        }
+
+        .oscilloscope canvas {
+            width: 100%;
+            height: 100%;
+            display: block;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Enhanced grid overlay */
+        .oscilloscope::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                repeating-linear-gradient(0deg, rgba(255,170,0,0.15) 0px, transparent 1px, transparent 19px, rgba(255,170,0,0.15) 20px),
+                repeating-linear-gradient(90deg, rgba(255,170,0,0.15) 0px, transparent 1px, transparent 19px, rgba(255,170,0,0.15) 20px);
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        /* ===================================================================
+           ENHANCED EQUALIZER SECTION
+           =================================================================== */
+
+        .equalizer-section {
+            grid-area: equalizer;
+            background: linear-gradient(135deg, rgba(255, 170, 0, 0.08) 0%, rgba(255, 170, 0, 0.04) 100%);
+            border: 3px solid var(--amber);
+            border-radius: 12px;
+            padding: 15px;
+            box-shadow: 
+                0 0 20px rgba(255, 170, 0, 0.3),
+                inset 0 2px 0 rgba(255, 170, 0, 0.2);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            width: 100%;
+            height: 100%;
+        }
+
+        .eq-display {
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
+            flex: 1;
+            background: linear-gradient(135deg, #000 0%, #111 100%);
+            border: 3px inset var(--border-amber);
+            padding: 6px 10px;
+            position: relative;
+            border-radius: 4px;
+            margin-top: 12px;
+            box-shadow: 
+                inset 0 4px 8px rgba(0, 0, 0, 0.8),
+                0 0 10px rgba(255, 170, 0, 0.2);
+            min-height: 60px;
+        }
+
+        .eq-display::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: 
+                repeating-linear-gradient(90deg, rgba(255, 170, 0, 0.08) 0px, transparent 1px, transparent 7px, rgba(255, 170, 0, 0.08) 8px),
+                repeating-linear-gradient(0deg, rgba(255, 170, 0, 0.08) 0px, transparent 1px, transparent 9px, rgba(255, 170, 0, 0.08) 10px);
+            pointer-events: none;
+        }
+
+        .eq-bar {
+            width: 5px;
+            background: linear-gradient(to top, var(--amber-dark) 0%, var(--amber) 50%, var(--amber-bright) 100%);
+            border-radius: 2px;
+            transition: height 0.15s ease;
+            box-shadow: 
+                0 0 6px var(--amber-glow),
+                inset 0 1px 2px rgba(255, 255, 255, 0.3);
+            position: relative;
+        }
+
+        .eq-bar::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background: rgba(255, 255, 255, 0.6);
+            border-radius: 2px;
+        }
+
+        .eq-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 8px;
+            font-size: 8px;
+            color: var(--amber-dark);
+            opacity: 0.9;
+            flex-shrink: 0;
+        }
+
+        /* ===================================================================
+           ENHANCED TUNER SECTION
+           =================================================================== */
+
+        .tuner-section {
+            grid-area: tuner;
+            background: linear-gradient(135deg, rgba(255, 170, 0, 0.08) 0%, rgba(255, 170, 0, 0.04) 100%);
+            border: 3px solid var(--amber);
+            border-radius: 12px;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 
+                0 0 20px rgba(255, 170, 0, 0.3),
+                inset 0 2px 0 rgba(255, 170, 0, 0.2);
+            height: 100%;
+        }
+
+        /* ENHANCED POWER BUTTON */
+        .power-control {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .power-button {
+            width: 90px;
+            height: 90px;
+            background: 
+                radial-gradient(circle at 30% 30%, #444 0%, #222 50%, #000 100%);
+            border: 5px solid #555;
+            border-radius: 50%;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 
+                0 8px 16px rgba(0, 0, 0, 0.7),
+                inset 0 -3px 6px rgba(0, 0, 0, 0.8),
+                inset 0 3px 6px rgba(255, 255, 255, 0.1);
+        }
+
+        .power-button::before {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 28px;
+            height: 28px;
+            transform: translate(-50%, -50%);
+            background: #777;
+            mask: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M13 3h-2v10h2V3zm4.83 2.17l-1.42 1.42A6.92 6.92 0 0119 12c0 3.87-3.13 7-7 7A6.995 6.995 0 015 12c0-2.06.9-3.92 2.34-5.2L5.91 5.37A8.96 8.96 0 003 12c0 4.97 4.03 9 9 9s9-4.03 9-9c0-2.73-1.21-5.17-3.17-6.83z'/%3E%3C/svg%3E");
+            mask-size: contain;
+            transition: all 0.3s ease;
+        }
+
+        .power-button:hover {
+            border-color: #666;
+            box-shadow: 
+                0 10px 20px rgba(0, 0, 0, 0.8),
+                inset 0 -3px 6px rgba(0, 0, 0, 0.8),
+                inset 0 3px 6px rgba(255, 255, 255, 0.2);
+        }
+
+        .power-button:active {
+            transform: translateY(3px);
+            box-shadow: 
+                0 5px 10px rgba(0, 0, 0, 0.7),
+                inset 0 -2px 4px rgba(0, 0, 0, 0.8),
+                inset 0 2px 4px rgba(255, 255, 255, 0.1);
+        }
+
+        .power-button.active {
+            background: 
+                radial-gradient(circle at 30% 30%, #332200 0%, #221100 50%, #110800 100%);
+            border-color: var(--amber);
+            box-shadow: 
+                0 0 35px var(--amber-glow),
+                0 8px 16px rgba(0, 0, 0, 0.7),
+                inset 0 -3px 6px rgba(0, 0, 0, 0.8),
+                inset 0 3px 6px rgba(255, 170, 0, 0.4);
+            animation: powerPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes powerPulse {
+            0%, 100% { box-shadow: 0 0 35px var(--amber-glow), 0 8px 16px rgba(0, 0, 0, 0.7), inset 0 -3px 6px rgba(0, 0, 0, 0.8), inset 0 3px 6px rgba(255, 170, 0, 0.4); }
+            50% { box-shadow: 0 0 50px var(--amber-glow), 0 8px 16px rgba(0, 0, 0, 0.7), inset 0 -3px 6px rgba(0, 0, 0, 0.8), inset 0 3px 6px rgba(255, 170, 0, 0.6); }
+        }
+
+        .power-button.active::before {
+            background: var(--amber);
+            filter: drop-shadow(0 0 10px var(--amber-glow));
+        }
+
+        .power-label {
+            font-size: 11px;
+            color: var(--amber-dark);
+            text-transform: uppercase;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-shadow: 0 0 5px var(--amber-glow);
+        }
+
+        /* ENHANCED FREQUENCY DISPLAY */
+        .frequency-display {
+            text-align: center;
+            flex: 1;
+            margin: 0 40px;
+        }
+
+        .freq-readout {
+            font-family: 'Orbitron', monospace;
+            font-size: 72px;
+            font-weight: 700;
+            color: var(--amber);
+            text-shadow: 
+                0 0 40px var(--amber-glow),
+                0 0 80px rgba(255, 170, 0, 0.6),
+                0 4px 8px rgba(0, 0, 0, 0.5);
+            line-height: 1;
+            margin-bottom: 20px;
+            animation: freqGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes freqGlow {
+            0% { text-shadow: 0 0 40px var(--amber-glow), 0 0 80px rgba(255, 170, 0, 0.6), 0 4px 8px rgba(0, 0, 0, 0.5); }
+            100% { text-shadow: 0 0 60px var(--amber-glow), 0 0 100px rgba(255, 170, 0, 0.8), 0 4px 8px rgba(0, 0, 0, 0.5); }
+        }
+
+        .freq-unit {
+            font-size: 20px;
+            color: var(--amber-dark);
+            margin-left: 10px;
+            opacity: 0.8;
+        }
+
+        /* ENHANCED FREQUENCY SLIDER */
+        .freq-control {
+            position: relative;
+            height: 50px;
+            background: linear-gradient(135deg, #000 0%, var(--screen-bg) 100%);
+            border: 4px solid var(--amber);
+            border-radius: 25px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            box-shadow: 
+                inset 0 4px 10px rgba(0, 0, 0, 0.7),
+                0 3px 6px rgba(0, 0, 0, 0.3),
+                0 0 20px rgba(255, 170, 0, 0.3);
+        }
+
+        .freq-track {
+            position: absolute;
+            top: 50%;
+            left: 25px;
+            right: 25px;
+            height: 8px;
+            background: linear-gradient(90deg, 
+                var(--border-amber) 0%, 
+                var(--amber) 25%, 
+                var(--amber-bright) 50%, 
+                var(--amber) 75%, 
+                var(--border-amber) 100%
+            );
+            transform: translateY(-50%);
+            border-radius: 4px;
+            box-shadow: 
+                0 0 12px var(--amber-glow),
+                inset 0 2px 4px rgba(0, 0, 0, 0.4),
+                inset 0 -2px 4px rgba(255, 255, 255, 0.2);
+        }
+
+        .freq-thumb {
+            position: absolute;
+            top: 50%;
+            width: 36px;
+            height: 36px;
+            background: radial-gradient(circle at 30% 30%, var(--amber-bright) 20%, var(--amber) 80%);
+            border: 4px solid var(--amber);
+            border-radius: 50%;
+            cursor: grab;
+            box-shadow: 
+                0 0 20px var(--amber-glow),
+                inset 0 3px 6px rgba(255, 255, 255, 0.4),
+                inset 0 -3px 6px rgba(0, 0, 0, 0.3);
+            transition: all 0.2s ease;
+            transform: translate(-50%, -50%);
+            left: 25px;
+        }
+
+        .freq-thumb::before {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 4px rgba(255, 255, 255, 0.6);
+        }
+
+        .freq-thumb:hover {
+            box-shadow: 
+                0 0 25px var(--amber-glow),
+                inset 0 3px 6px rgba(255, 255, 255, 0.5),
+                inset 0 -3px 6px rgba(0, 0, 0, 0.3);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+
+        .freq-thumb:active {
+            cursor: grabbing;
+            transform: translate(-50%, -50%) scale(0.95);
+        }
+
+        /* Station markers */
+        .station-markers {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 12px;
+            position: relative;
+        }
+
+        .station-marker {
+            width: 3px;
+            height: 15px;
+            background: linear-gradient(to top, var(--amber-dark) 0%, var(--amber) 50%, var(--amber-bright) 100%);
+            box-shadow: 0 0 6px var(--amber-glow);
+            position: relative;
+            animation: markerPulse 3s ease-in-out infinite;
+        }
+
+        @keyframes markerPulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.6; }
+        }
+
+        .station-marker::after {
+            content: attr(data-freq);
+            position: absolute;
+            top: 18px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 9px;
+            color: var(--amber-dark);
+            white-space: nowrap;
+        }
+
+        /* ENHANCED SCAN CONTROL */
+        .scan-control {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .scan-button {
+            width: 80px;
+            height: 40px;
+            background: linear-gradient(135deg, var(--screen-bg) 0%, #000 100%);
+            border: 3px solid var(--amber);
+            color: var(--amber);
+            font-family: 'Orbitron', monospace;
+            font-size: 12px;
+            text-transform: uppercase;
+            cursor: pointer;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            font-weight: 700;
+            letter-spacing: 1px;
+            box-shadow: 
+                0 3px 6px rgba(0, 0, 0, 0.4),
+                inset 0 2px 4px rgba(255, 170, 0, 0.1);
+        }
+
+        .scan-button:hover {
+            border-color: var(--amber-bright);
+            background: linear-gradient(135deg, #2a1500 0%, var(--screen-bg) 100%);
+            box-shadow: 
+                0 0 15px var(--amber-glow),
+                0 4px 8px rgba(0, 0, 0, 0.5);
+        }
+
+        .scan-button.active {
+            background: linear-gradient(135deg, var(--amber) 0%, var(--amber-bright) 100%);
+            color: #000;
+            border-color: var(--amber-bright);
+            box-shadow: 
+                0 0 20px var(--amber-glow),
+                inset 0 2px 4px rgba(255, 255, 255, 0.4);
+            animation: scanActive 0.5s ease-in-out infinite alternate;
+        }
+
+        @keyframes scanActive {
+            0% { box-shadow: 0 0 20px var(--amber-glow), inset 0 2px 4px rgba(255, 255, 255, 0.4); }
+            100% { box-shadow: 0 0 30px var(--amber-glow), inset 0 2px 4px rgba(255, 255, 255, 0.6); }
+        }
+
+        /* ===================================================================
+           ENHANCED STATIONS SECTION
+           =================================================================== */
+
+        .stations-section {
+            grid-area: stations;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            gap: 15px;
+            padding: 0;
+            height: 100%;
+            min-height: 200px;
+            overflow: visible;
+        }
+
+        .station-card {
+            background: linear-gradient(135deg, rgba(255, 170, 0, 0.08) 0%, rgba(0, 0, 0, 0.4) 100%);
+            border: 3px solid var(--border-amber);
+            border-radius: 12px;
+            padding: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 
+                0 2px 8px rgba(0, 0, 0, 0.3),
+                inset 0 1px 2px rgba(255, 170, 0, 0.1);
+            width: 100%;
+            height: 100%;
+            min-height: 90px;
+            max-height: none;
+            box-sizing: border-box;
+        }
+
+        .station-card::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 170, 0, 0.15), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .station-card:hover {
+            border-color: var(--amber);
+            background: linear-gradient(135deg, rgba(255, 170, 0, 0.12) 0%, rgba(0, 0, 0, 0.6) 100%);
+            box-shadow: 
+                0 0 20px rgba(255, 170, 0, 0.4),
+                0 4px 12px rgba(0, 0, 0, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .station-card:hover::before {
+            left: 100%;
+        }
+
+        .station-card.active {
+            background: linear-gradient(135deg, rgba(255, 170, 0, 0.2) 0%, rgba(255, 170, 0, 0.1) 100%);
+            border-color: var(--amber-bright);
+            box-shadow: 
+                0 0 30px var(--amber-glow),
+                inset 0 0 25px rgba(255, 170, 0, 0.15),
+                0 6px 16px rgba(0, 0, 0, 0.4);
+            animation: stationActive 2s ease-in-out infinite;
+        }
+
+        @keyframes stationActive {
+            0%, 100% { box-shadow: 0 0 30px var(--amber-glow), inset 0 0 25px rgba(255, 170, 0, 0.15), 0 6px 16px rgba(0, 0, 0, 0.4); }
+            50% { box-shadow: 0 0 40px var(--amber-glow), inset 0 0 35px rgba(255, 170, 0, 0.2), 0 6px 16px rgba(0, 0, 0, 0.4); }
+        }
+
+        .station-header {
+            position: absolute;
+            top: 6px;
+            right: 8px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            z-index: 10;
+        }
+
+        .station-id {
+            font-size: 8px;
+            color: var(--amber-dark);
+            font-weight: 700;
+            letter-spacing: 1px;
+            font-family: 'Orbitron', monospace;
+        }
+
+        .station-status {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--border-amber);
+            transition: all 0.3s ease;
+            box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.4);
+            flex-shrink: 0;
+        }
+
+        .station-card.active .station-status {
+            background: var(--success);
+            box-shadow: 
+                0 0 10px rgba(0, 255, 0, 0.7),
+                inset 0 1px 2px rgba(255, 255, 255, 0.3);
+            animation: statusPulse 2s infinite ease-in-out;
+        }
+
+        @keyframes statusPulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.1); }
+        }
+
+        .station-logo {
+            width: 40px;
+            height: 40px;
+            background: linear-gradient(135deg, #000 0%, #111 100%);
+            border: 2px solid var(--border-amber);
+            border-radius: 6px;
+            overflow: hidden;
+            flex-shrink: 0;
+            box-shadow: 
+                inset 0 2px 4px rgba(0, 0, 0, 0.6),
+                0 0 8px rgba(255, 170, 0, 0.2);
+        }
+
+        .station-logo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            filter: sepia(100%) hue-rotate(15deg) saturate(1.5) brightness(0.9);
+            transition: all 0.3s ease;
+        }
+
+        .station-card:hover .station-logo img {
+            filter: sepia(80%) hue-rotate(15deg) saturate(1.8) brightness(1.1);
+        }
+
+        .station-info {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 4px;
+            min-height: 40px;
+        }
+
+        .station-name {
+            font-family: 'Orbitron', monospace;
+            font-size: 11px;
+            font-weight: 700;
+            color: var(--amber);
+            margin-bottom: 3px;
+            text-shadow: 0 0 8px var(--amber-glow);
+            line-height: 1.2;
+        }
+
+        .station-freq {
+            font-size: 8px;
+            color: var(--amber-dark);
+            opacity: 0.9;
+            letter-spacing: 0.5px;
+            line-height: 1.3;
+        }
+
+        /* ===================================================================
+           ENHANCED PLAYER SECTION
+           =================================================================== */
+
+        .player-section {
+            grid-area: player;
+            background: linear-gradient(135deg, rgba(255, 170, 0, 0.08) 0%, rgba(255, 170, 0, 0.04) 100%);
+            border: 3px solid var(--amber);
+            border-radius: 12px;
+            padding: 15px 25px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 
+                0 0 20px rgba(255, 170, 0, 0.3),
+                inset 0 2px 0 rgba(255, 170, 0, 0.2);
+            height: 100%;
+        }
+
+        .volume-control {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .volume-display {
+            position: relative;
+            width: 70px;
+            height: 70px;
+        }
+
+        .volume-ring {
+            width: 100%;
+            height: 100%;
+            border: 4px solid var(--border-amber);
+            border-radius: 50%;
+            background: radial-gradient(circle, var(--screen-bg) 0%, #000 100%);
+            position: relative;
+            box-shadow: 
+                inset 0 3px 6px rgba(0, 0, 0, 0.7),
+                0 0 15px rgba(255, 170, 0, 0.3);
+        }
+
+        .volume-track {
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            width: calc(100% + 8px);
+            height: calc(100% + 8px);
+            border-radius: 50%;
+            background: conic-gradient(
+                from 135deg,
+                var(--amber) 0deg,
+                var(--amber-bright) calc(var(--volume-percent, 25) * 2.7deg),
+                var(--border-amber) calc(var(--volume-percent, 25) * 2.7deg),
+                var(--border-amber) 360deg
+            );
+            mask: radial-gradient(circle, transparent 68%, black 72%);
+            animation: volumeGlow 2s ease-in-out infinite alternate;
+        }
+
+        @keyframes volumeGlow {
+            0% { filter: brightness(1); }
+            100% { filter: brightness(1.2); }
+        }
+
+        .volume-knob {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 52px;
+            height: 52px;
+            background: radial-gradient(circle at 30% 30%, #2a1500 0%, var(--screen-bg) 100%);
+            border: 4px solid var(--amber);
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 
+                0 0 20px var(--amber-glow),
+                inset 0 0 15px rgba(0, 0, 0, 0.8),
+                inset 0 2px 4px rgba(255, 170, 0, 0.2);
+            transform: translate(-50%, -50%);
+            transition: all 0.2s ease;
+        }
+
+        .volume-knob:hover {
+            box-shadow: 
+                0 0 25px var(--amber-glow),
+                inset 0 0 15px rgba(0, 0, 0, 0.8),
+                inset 0 2px 4px rgba(255, 170, 0, 0.3);
+            transform: translate(-50%, -50%) scale(1.05);
+        }
+
+        .volume-knob::before {
+            content: "";
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            width: 4px;
+            height: 18px;
+            background: linear-gradient(to bottom, var(--amber-bright), var(--amber));
+            border-radius: 2px;
+            transform: translateX(-50%) rotate(var(--knob-rotation, 0deg));
+            transform-origin: center 18px;
+            box-shadow: 0 0 8px var(--amber-glow);
+        }
+
+        .volume-label {
+            font-size: 9px;
+            color: var(--amber-dark);
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .volume-value {
+            font-family: 'Orbitron', monospace;
+            font-size: 13px;
+            font-weight: 700;
+            color: var(--amber);
+            text-shadow: 0 0 10px var(--amber-glow);
+        }
+
+        /* NOW PLAYING - ENHANCED */
+        .now-playing {
+            flex: 1;
+            margin: 0 40px;
+            text-align: center;
+        }
+
+        .now-playing-label {
+            font-size: 11px;
+            color: var(--amber-dark);
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .now-playing-display {
+            background: linear-gradient(135deg, #000 0%, var(--screen-bg) 100%);
+            border: 3px solid var(--amber);
+            border-radius: 8px;
+            padding: 15px 25px;
+            min-height: 60px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 
+                inset 0 3px 10px rgba(0, 0, 0, 0.7),
+                0 0 15px rgba(255, 170, 0, 0.3);
+            position: relative;
+        }
+
+        .now-playing-display::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255, 170, 0, 0.05), transparent);
+            animation: nowPlayingSweep 3s ease-in-out infinite;
+            border-radius: 5px;
+        }
+
+        @keyframes nowPlayingSweep {
+            0%, 100% { transform: translateX(-100%); }
+            50% { transform: translateX(100%); }
+        }
+
+        .now-playing-text {
+            font-family: 'Orbitron', monospace;
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--amber);
+            text-shadow: 0 0 15px var(--amber-glow);
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            max-width: 100%;
+            position: relative;
+            z-index: 1;
+        }
+
+        .now-playing-metadata {
+            font-size: 11px;
+            color: var(--amber-dark);
+            margin-top: 5px;
+            opacity: 0.9;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* DIAGNOSTICS - ENHANCED */
+        .diagnostics {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .diagnostics-label {
+            font-size: 9px;
+            color: var(--amber-dark);
+            text-transform: uppercase;
+            font-weight: 700;
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        .diagnostics-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 8px;
+        }
+
+        .diagnostic-item {
+            background: linear-gradient(135deg, #000 0%, #111 100%);
+            border: 2px solid var(--border-amber);
+            border-radius: 4px;
+            padding: 8px;
+            text-align: center;
+            box-shadow: 
+                inset 0 2px 4px rgba(0, 0, 0, 0.6),
+                0 0 8px rgba(255, 170, 0, 0.2);
+        }
+
+        .diagnostic-label {
+            font-size: 8px;
+            color: var(--amber-dark);
+            text-transform: uppercase;
+            display: block;
+            font-weight: 700;
+        }
+
+        .diagnostic-value {
+            color: var(--amber-bright);
+            font-weight: bold;
+            font-size: 10px;
+            text-shadow: 0 0 6px var(--amber-glow);
+            display: block;
+            margin-top: 2px;
+            font-family: 'Orbitron', monospace;
+        }
+
+        /* ===================================================================
+           ENHANCED CONTROLS SECTION - MOVIE PRODUCTION READY
+           =================================================================== */
+
+        .controls-section {
+            grid-area: controls;
+            background: linear-gradient(135deg, rgba(255, 170, 0, 0.12) 0%, rgba(255, 170, 0, 0.06) 100%);
+            border: 4px solid var(--amber);
+            border-radius: 16px;
+            padding: 24px 20px;
+            display: grid;
+            grid-template-rows: repeat(8, 1fr);
+            gap: 14px;
+            position: relative;
+            overflow: visible;
+            box-shadow: 
+                0 0 30px rgba(255, 170, 0, 0.4),
+                inset 0 3px 0 rgba(255, 170, 0, 0.3),
+                inset 0 -3px 0 rgba(255, 170, 0, 0.1);
+            height: 100%;
+            min-height: 560px;
+        }
+
+        .controls-section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255, 170, 0, 0.08), transparent);
+            animation: controlsSweep 6s ease-in-out infinite;
+            border-radius: 12px;
+            z-index: 0;
+        }
+
+        @keyframes controlsSweep {
+            0%, 100% { transform: translateX(-100%); }
+            50% { transform: translateX(100%); }
+        }
+
+        .control-button {
+            width: 100%;
+            height: 100%;
+            min-height: 52px;
+            max-height: none;
+            padding: 16px 20px;
+            background: linear-gradient(135deg, var(--screen-bg) 0%, #000 50%, var(--screen-dark) 100%);
+            border: 3px solid var(--amber);
+            border-radius: 12px;
+            color: var(--amber);
+            font-family: 'Orbitron', monospace;
+            font-size: 11px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 
+                0 4px 12px rgba(0, 0, 0, 0.6),
+                inset 0 2px 6px rgba(255, 170, 0, 0.15),
+                inset 0 -2px 6px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            z-index: 1;
+            text-shadow: 0 0 8px var(--amber-glow);
+        }
+
+        .control-button::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 170, 0, 0.2), transparent);
+            transition: left 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            z-index: -1;
+        }
+
+        .control-button::after {
+            content: "";
+            position: absolute;
+            top: 4px;
+            left: 4px;
+            right: 4px;
+            bottom: 4px;
+            border: 1px solid rgba(255, 170, 0, 0.2);
+            border-radius: 8px;
+            background: linear-gradient(135deg, rgba(255, 170, 0, 0.05) 0%, transparent 100%);
+            z-index: -1;
+        }
+
+        .control-button:hover {
+            border-color: var(--amber-bright);
+            background: linear-gradient(135deg, #2a1500 0%, var(--screen-bg) 50%, #1a0f00 100%);
+            box-shadow: 
+                0 0 20px var(--amber-glow),
+                0 6px 16px rgba(0, 0, 0, 0.7),
+                inset 0 2px 8px rgba(255, 170, 0, 0.25);
+            transform: translateY(-2px) scale(1.02);
+            text-shadow: 0 0 12px var(--amber-glow);
+        }
+
+        .control-button:hover::before {
+            left: 100%;
+        }
+
+        .control-button:hover::after {
+            border-color: rgba(255, 170, 0, 0.4);
+            background: linear-gradient(135deg, rgba(255, 170, 0, 0.1) 0%, rgba(255, 170, 0, 0.05) 100%);
+        }
+
+        .control-button:active {
+            transform: translateY(0) scale(0.98);
+            box-shadow: 
+                0 0 15px var(--amber-glow),
+                0 2px 8px rgba(0, 0, 0, 0.6),
+                inset 0 3px 10px rgba(0, 0, 0, 0.4);
+        }
+
+        .control-button.active {
+            background: linear-gradient(135deg, var(--amber) 0%, var(--amber-bright) 50%, var(--amber) 100%);
+            color: #000;
+            border-color: var(--amber-bright);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+            box-shadow: 
+                0 0 30px var(--amber-glow),
+                0 0 15px rgba(255, 170, 0, 0.8),
+                inset 0 3px 8px rgba(255, 255, 255, 0.4),
+                inset 0 -3px 8px rgba(0, 0, 0, 0.3);
+            animation: activeButtonPulse 3s ease-in-out infinite;
+        }
+
+        .control-button.active::after {
+            border-color: rgba(0, 0, 0, 0.3);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.05) 100%);
+        }
+
+        @keyframes activeButtonPulse {
+            0%, 100% { 
+                box-shadow: 
+                    0 0 30px var(--amber-glow),
+                    0 0 15px rgba(255, 170, 0, 0.8),
+                    inset 0 3px 8px rgba(255, 255, 255, 0.4),
+                    inset 0 -3px 8px rgba(0, 0, 0, 0.3);
+            }
+            50% { 
+                box-shadow: 
+                    0 0 40px var(--amber-glow),
+                    0 0 25px rgba(255, 170, 0, 1),
+                    inset 0 3px 8px rgba(255, 255, 255, 0.6),
+                    inset 0 -3px 8px rgba(0, 0, 0, 0.3);
+            }
+        }
+
+        /* ENHANCED DATA PANEL */
+        .data-panel {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            width: 90%;
+            max-width: 420px;
+            background: linear-gradient(135deg, var(--panel-bg) 0%, rgba(5, 4, 0, 0.98) 100%);
+            border: 3px solid var(--amber);
+            border-radius: 12px;
+            padding: 25px;
+            max-height: 80vh;
+            overflow-y: auto;
+            z-index: 1000;
+            box-shadow: 
+                0 15px 40px rgba(0, 0, 0, 0.9),
+                0 0 50px var(--amber-glow),
+                inset 0 2px 0 rgba(255, 170, 0, 0.3);
+            opacity: 0;
+            transform: translate(-50%, -50%) scale(0.9);
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            pointer-events: none;
+        }
+
+        .data-panel.visible {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+            pointer-events: auto;
+        }
+
+        .data-panel::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .data-panel::-webkit-scrollbar-track {
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 4px;
+        }
+
+        .data-panel::-webkit-scrollbar-thumb {
+            background: var(--amber);
+            border-radius: 4px;
+            box-shadow: 0 0 6px var(--amber-glow);
+        }
+
+        .panel-header {
+            font-family: 'Orbitron', monospace;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--amber);
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--border-amber);
+            padding-bottom: 10px;
+            text-shadow: 0 0 12px var(--amber-glow);
+            letter-spacing: 1px;
+        }
+
+        .data-item {
+            background: linear-gradient(135deg, rgba(255, 170, 0, 0.08) 0%, rgba(255, 170, 0, 0.04) 100%);
+            border: 2px solid var(--border-amber);
+            border-radius: 6px;
+            padding: 15px;
+            margin-bottom: 12px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .data-item::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 170, 0, 0.1), transparent);
+            transition: left 0.6s ease;
+        }
+
+        .data-item:hover {
+            background: linear-gradient(135deg, rgba(255, 170, 0, 0.12) 0%, rgba(255, 170, 0, 0.08) 100%);
+            border-color: var(--amber);
+            box-shadow: 
+                0 0 12px rgba(255, 170, 0, 0.3),
+                inset 0 1px 2px rgba(255, 170, 0, 0.2);
+            transform: translateY(-1px);
+        }
+
+        .data-item:hover::before {
+            left: 100%;
+        }
+
+        .data-title {
+            color: var(--amber);
+            font-size: 12px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            font-family: 'Orbitron', monospace;
+            letter-spacing: 0.5px;
+        }
+
+        .data-text {
+            color: var(--amber-dark);
+            font-size: 11px;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+
+        .data-value {
+            color: var(--amber-bright);
+            font-weight: bold;
+            text-shadow: 0 0 6px var(--amber-glow);
+        }
+
+        .loading-animation {
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            border: 2px solid var(--border-amber);
+            border-radius: 50%;
+            border-top-color: var(--amber);
+            animation: spin 1s ease-in-out infinite;
+            margin: 20px auto;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Error Styling */
+        .error-message {
+            color: var(--danger);
+            background: linear-gradient(135deg, rgba(255, 68, 0, 0.1) 0%, rgba(255, 68, 0, 0.05) 100%);
+            border: 2px solid var(--danger);
+            border-radius: 6px;
+            padding: 12px;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        .error-title {
+            font-weight: 700;
+            margin-bottom: 4px;
+            font-size: 11px;
+        }
+
+        .error-text {
+            font-size: 9px;
+            opacity: 0.9;
+        }
+
+        /* ===================================================================
+           ENHANCED STATUS TICKER
+           =================================================================== */
+
+        .status-ticker {
+            background: linear-gradient(90deg, var(--screen-dark) 0%, var(--screen-bg) 50%, var(--screen-dark) 100%);
+            border-top: 3px solid var(--amber);
+            height: 60px;
+            overflow: hidden;
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            box-shadow: 
+                inset 0 3px 6px rgba(0, 0, 0, 0.6),
+                0 0 15px rgba(255, 170, 0, 0.3);
+            padding: 0 20px;
+        }
+
+        .ticker-content {
+            display: flex;
+            white-space: nowrap;
+            animation: tickerScroll 120s linear infinite;
+            align-items: center;
+            height: 100%;
+            font-size: 14px;
+            color: var(--amber-dark);
+            font-family: 'Orbitron', monospace;
+        }
+
+        .ticker-item {
+            padding-right: 80px;
+            flex-shrink: 0;
+            opacity: 0.9;
+            display: inline-flex;
+            align-items: center;
+            height: 100%;
+        }
+
+        .ticker-label {
+            color: var(--amber);
+            font-weight: 700;
+            letter-spacing: 1px;
+            text-shadow: 0 0 8px var(--amber-glow);
+            margin-right: 8px;
+        }
+
+        .ticker-label.breaking {
+            color: var(--danger);
+            text-shadow: 0 0 8px rgba(255, 68, 0, 0.8);
+            animation: breakingBlink 1s ease-in-out infinite;
+        }
+
+        @keyframes breakingBlink {
+            0%, 50% { opacity: 1; }
+            75% { opacity: 0.7; }
+            100% { opacity: 1; }
+        }
+
+        @keyframes tickerScroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* ===================================================================
+           ENHANCED POWER OFF STATE
+           =================================================================== */
+
+        .screen-content.powered-off .header-section,
+        .screen-content.powered-off .led-status-bar,
+        .screen-content.powered-off .analyzer-section,
+        .screen-content.powered-off .main-interface > *:not(.tuner-section) {
+            opacity: 0.1;
+            filter: brightness(0.15) grayscale(0.9);
+            pointer-events: none;
+            transition: all 0.8s ease;
+        }
+
+        .screen-content.powered-off .oscilloscope {
+            background: #000;
+        }
+
+        .screen-content.powered-off .power-button {
+            opacity: 1;
+            filter: none;
+            pointer-events: auto;
+            animation: powerPulse 4s infinite ease-in-out;
+        }
+
+        @keyframes powerPulseOff {
+            0%, 100% { 
+                box-shadow: 0 0 8px rgba(255, 170, 0, 0.3);
+                transform: scale(1);
+            }
+            50% { 
+                box-shadow: 0 0 20px rgba(255, 170, 0, 0.5);
+                transform: scale(1.05);
+            }
+        }
+
+        .screen-content.powered-off::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            pointer-events: none;
+            z-index: 2;
+            transition: opacity 0.6s ease;
+        }
+
+        /* ===================================================================
+           RESPONSIVE DESIGN
+           =================================================================== */
+
+        @media (max-width: 1400px) {
+            .main-interface {
+                grid-template-columns: 1fr 1fr 280px;
+                grid-template-rows: 180px 1fr 80px;
+            }
+            
+            .crt-monitor {
+                width: 98vw;
+                height: 98vh;
+            }
+        }
+
+        @media (max-width: 1200px) {
+            .main-interface {
+                grid-template-columns: 1fr 1fr 280px;
+                grid-template-rows: 150px 1fr 70px;
+                grid-template-areas:
+                    "analyzer equalizer controls"
+                    "tuner stations controls"
+                    "player player controls";
+                min-height: 600px;
+            }
+            
+            .controls-section {
+                padding: 15px 12px;
+                gap: 10px;
+                min-height: 450px;
+            }
+
+            .control-button {
+                padding: 10px 12px;
+                font-size: 9px;
+                min-height: 40px;
+                max-height: 48px;
+            }
+
+            .stations-section {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                min-height: 240px;
+                height: auto;
+            }
+
+            .station-card {
+                min-height: 90px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            .main-interface {
+                grid-template-columns: 1fr 250px;
+                grid-template-rows: 120px 100px 1fr 70px;
+                grid-template-areas:
+                    "analyzer controls"
+                    "equalizer controls"
+                    "tuner controls"
+                    "player controls";
+            }
+            
+            .controls-section {
+                padding: 12px 10px;
+                gap: 8px;
+                min-height: 400px;
+            }
+
+            .control-button {
+                padding: 8px 10px;
+                font-size: 8px;
+                min-height: 35px;
+                max-height: 42px;
+            }
+
+            .stations-section {
+                grid-area: auto;
+                grid-column: 1 / -1;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                margin-top: 15px;
+                min-height: 200px;
+            }
+
+            .header-section {
+                flex-direction: column;
+                gap: 12px;
+                text-align: center;
+                padding: 12px 20px;
+            }
+            
+            .system-status {
+                gap: 15px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .crt-monitor {
+                border-radius: 15px;
+                border-width: 3px;
+                width: 100vw;
+                height: 100vh;
+            }
+            
+            .monitor-container {
+                padding: 0;
+            }
+
+            .screen-content {
+                padding: 12px;
+            }
+
+            .header-section {
+                padding: 10px 15px;
+            }
+            
+            .logo-text h1 {
+                font-size: 20px;
+            }
+            
+            .hcn-logo {
+                width: 40px;
+                height: 40px;
+                font-size: 14px;
+            }
+            
+            .freq-readout {
+                font-size: 40px;
+            }
+            
+            .power-button {
+                width: 60px;
+                height: 60px;
+            }
+
+            .main-interface {
+                gap: 10px;
+                grid-template-columns: 1fr 200px;
+                grid-template-rows: 100px 80px 1fr 60px;
+                grid-template-areas:
+                    "analyzer controls"
+                    "equalizer controls"
+                    "tuner controls"
+                    "player controls";
+            }
+
+            .controls-section {
+                padding: 10px 8px;
+                gap: 6px;
+                min-height: 300px;
+            }
+
+            .control-button {
+                padding: 6px 8px;
+                font-size: 7px;
+                min-height: 28px;
+                max-height: 35px;
+            }
+
+            .stations-section {
+                grid-area: auto;
+                grid-column: 1 / -1;
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+                margin-top: 10px;
+                min-height: 180px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="monitor-container">
+        <div class="crt-monitor">
+            <div class="screen-content powered-off" id="screenContent">
+                
+                <!-- SIMPLIFIED Boot Sequence -->
+                <div class="boot-sequence" id="bootSequence">
+                    <div class="boot-header">
+                        <h1>HUMANITARIAN LOGISTICS NETWORK</h1>
+                        <div>HCN OS EMBEDDED v3.2.1</div>
+                    </div>
+                    <div class="boot-content">
+                        <div class="boot-line">BIOS DATE: 09.07.2955</div>
+                        <div class="boot-line">NEUHAUS CORE: INITIALIZING...</div>
+                        <div class="boot-line">MEMORY TEST: OK - 32768K</div>
+                        <div class="boot-line">CPU INIT: QUAD CORE 1.8GHz</div>
+                        <div class="boot-line">QUANTUM LINK: STABLE</div>
+                        <div class="boot-line">COMMS ARRAY: READY</div>
+                        <div class="boot-line">AUDIO SUBSYSTEM: INITIALIZED</div>
+                        <div class="boot-line">STATION DATABASE: LOADED</div>
+                        <div class="boot-line">HCN DISPATCH: CONNECTED</div>
+                        <div class="boot-line">SYSTEM READY - WELCOME CITIZEN</div>
+                    </div>
+                </div>
+                
+                <!-- Header Section -->
+                <div class="header-section">
+                    <div class="logo-section">
+                        <div class="hcn-logo">HCN</div>
+                        <div class="logo-text">
+                            <h1>HCN RADIO</h1>
+                            <div class="subtitle">HUMANITARIAN LOGISTICS NETWORK COMMUNICATIONS</div>
+                        </div>
+                    </div>
+                    <div class="system-status">
+                        <div class="status-item">
+                            <span class="status-label">Stardate</span>
+                            <span class="status-value" id="stardate">2955.180</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">System</span>
+                            <span class="status-value" id="system">STANTON</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Network</span>
+                            <span class="status-value" id="networkStatus">OPTIMAL</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">Security</span>
+                            <span class="status-value" id="security">MEDIUM</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LED Status Bar -->
+                <div class="led-status-bar">
+                    <div class="led-group">
+                        <div class="led-indicator">
+                            <div class="led" id="ledPower"></div>
+                            <span class="led-label">PWR</span>
+                        </div>
+                        <div class="led-indicator">
+                            <div class="led" id="ledSignal"></div>
+                            <span class="led-label">SIG</span>
+                        </div>
+                        <div class="led-indicator">
+                            <div class="led" id="ledData"></div>
+                            <span class="led-label">DATA</span>
+                        </div>
+                        <div class="led-indicator">
+                            <div class="led" id="ledLink"></div>
+                            <span class="led-label">LINK</span>
+                        </div>
+                    </div>
+                    <div class="led-group">
+                        <div class="led-indicator">
+                            <span class="led-label">BUFFER</span>
+                            <div class="led" id="ledBuffer"></div>
+                        </div>
+                        <div class="led-indicator">
+                            <span class="led-label">QUANTUM</span>
+                            <div class="led" id="ledQuantum"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Main Interface -->
+                <div class="main-interface">
+                    
+                    <!-- Analyzer Section -->
+                    <div class="analyzer-section">
+                        <div class="section-header">
+                            <div class="section-title">Advanced Signal Analysis</div>
+                            <div class="section-stats">
+                                <div class="stat-item">SNR: <span class="stat-value" id="snr">--</span></div>
+                                <div class="stat-item">THD: <span class="stat-value" id="thd">--%</span></div>
+                                <div class="stat-item">RMS: <span class="stat-value" id="rms">--</span></div>
+                                <div class="stat-item">PEAK: <span class="stat-value" id="peak">--</span></div>
+                            </div>
+                        </div>
+                        <div class="oscilloscope">
+                            <div class="scope-display">
+                                <canvas id="scopeCanvas"></canvas>
+                            </div>
+                            <div class="spectrum-display">
+                                <canvas id="spectrumCanvas"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Equalizer Section -->
+                    <div class="equalizer-section">
+                        <div class="section-header">
+                            <div class="section-title">Audio Spectrum Equalizer</div>
+                            <div style="font-size: 9px; color: var(--amber-dark);">WEYLAND-YUTANI CORP</div>
+                        </div>
+                        <div class="eq-display" id="eqDisplay">
+                            <!-- EQ bars will be generated by JavaScript -->
+                        </div>
+                        <div class="eq-labels">
+                            <span>60Hz</span>
+                            <span>170Hz</span>
+                            <span>310Hz</span>
+                            <span>600Hz</span>
+                            <span>1kHz</span>
+                            <span>3kHz</span>
+                            <span>6kHz</span>
+                            <span>12kHz</span>
+                            <span>14kHz</span>
+                        </div>
+                    </div>
+
+                    <!-- Tuner Section -->
+                    <div class="tuner-section">
+                        <div class="power-control">
+                            <div class="power-button" id="powerButton"></div>
+                            <span class="power-label">POWER</span>
+                        </div>
+                        
+                        <div class="frequency-display">
+                            <div class="freq-readout">
+                                <span id="freqValue">300.0</span><span class="freq-unit">AM</span>
+                            </div>
+                            <div class="freq-control" id="freqControl">
+                                <div class="freq-track"></div>
+                                <div class="freq-thumb" id="freqThumb"></div>
+                            </div>
+                            <div class="station-markers">
+                                <div class="station-marker" data-freq="305.5"></div>
+                                <div class="station-marker" data-freq="315.0"></div>
+                                <div class="station-marker" data-freq="319.7"></div>
+                                <div class="station-marker" data-freq="320.0"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="scan-control">
+                            <button class="scan-button" id="scanButton">SCAN</button>
+                            <span class="power-label">AUTO</span>
+                        </div>
+                    </div>
+
+                    <!-- Stations Section -->
+                    <div class="stations-section">
+                        <div class="station-card" data-stream="https://hcnradio.ddns.me/stream/1/" data-frequency="305.5">
+                            <div class="station-header">
+                                <span class="station-id">HCN-01</span>
+                                <div class="station-status"></div>
+                            </div>
+                            <div class="station-logo">
+                                <img src="https://images.squarespace-cdn.com/content/v1/669848a030fd4051a56c5278/f60b256f-3c2a-4205-bdaa-2c33ff470760/radio1.png?format=1500w" alt="Radio One" loading="lazy">
+                            </div>
+                            <div class="station-info">
+                                <div class="station-name">RADIO ONE</div>
+                                <div class="station-freq">305.5 AM • VOICES OF THE UNIVERSE</div>
+                            </div>
+                        </div>
+
+                        <div class="station-card" data-stream="https://hcnradio.ddns.me/stream/2/" data-frequency="315.0">
+                            <div class="station-header">
+                                <span class="station-id">HCN-02</span>
+                                <div class="station-status"></div>
+                            </div>
+                            <div class="station-logo">
+                                <img src="https://images.squarespace-cdn.com/content/v1/669848a030fd4051a56c5278/94b4b147-fe2b-41cb-9711-95d3c6a46266/radio2.png?format=2500w" alt="Radio Two" loading="lazy">
+                            </div>
+                            <div class="station-info">
+                                <div class="station-name">RADIO TWO</div>
+                                <div class="station-freq">315.0 AM • DIVERSE SOUNDS</div>
+                            </div>
+                        </div>
+
+                        <div class="station-card" data-stream="https://hcnradio.ddns.me/stream/3/" data-frequency="319.7">
+                            <div class="station-header">
+                                <span class="station-id">HCN-03</span>
+                                <div class="station-status"></div>
+                            </div>
+                            <div class="station-logo">
+                                <img src="https://images.squarespace-cdn.com/content/v1/669848a030fd4051a56c5278/0212132e-e7ca-4f19-aef7-7d1664fce87f/hcninvest.png?format=1500w" alt="HCN-Investigative" loading="lazy">
+                            </div>
+                            <div class="station-info">
+                                <div class="station-name">HCN-INVESTIGATIVE</div>
+                                <div class="station-freq">319.7 AM • UNCOVERING TRUTH</div>
+                            </div>
+                        </div>
+
+                        <div class="station-card" data-stream="https://hcnradio.ddns.me/stream/4/" data-frequency="320.0">
+                            <div class="station-header">
+                                <span class="station-id">HCN-04</span>
+                                <div class="station-status"></div>
+                            </div>
+                            <div class="station-logo">
+                                <img src="https://images.squarespace-cdn.com/content/v1/669848a030fd4051a56c5278/a24d44e1-2ece-4096-a17f-6227a4b897bb/radio4final.png" alt="HCN-Music" loading="lazy">
+                            </div>
+                            <div class="station-info">
+                                <div class="station-name">HCN-MUSIC</div>
+                                <div class="station-freq">320.0 AM • GALACTIC GROOVE</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Player Section -->
+                    <div class="player-section">
+                        <div class="volume-control">
+                            <div class="volume-label">AUDIO LEVEL</div>
+                            <div class="volume-display">
+                                <div class="volume-ring">
+                                    <div class="volume-track" style="--volume-percent: 25;"></div>
+                                    <div class="volume-knob" id="volumeKnob" style="--knob-rotation: 0deg;"></div>
+                                </div>
+                            </div>
+                            <div class="volume-value">
+                                <span id="volumeValue">25</span>%
+                            </div>
+                        </div>
+
+                        <div class="now-playing">
+                            <div class="now-playing-label">Current Broadcast</div>
+                            <div class="now-playing-display">
+                                <div class="now-playing-text" id="nowPlayingText">SYSTEM STANDBY</div>
+                                <div class="now-playing-metadata" id="nowPlayingMeta"></div>
+                            </div>
+                        </div>
+
+                        <div class="diagnostics">
+                            <div class="diagnostics-label">System Diagnostics</div>
+                            <div class="diagnostics-grid">
+                                <div class="diagnostic-item">
+                                    <span class="diagnostic-label">SIGNAL</span>
+                                    <span class="diagnostic-value" id="signalStrength">--</span>
+                                </div>
+                                <div class="diagnostic-item">
+                                    <span class="diagnostic-label">BUFFER</span>
+                                    <span class="diagnostic-value" id="bufferStatus">--</span>
+                                </div>
+                                <div class="diagnostic-item">
+                                    <span class="diagnostic-label">LATENCY</span>
+                                    <span class="diagnostic-value" id="latency">--</span>
+                                </div>
+                                <div class="diagnostic-item">
+                                    <span class="diagnostic-label">BITRATE</span>
+                                    <span class="diagnostic-value" id="bitrate">--</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Controls Section -->
+                    <div class="controls-section">
+                        <button class="control-button" id="muteButton">MUTE</button>
+                        <button class="control-button" id="ambientButton">AMBIENT</button>
+                        <button class="control-button" id="newsButton">NEWS</button>
+                        <button class="control-button" id="missionButton">MISSIONS</button>
+                        <button class="control-button" id="tradeButton">TRADE</button>
+                        <button class="control-button" id="marketButton">MARKET</button>
+                        <button class="control-button" id="holoviewerButton">HOLOVIEWER</button>
+                        <button class="control-button" id="fullscreenButton">FULLSCREEN</button>
+                    </div>
+
+                </div>
+
+                <!-- Data Panel -->
+                <div class="data-panel" id="dataPanel">
+                    <div class="panel-header" id="panelHeader">LOADING...</div>
+                    <div id="panelContent"></div>
+                </div>
+
+                <!-- Status Ticker -->
+                <div class="status-ticker">
+                    <div class="ticker-content" id="tickerContent">
+                        <div class="ticker-item">
+                            <span class="ticker-label">STATUS:</span> 
+                            HCN Dispatch Network initializing - scanning galactic communication frequencies for priority transmissions
+                        </div>
+                        <div class="ticker-item">
+                            <span class="ticker-label">NETWORK:</span> 
+                            Quantum relay systems establishing connection with central command - monitoring civilian and military channels
+                        </div>
+                        <div class="ticker-item">
+                            <span class="ticker-label">COMMS:</span> 
+                            Subspace array operational - ready to receive alerts from UEE Navy and independent sources
+                        </div>
+                        <div class="ticker-item">
+                            <span class="ticker-label">SECURITY:</span> 
+                            Encryption protocols active - maintaining secure communication with authorized personnel only
+                        </div>
+                        <div class="ticker-item">
+                            <span class="ticker-label">BROADCAST:</span> 
+                            Multi-frequency transmission enabled - delivering critical updates across all inhabited systems
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Audio Elements -->
+    <audio id="audioPlayer" style="display: none;" crossorigin="anonymous" preload="none"></audio>
+
+    <script>
+        // ===================================================================
+        // CONFIGURATION - UPDATE THESE URLS TO YOUR SETUP
+        // ===================================================================
+
+        const API_CONFIG = {
+            // YOUR Vercel deployment URL - update this to your Vercel app
+            baseUrl: 'https://your-vercel-app.vercel.app/api',
+            
+            // GitHub raw URLs for your data - update to your repo
+            githubBaseUrl: 'https://raw.githubusercontent.com/selco13/hcn-news-data/main',
+            
+            // API endpoints
+            endpoints: {
+                news: '/news',
+                missions: '/missions', 
+                trade: '/trade',
+                market: '/market'
+            },
+            
+            // GitHub direct files
+            files: {
+                programmingGuide: '/programming-guide.json',
+                bounties: '/bounty/list.json',
+                index: '/index.json'
+            }
+        };
+
+        // ===================================================================
+        // RADIO STATE MANAGEMENT
+        // ===================================================================
+
+        const RadioState = {
+            isPowered: false,
+            isBooting: false,
+            currentStation: null,
+            volume: 25,
+            isMuted: false,
+            frequency: 300.0,
+            audioContext: null,
+            analyser: null,
+            dataArray: null,
+            frequencyData: null,
+            animationFrame: null,
+            activePanelType: null,
+            eqBars: [],
+            metadataInterval: null,
+            isScanning: false,
+            isFullscreen: false
+        };
+
+        // ===================================================================
+        // ENHANCED AUDIO SYSTEM
+        // ===================================================================
+
+        class EnhancedAudioManager {
+            constructor() {
+                this.context = null;
+                this.analyser = null;
+                this.gainNode = null;
+                this.source = null;
+                this.dataArray = null;
+                this.frequencyData = null;
+                this.isInitialized = false;
+            }
+
+            async initialize() {
+                if (this.isInitialized) return;
+
+                try {
+                    const AudioContext = window.AudioContext || window.webkitAudioContext;
+                    this.context = new AudioContext();
+
+                    this.analyser = this.context.createAnalyser();
+                    this.analyser.fftSize = 4096;
+                    this.analyser.smoothingTimeConstant = 0.8;
+                    this.analyser.minDecibels = -100;
+                    this.analyser.maxDecibels = -30;
+
+                    this.gainNode = this.context.createGain();
+
+                    const bufferLength = this.analyser.frequencyBinCount;
+                    this.dataArray = new Uint8Array(bufferLength);
+                    this.frequencyData = new Uint8Array(bufferLength);
+
+                    const audioElement = document.getElementById('audioPlayer');
+                    if (audioElement && !this.source) {
+                        this.source = this.context.createMediaElementSource(audioElement);
+                        this.source.connect(this.gainNode);
+                        this.gainNode.connect(this.analyser);
+                        this.analyser.connect(this.context.destination);
+                    }
+
+                    RadioState.audioContext = this.context;
+                    RadioState.analyser = this.analyser;
+                    RadioState.dataArray = this.dataArray;
+                    RadioState.frequencyData = this.frequencyData;
+
+                    this.isInitialized = true;
+                    console.log("🎵 Enhanced Audio Manager initialized");
+
+                } catch (error) {
+                    console.error("Audio initialization failed:", error);
+                }
+            }
+
+            async resume() {
+                if (this.context && this.context.state === 'suspended') {
+                    try {
+                        await this.context.resume();
+                        console.log("🎵 Audio context resumed");
+                    } catch (error) {
+                        console.error("Audio resume failed:", error);
+                    }
+                }
+            }
+
+            setVolume(volume) {
+                if (this.gainNode) {
+                    const gainValue = Math.pow(volume / 100, 2);
+                    this.gainNode.gain.setValueAtTime(gainValue, this.context.currentTime);
+                }
+            }
+
+            getAnalyserData() {
+                if (!this.analyser) return null;
+                
+                this.analyser.getByteTimeDomainData(this.dataArray);
+                this.analyser.getByteFrequencyData(this.frequencyData);
+                
+                return {
+                    timeData: this.dataArray,
+                    frequencyData: this.frequencyData
+                };
+            }
+        }
+
+        const audioManager = new EnhancedAudioManager();
+
+        // ===================================================================
+        // API INTEGRATION WITH YOUR VERCEL/GITHUB SETUP
+        // ===================================================================
+
+        class HCNDataManager {
+            constructor() {
+                this.cache = new Map();
+                this.lastFetch = new Map();
+                this.cacheDuration = 300000; // 5 minutes
+            }
+
+            async fetchWithRetry(url, options = {}, retries = 3) {
+                for (let i = 0; i < retries; i++) {
+                    try {
+                        console.log(`🔍 Attempting fetch ${i + 1}/${retries}: ${url}`);
+                        const response = await fetch(url, {
+                            ...options,
+                            headers: {
+                                'Accept': 'application/json',
+                                'User-Agent': 'HCN-Radio/1.0',
+                                ...options.headers
+                            }
+                        });
+                        
+                        if (!response.ok) {
+                            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                        }
+                        
+                        const data = await response.json();
+                        console.log(`✅ Fetch successful on attempt ${i + 1}`);
+                        return data;
+                        
+                    } catch (error) {
+                        console.warn(`⚠️ Fetch attempt ${i + 1} failed:`, error.message);
+                        if (i === retries - 1) throw error;
+                        await new Promise(resolve => setTimeout(resolve, 1000 * (i + 1)));
+                    }
+                }
+            }
+
+            isCacheValid(key) {
+                const lastFetch = this.lastFetch.get(key);
+                return lastFetch && (Date.now() - lastFetch) < this.cacheDuration;
+            }
+
+            async fetchNewsData(date = null) {
+                const cacheKey = `news-${date || 'latest'}`;
+                
+                if (this.isCacheValid(cacheKey)) {
+                    console.log('📰 Using cached news data');
+                    return this.cache.get(cacheKey);
+                }
+
+                try {
+                    // Try Vercel API first
+                    const vercelUrl = `${API_CONFIG.baseUrl}${API_CONFIG.endpoints.news}${date ? `?date=${date}` : ''}`;
+                    console.log('📰 Fetching news from Vercel API:', vercelUrl);
+                    
+                    const data = await this.fetchWithRetry(vercelUrl);
+                    
+                    this.cache.set(cacheKey, data);
+                    this.lastFetch.set(cacheKey, Date.now());
+                    
+                    return data;
+                    
+                } catch (error) {
+                    console.error('📰 News API failed:', error);
+                    
+                    // Fallback to GitHub
+                    try {
+                        const fallbackDate = date || new Date().toISOString().split('T')[0];
+                        const githubUrl = `${API_CONFIG.githubBaseUrl}/${fallbackDate}.json`;
+                        console.log('📰 Trying GitHub fallback:', githubUrl);
+                        
+                        const githubData = await this.fetchWithRetry(githubUrl);
+                        
+                        // Transform GitHub data to expected format
+                        const transformedData = this.transformGitHubNewsData(githubData);
+                        
+                        this.cache.set(cacheKey, transformedData);
+                        this.lastFetch.set(cacheKey, Date.now());
+                        
+                        return transformedData;
+                        
+                    } catch (githubError) {
+                        console.error('📰 GitHub fallback failed:', githubError);
+                        return this.getFallbackNewsData();
+                    }
+                }
+            }
+
+            transformGitHubNewsData(rawData) {
+                const headlines = [];
+                
+                // Extract from main story
+                if (rawData.mainStory) {
+                    headlines.push({
+                        title: rawData.mainStory.title,
+                        summary: rawData.mainStory.subtitle || 'Main story available',
+                        source: rawData.mainStory.author || 'HCN Correspondent',
+                        priority: rawData.breaking?.active ? 'BREAKING' : 'HIGH'
+                    });
+                }
+                
+                // Extract from quick updates
+                if (rawData.quickUpdates && Array.isArray(rawData.quickUpdates)) {
+                    rawData.quickUpdates.forEach(update => {
+                        headlines.push({
+                            title: update.title,
+                            summary: update.summary,
+                            source: 'HCN News Wire',
+                            priority: 'NORMAL'
+                        });
+                    });
+                }
+                
+                // Extract from secondary stories
+                if (rawData.secondaryStories && Array.isArray(rawData.secondaryStories)) {
+                    rawData.secondaryStories.forEach(story => {
+                        headlines.push({
+                            title: story.title,
+                            summary: story.subtitle || 'Full story available',
+                            source: story.author || 'HCN Correspondent',
+                            priority: 'NORMAL'
+                        });
+                    });
+                }
+                
+                return { headlines };
+            }
+
+            getFallbackNewsData() {
+                return {
+                    headlines: [
+                        {
+                            title: "HCN Network Operational",
+                            summary: "All systems functioning normally - live data feed active",
+                            source: "HCN Operations",
+                            priority: "NORMAL"
+                        },
+                        {
+                            title: "Quantum Communication Array Online",
+                            summary: "Long-range communications restored across all sectors",
+                            source: "HCN Engineering",
+                            priority: "HIGH"
+                        },
+                        {
+                            title: "Fleet Movement Detected",
+                            summary: "UEE Navy vessels conducting routine patrols in Stanton system",
+                            source: "HCN Military Desk",
+                            priority: "NORMAL"
+                        }
+                    ]
+                };
+            }
+
+            async fetchMissionsData() {
+                const cacheKey = 'missions';
+                
+                if (this.isCacheValid(cacheKey)) {
+                    console.log('🎯 Using cached missions data');
+                    return this.cache.get(cacheKey);
+                }
+
+                try {
+                    // Try Vercel API first
+                    const vercelUrl = `${API_CONFIG.baseUrl}${API_CONFIG.endpoints.missions}`;
+                    console.log('🎯 Fetching missions from Vercel API:', vercelUrl);
+                    
+                    const data = await this.fetchWithRetry(vercelUrl);
+                    
+                    this.cache.set(cacheKey, data);
+                    this.lastFetch.set(cacheKey, Date.now());
+                    
+                    return data;
+                    
+                } catch (error) {
+                    console.error('🎯 Missions API failed:', error);
+                    
+                    // Fallback to GitHub bounties
+                    try {
+                        const githubUrl = `${API_CONFIG.githubBaseUrl}${API_CONFIG.files.bounties}`;
+                        console.log('🎯 Trying GitHub bounties fallback:', githubUrl);
+                        
+                        const githubData = await this.fetchWithRetry(githubUrl);
+                        const transformedData = this.transformBountyData(githubData);
+                        
+                        this.cache.set(cacheKey, transformedData);
+                        this.lastFetch.set(cacheKey, Date.now());
+                        
+                        return transformedData;
+                        
+                    } catch (githubError) {
+                        console.error('🎯 GitHub bounties fallback failed:', githubError);
+                        return this.getFallbackMissionsData();
+                    }
+                }
+            }
+
+            transformBountyData(bountyData) {
+                if (Array.isArray(bountyData)) {
+                    return bountyData.map(bounty => ({
+                        title: bounty.title || 'Unknown Target',
+                        description: bounty.summary || 'Bounty details classified',
+                        reward: bounty.reward || '0 aUEC',
+                        location: bounty.location || 'Unknown',
+                        difficulty: bounty.difficulty?.toUpperCase() || 'MEDIUM',
+                        status: 'Available'
+                    }));
+                } else {
+                    return [{
+                        title: bountyData.title || 'Unknown Target',
+                        description: bountyData.summary || 'Bounty details classified',
+                        reward: bountyData.reward || '0 aUEC',
+                        location: bountyData.location || 'Unknown',
+                        difficulty: bountyData.difficulty?.toUpperCase() || 'MEDIUM',
+                        status: 'Available'
+                    }];
+                }
+            }
+
+            getFallbackMissionsData() {
+                return [
+                    {
+                        title: "Pirate Elimination Contract",
+                        description: "Eliminate hostile targets threatening civilian shipping lanes",
+                        reward: "45000 aUEC",
+                        location: "Crusader System",
+                        difficulty: "HIGH",
+                        status: "Available"
+                    },
+                    {
+                        title: "Cargo Escort Mission",
+                        description: "Provide security escort for high-value cargo transport",
+                        reward: "28000 aUEC",
+                        location: "Stanton System",
+                        difficulty: "MEDIUM",
+                        status: "Available"
+                    },
+                    {
+                        title: "Reconnaissance Survey",
+                        description: "Survey uncharted asteroid field for mining opportunities",
+                        reward: "15000 aUEC",
+                        location: "Aaron Halo",
+                        difficulty: "LOW",
+                        status: "Available"
+                    }
+                ];
+            }
+
+            async fetchTradeData() {
+                const cacheKey = 'trade';
+                
+                if (this.isCacheValid(cacheKey)) {
+                    console.log('💰 Using cached trade data');
+                    return this.cache.get(cacheKey);
+                }
+
+                try {
+                    const vercelUrl = `${API_CONFIG.baseUrl}${API_CONFIG.endpoints.trade}`;
+                    console.log('💰 Fetching trade data from Vercel API:', vercelUrl);
+                    
+                    const data = await this.fetchWithRetry(vercelUrl);
+                    
+                    this.cache.set(cacheKey, data);
+                    this.lastFetch.set(cacheKey, Date.now());
+                    
+                    return data;
+                    
+                } catch (error) {
+                    console.error('💰 Trade API failed:', error);
+                    return this.getFallbackTradeData();
+                }
+            }
+
+            getFallbackTradeData() {
+                return [
+                    {
+                        name: "Medical Supplies",
+                        price: "28.50",
+                        change: "+2.3",
+                        route: "Port Olisar → New Babbage",
+                        profit: "12500"
+                    },
+                    {
+                        name: "Processed Food",
+                        price: "1.45",
+                        change: "-0.8",
+                        route: "ArcCorp → Lorville",
+                        profit: "8750"
+                    },
+                    {
+                        name: "Titanium Ore",
+                        price: "8.20",
+                        change: "+5.2",
+                        route: "Daymar → Area18",
+                        profit: "15200"
+                    }
+                ];
+            }
+
+            async fetchMarketData() {
+                const cacheKey = 'market';
+                
+                if (this.isCacheValid(cacheKey)) {
+                    console.log('📊 Using cached market data');
+                    return this.cache.get(cacheKey);
+                }
+
+                try {
+                    const vercelUrl = `${API_CONFIG.baseUrl}${API_CONFIG.endpoints.market}`;
+                    console.log('📊 Fetching market data from Vercel API:', vercelUrl);
+                    
+                    const data = await this.fetchWithRetry(vercelUrl);
+                    
+                    this.cache.set(cacheKey, data);
+                    this.lastFetch.set(cacheKey, Date.now());
+                    
+                    return data;
+                    
+                } catch (error) {
+                    console.error('📊 Market API failed:', error);
+                    return this.getFallbackMarketData();
+                }
+            }
+
+            getFallbackMarketData() {
+                return [
+                    {
+                        name: "Quantum Fuel",
+                        price: "1.50",
+                        change: "+0.05",
+                        demand: "High",
+                        locations: ["Port Olisar", "Grim HEX", "Levski"]
+                    },
+                    {
+                        name: "Ship Components",
+                        price: "125.00",
+                        change: "-2.1",
+                        demand: "Very High",
+                        locations: ["Area18", "New Babbage"]
+                    },
+                    {
+                        name: "Agricultural Supplies",
+                        price: "0.85",
+                        change: "+1.2",
+                        demand: "Moderate",
+                        locations: ["Lorville", "Tressler"]
+                    }
+                ];
+            }
+
+            async fetchProgrammingGuide() {
+                const cacheKey = 'programmingGuide';
+                
+                if (this.isCacheValid(cacheKey)) {
+                    console.log('📺 Using cached programming guide');
+                    return this.cache.get(cacheKey);
+                }
+
+                try {
+                    const githubUrl = `${API_CONFIG.githubBaseUrl}${API_CONFIG.files.programmingGuide}`;
+                    console.log('📺 Fetching programming guide from GitHub:', githubUrl);
+                    
+                    const data = await this.fetchWithRetry(githubUrl);
+                    
+                    this.cache.set(cacheKey, data);
+                    this.lastFetch.set(cacheKey, Date.now());
+                    
+                    return data;
+                    
+                } catch (error) {
+                    console.error('📺 Programming guide fetch failed:', error);
+                    return this.getFallbackProgrammingGuide();
+                }
+            }
+
+            getFallbackProgrammingGuide() {
+                return {
+                    channels: {
+                        "hcn-01": { name: "Radio One", frequency: "305.5 AM" },
+                        "hcn-02": { name: "Radio Two", frequency: "315.0 AM" },
+                        "hcn-03": { name: "HCN Investigative", frequency: "319.7 AM" },
+                        "hcn-04": { name: "HCN Music", frequency: "320.0 AM" }
+                    }
+                };
+            }
+        }
+
+        const dataManager = new HCNDataManager();
+
+        // ===================================================================
+        // NEWS TICKER WITH REAL API INTEGRATION
+        // ===================================================================
+
+        async function updateNewsTicker() {
+            console.log('📰 Updating news ticker with real data...');
+            const tickerContent = document.getElementById('tickerContent');
+            
+            if (!tickerContent) {
+                console.error('❌ Ticker content element not found');
+                return;
+            }
+
+            // Start with fallback content
+            let tickerHTML = `
+                <div class="ticker-item">
+                    <span class="ticker-label">STATUS:</span> 
+                    HCN Dispatch Network operational - scanning galactic frequencies
+                </div>
+                <div class="ticker-item">
+                    <span class="ticker-label">NETWORK:</span> 
+                    Quantum relay systems active - monitoring all channels
+                </div>
+            `;
+
+            try {
+                const newsData = await dataManager.fetchNewsData();
+                
+                if (newsData && newsData.headlines && Array.isArray(newsData.headlines) && newsData.headlines.length > 0) {
+                    console.log('✅ Ticker updated with real news data:', newsData.headlines.length, 'headlines');
+                    
+                    let realTickerHTML = '';
+                    
+                    // Add breaking news first
+                    const breakingNews = newsData.headlines.filter(h => h.priority === 'BREAKING' || h.priority === 'HIGH');
+                    if (breakingNews.length > 0) {
+                        breakingNews.slice(0, 2).forEach(headline => {
+                            const priority = headline.priority === 'BREAKING' ? 'breaking' : '';
+                            realTickerHTML += `
+                                <div class="ticker-item">
+                                    <span class="ticker-label ${priority}">${headline.priority === 'BREAKING' ? 'BREAKING' : 'ALERT'}:</span> 
+                                    ${headline.title}
+                                </div>
+                            `;
+                        });
+                    }
+                    
+                    // Add regular news
+                    const regularNews = newsData.headlines.filter(h => h.priority !== 'BREAKING' && h.priority !== 'HIGH').slice(0, 3);
+                    regularNews.forEach(headline => {
+                        realTickerHTML += `
+                            <div class="ticker-item">
+                                <span class="ticker-label">NEWS:</span> 
+                                ${headline.title}
+                            </div>
+                        `;
+                    });
+                    
+                    // Add system status
+                    realTickerHTML += `
+                        <div class="ticker-item">
+                            <span class="ticker-label">NETWORK:</span> 
+                            HCN Dispatch Network operational - ${newsData.headlines.length} active feeds
+                        </div>
+                        <div class="ticker-item">
+                            <span class="ticker-label">STATUS:</span> 
+                            All communication arrays stable - monitoring galactic frequencies
+                        </div>
+                    `;
+                    
+                    if (realTickerHTML.trim()) {
+                        tickerHTML = realTickerHTML;
+                    }
+                }
+                
+            } catch (error) {
+                console.log('📰 Ticker API error, using fallback:', error.message);
+                tickerHTML += `
+                    <div class="ticker-item">
+                        <span class="ticker-label">STATUS:</span> 
+                        API connection failed - using backup news feed
+                    </div>
+                `;
+            }
+            
+            tickerContent.innerHTML = tickerHTML;
+            console.log('📰 Ticker content updated');
+        }
+
+        // ===================================================================
+        // VISUAL EFFECTS
+        // ===================================================================
+
+        function drawOscilloscope() {
+            if (!RadioState.isPowered) return;
+
+            const scopeCanvas = document.getElementById('scopeCanvas');
+            const spectrumCanvas = document.getElementById('spectrumCanvas');
+            
+            if (!scopeCanvas || !spectrumCanvas) return;
+
+            const scopeCtx = scopeCanvas.getContext('2d');
+            const scopeContainer = scopeCanvas.parentElement;
+            if (!scopeContainer) return;
+            
+            const scopeRect = scopeContainer.getBoundingClientRect();
+            const scopeWidth = Math.max(10, Math.floor(scopeRect.width));
+            const scopeHeight = Math.max(10, Math.floor(scopeRect.height));
+            
+            if (scopeCanvas.width !== scopeWidth || scopeCanvas.height !== scopeHeight) {
+                scopeCanvas.width = scopeWidth;
+                scopeCanvas.height = scopeHeight;
+            }
+            
+            scopeCtx.fillStyle = 'rgba(0, 0, 0, 0.12)';
+            scopeCtx.fillRect(0, 0, scopeWidth, scopeHeight);
+
+            scopeCtx.lineWidth = 2.5;
+            scopeCtx.strokeStyle = '#ffaa00';
+            scopeCtx.shadowBlur = 12;
+            scopeCtx.shadowColor = '#ffaa00';
+            scopeCtx.beginPath();
+
+            const analyserData = audioManager.getAnalyserData();
+            if (analyserData && RadioState.currentStation) {
+                const timeData = analyserData.timeData;
+                const sliceWidth = scopeWidth / timeData.length;
+                let x = 0;
+
+                for (let i = 0; i < timeData.length; i++) {
+                    const v = (timeData[i] / 128.0);
+                    const y = (scopeHeight / 2) + ((v - 1) * scopeHeight / 2.2);
+
+                    if (i === 0) {
+                        scopeCtx.moveTo(x, y);
+                    } else {
+                        scopeCtx.lineTo(x, y);
+                    }
+                    x += sliceWidth;
+                }
+            } else {
+                const time = Date.now() / 1000;
+                for (let x = 0; x < scopeWidth; x += 2) {
+                    const noise = (Math.random() - 0.5) * 15;
+                    const y = (scopeHeight / 2) + Math.sin(x * 0.025 + time * 2.5) * 35 + noise;
+                    if (x === 0) {
+                        scopeCtx.moveTo(x, y);
+                    } else {
+                        scopeCtx.lineTo(x, y);
+                    }
+                }
+            }
+            scopeCtx.stroke();
+
+            const spectrumCtx = spectrumCanvas.getContext('2d');
+            const spectrumContainer = spectrumCanvas.parentElement;
+            if (!spectrumContainer) return;
+            
+            const spectrumRect = spectrumContainer.getBoundingClientRect();
+            const spectrumWidth = Math.max(10, Math.floor(spectrumRect.width));
+            const spectrumHeight = Math.max(10, Math.floor(spectrumRect.height));
+            
+            if (spectrumCanvas.width !== spectrumWidth || spectrumCanvas.height !== spectrumHeight) {
+                spectrumCanvas.width = spectrumWidth;
+                spectrumCanvas.height = spectrumHeight;
+            }
+
+            spectrumCtx.fillStyle = 'rgba(0, 0, 0, 0.18)';
+            spectrumCtx.fillRect(0, 0, spectrumWidth, spectrumHeight);
+
+            if (analyserData && RadioState.currentStation) {
+                const frequencyData = analyserData.frequencyData;
+                const barWidth = spectrumWidth / (frequencyData.length / 4);
+                let x = 0;
+
+                for (let i = 0; i < frequencyData.length / 4; i++) {
+                    const barHeight = (frequencyData[i] / 255) * spectrumHeight * 0.85;
+                    
+                    const gradient = spectrumCtx.createLinearGradient(0, spectrumHeight, 0, spectrumHeight - barHeight);
+                    gradient.addColorStop(0, '#cc8800');
+                    gradient.addColorStop(0.3, '#ffaa00');
+                    gradient.addColorStop(0.7, '#ffcc00');
+                    gradient.addColorStop(1, '#ffff88');
+                    
+                    spectrumCtx.fillStyle = gradient;
+                    spectrumCtx.fillRect(x, spectrumHeight - barHeight, barWidth - 1, barHeight);
+                    
+                    spectrumCtx.shadowBlur = 6;
+                    spectrumCtx.shadowColor = '#ffaa00';
+                    spectrumCtx.fillRect(x, spectrumHeight - barHeight, barWidth - 1, barHeight);
+                    spectrumCtx.shadowBlur = 0;
+                    
+                    x += barWidth;
+                }
+            }
+
+            updateAnalyzerStats();
+            RadioState.animationFrame = requestAnimationFrame(drawOscilloscope);
+        }
+
+        function updateAnalyzerStats() {
+            if (!RadioState.analyser) return;
+
+            const analyserData = audioManager.getAnalyserData();
+            if (!analyserData) return;
+
+            const timeData = analyserData.timeData;
+            const frequencyData = analyserData.frequencyData;
+
+            let sum = 0;
+            let peak = 0;
+            for (let i = 0; i < timeData.length; i++) {
+                const normalized = (timeData[i] / 128.0) - 1.0;
+                sum += normalized * normalized;
+                peak = Math.max(peak, Math.abs(normalized));
+            }
+
+            const rms = Math.sqrt(sum / timeData.length);
+            const rmsDb = 20 * Math.log10(Math.max(rms, 0.00001));
+            const peakDb = 20 * Math.log10(Math.max(peak, 0.00001));
+
+            const signalPower = frequencyData.reduce((acc, val) => acc + val * val, 0);
+            const avgSignal = Math.sqrt(signalPower / frequencyData.length);
+            const snr = 48 + (avgSignal / 255) * 28 + (Math.random() * 3 - 1.5);
+
+            const thd = 0.04 + (Math.random() * 0.06);
+
+            document.getElementById('rms').textContent = Math.round(rmsDb + 45) + ' dBu';
+            document.getElementById('snr').textContent = Math.round(snr) + ' dB';
+            document.getElementById('thd').textContent = thd.toFixed(3) + '%';
+            document.getElementById('peak').textContent = Math.round(peakDb + 48) + ' dB';
+
+            const signalStrength = Math.round(88 + Math.random() * 12);
+            document.getElementById('signalStrength').textContent = signalStrength + '%';
+            
+            const bufferStatus = signalStrength > 95 ? 'FULL' : signalStrength > 85 ? 'GOOD' : 'OK';
+            document.getElementById('bufferStatus').textContent = bufferStatus;
+            
+            document.getElementById('latency').textContent = Math.round(4 + Math.random() * 8) + ' ms';
+            document.getElementById('bitrate').textContent = (RadioState.currentStation ? 320 : 0) + ' kbps';
+        }
+
+        function createEQBars() {
+            const eqDisplay = document.getElementById('eqDisplay');
+            const numBars = 28;
+            RadioState.eqBars = [];
+            eqDisplay.innerHTML = '';
+
+            for (let i = 0; i < numBars; i++) {
+                const bar = document.createElement('div');
+                bar.className = 'eq-bar';
+                bar.style.height = '3px';
+                eqDisplay.appendChild(bar);
+                RadioState.eqBars.push(bar);
+            }
+        }
+
+        function updateEQBars() {
+            if (!RadioState.eqBars.length) return;
+
+            const analyserData = audioManager.getAnalyserData();
+
+            if (analyserData && RadioState.currentStation) {
+                const frequencyData = analyserData.frequencyData;
+                const barCount = RadioState.eqBars.length;
+                const dataStep = Math.floor(frequencyData.length / barCount);
+
+                for (let i = 0; i < barCount; i++) {
+                    const dataIndex = i * dataStep;
+                    const value = frequencyData[dataIndex] || 0;
+                    const height = (value / 255) * 65 + 3;
+                    RadioState.eqBars[i].style.height = height + 'px';
+                }
+            } else {
+                const time = Date.now() / 1000;
+                RadioState.eqBars.forEach((bar, i) => {
+                    const height = (Math.sin(time * 3.5 + i * 0.25) * 0.35 + 0.45) * 30 + 8;
+                    bar.style.height = height + 'px';
+                });
+            }
+        }
+
+        // ===================================================================
+        // BOOT SEQUENCE
+        // ===================================================================
+
+        async function runBootSequence() {
+            return new Promise((resolve) => {
+                const bootLines = document.querySelectorAll('.boot-line');
+                let currentLine = 0;
+                
+                function showNextLine() {
+                    if (currentLine < bootLines.length) {
+                        bootLines[currentLine].classList.add('active');
+                        currentLine++;
+                        
+                        if (currentLine === bootLines.length) {
+                            setTimeout(() => {
+                                document.getElementById('bootSequence').classList.remove('active');
+                                resolve();
+                            }, 800);
+                        } else {
+                            setTimeout(showNextLine, 150 + Math.random() * 100);
+                        }
+                    }
+                }
+                
+                setTimeout(showNextLine, 300);
+            });
+        }
+
+        // ===================================================================
+        // CONTROL FUNCTIONS
+        // ===================================================================
+
+        async function togglePower() {
+            console.log('🔌 Power toggle requested - Current state:', RadioState.isPowered);
+            
+            const powerButton = document.getElementById('powerButton');
+            const screenContent = document.getElementById('screenContent');
+            const ledPower = document.getElementById('ledPower');
+
+            if (!powerButton || !screenContent || !ledPower) {
+                console.error('Critical power elements not found');
+                return;
+            }
+
+            if (RadioState.isBooting) {
+                return;
+            }
+
+            RadioState.isPowered = !RadioState.isPowered;
+
+            if (RadioState.isPowered) {
+                console.log('🚀 POWERING ON - Starting boot sequence');
+                
+                RadioState.isBooting = true;
+                powerButton.classList.add('active');
+                ledPower.classList.add('active');
+                
+                const bootSequence = document.getElementById('bootSequence');
+                bootSequence.classList.add('active');
+                
+                await runBootSequence();
+                await audioManager.initialize();
+                createEQBars();
+                drawOscilloscope();
+
+                setTimeout(() => {
+                    const ledSignal = document.getElementById('ledSignal');
+                    if (ledSignal) ledSignal.classList.add('active');
+                }, 600);
+                
+                setTimeout(() => {
+                    const ledData = document.getElementById('ledData');
+                    if (ledData) ledData.classList.add('active');
+                }, 1200);
+                
+                setTimeout(() => {
+                    const ledLink = document.getElementById('ledLink');
+                    if (ledLink) ledLink.classList.add('active');
+                }, 1800);
+                
+                setTimeout(() => {
+                    const ledBuffer = document.getElementById('ledBuffer');
+                    if (ledBuffer) ledBuffer.classList.add('active');
+                }, 2400);
+                
+                setTimeout(() => {
+                    const ledQuantum = document.getElementById('ledQuantum');
+                    if (ledQuantum) ledQuantum.classList.add('active');
+                }, 3000);
+
+                screenContent.classList.remove('powered-off');
+                updateNowPlaying('SYSTEM READY');
+                updateStardate();
+                
+                RadioState.isBooting = false;
+                console.log("✅ Radio powered on successfully");
+
+            } else {
+                console.log('🔌 POWERING OFF - Shutting down systems');
+                
+                powerButton.classList.remove('active');
+                screenContent.classList.add('powered-off');
+
+                document.querySelectorAll('.led').forEach(led => {
+                    led.classList.remove('active');
+                });
+
+                const audioPlayer = document.getElementById('audioPlayer');
+                if (audioPlayer) {
+                    audioPlayer.pause();
+                    audioPlayer.src = '';
+                }
+
+                if (RadioState.metadataInterval) {
+                    clearInterval(RadioState.metadataInterval);
+                    RadioState.metadataInterval = null;
+                }
+
+                updateNowPlaying('SYSTEM STANDBY');
+                updateFrequency(300.0);
+
+                if (RadioState.animationFrame) {
+                    cancelAnimationFrame(RadioState.animationFrame);
+                    RadioState.animationFrame = null;
+                }
+
+                if (RadioState.currentStation) {
+                    RadioState.currentStation.classList.remove('active');
+                    RadioState.currentStation = null;
+                }
+
+                hideDataPanel();
+
+                RadioState.isScanning = false;
+                const scanButton = document.getElementById('scanButton');
+                if (scanButton) {
+                    scanButton.classList.remove('active');
+                    scanButton.textContent = 'SCAN';
+                }
+
+                console.log("❌ Radio powered off successfully");
+            }
+        }
+
+        async function selectStation(stationCard) {
+            if (!RadioState.isPowered) return;
+
+            if (RadioState.currentStation) {
+                RadioState.currentStation.classList.remove('active');
+            }
+
+            if (RadioState.currentStation === stationCard) {
+                RadioState.currentStation = null;
+                updateNowPlaying('SYSTEM READY');
+                
+                const audioPlayer = document.getElementById('audioPlayer');
+                if (audioPlayer) {
+                    audioPlayer.pause();
+                    audioPlayer.src = '';
+                }
+                
+                if (RadioState.metadataInterval) {
+                    clearInterval(RadioState.metadataInterval);
+                    RadioState.metadataInterval = null;
+                }
+                
+                updateFrequency(300.0);
+                return;
+            }
+
+            RadioState.currentStation = stationCard;
+            stationCard.classList.add('active');
+
+            const streamUrl = stationCard.dataset.stream;
+            const frequency = parseFloat(stationCard.dataset.frequency);
+            const stationName = stationCard.querySelector('.station-name').textContent;
+
+            updateFrequency(frequency);
+            updateNowPlaying('ESTABLISHING QUANTUM LINK...', 'CONNECTING TO REMOTE STATION');
+
+            const audioPlayer = document.getElementById('audioPlayer');
+            if (audioPlayer && streamUrl) {
+                audioPlayer.src = streamUrl;
+                audioPlayer.load();
+
+                await audioManager.resume();
+
+                setTimeout(async () => {
+                    try {
+                        await audioPlayer.play();
+                        audioPlayer.volume = RadioState.isMuted ? 0 : (RadioState.volume / 100);
+                        updateNowPlaying('SIGNAL ACQUIRED', stationName);
+                        
+                        setTimeout(() => {
+                            startMetadataPolling(streamUrl, stationName);
+                        }, 2000);
+
+                        console.log(`✅ Tuned to ${stationName} at ${frequency} MHz`);
+
+                    } catch (error) {
+                        updateNowPlaying('SIGNAL LOST - RETRY', 'CONNECTION FAILED');
+                        console.error("Playback failed:", error);
+                    }
+                }, 2500);
+            }
+        }
+
+        function startMetadataPolling(streamUrl, stationName) {
+            if (RadioState.metadataInterval) {
+                clearInterval(RadioState.metadataInterval);
+            }
+
+            fetchMetadata(streamUrl, stationName);
+
+            RadioState.metadataInterval = setInterval(() => {
+                fetchMetadata(streamUrl, stationName);
+            }, 10000);
+        }
+
+        async function fetchMetadata(streamUrl, stationName) {
+            try {
+                const statsUrl = streamUrl.replace('/stream/', '/stats?json=1');
+                const response = await fetch(statsUrl, { 
+                    signal: AbortSignal.timeout(5000) 
+                });
+
+                if (response.ok) {
+                    const data = await response.json();
+                    if (data.songtitle || data.streamtitle) {
+                        const title = data.songtitle || data.streamtitle;
+                        const artist = data.artist || '';
+                        
+                        updateNowPlaying(title, artist ? `${artist} • ${stationName}` : stationName);
+                        
+                        console.log('📻 Metadata updated:', title);
+                        return;
+                    }
+                }
+                
+                updateNowPlaying(stationName, 'LIVE BROADCAST');
+                
+            } catch (error) {
+                updateNowPlaying(stationName, 'LIVE BROADCAST');
+                console.log('📻 Metadata fetch failed, using station name');
+            }
+        }
+
+        function setupFrequencyControl() {
+            const freqControl = document.getElementById('freqControl');
+            const freqThumb = document.getElementById('freqThumb');
+            
+            let isDragging = false;
+            const MIN_FREQ = 300.0;
+            const MAX_FREQ = 325.0;
+
+            function updateThumbPosition(frequency) {
+                const percent = (frequency - MIN_FREQ) / (MAX_FREQ - MIN_FREQ);
+                const controlRect = freqControl.getBoundingClientRect();
+                const trackWidth = controlRect.width - 50;
+                const position = 25 + (percent * trackWidth);
+                
+                freqThumb.style.left = position + 'px';
+            }
+
+            function getFrequencyFromPosition(clientX) {
+                const controlRect = freqControl.getBoundingClientRect();
+                const relativeX = clientX - controlRect.left - 25;
+                const trackWidth = controlRect.width - 50;
+                const percent = Math.max(0, Math.min(1, relativeX / trackWidth));
+                return MIN_FREQ + (percent * (MAX_FREQ - MIN_FREQ));
+            }
+
+            freqControl.addEventListener('click', (e) => {
+                if (!RadioState.isPowered || e.target === freqThumb) return;
+                
+                const frequency = getFrequencyFromPosition(e.clientX);
+                updateFrequency(frequency);
+                findNearestStation(frequency);
+            });
+
+            freqThumb.addEventListener('mousedown', startDrag);
+            freqThumb.addEventListener('touchstart', startDrag, { passive: false });
+
+            function startDrag(e) {
+                if (!RadioState.isPowered) return;
+                isDragging = true;
+                freqThumb.style.cursor = 'grabbing';
+                if (e.type === 'touchstart') e.preventDefault();
+            }
+
+            document.addEventListener('mousemove', handleMove);
+            document.addEventListener('touchmove', handleMove, { passive: false });
+            document.addEventListener('mouseup', endDrag);
+            document.addEventListener('touchend', endDrag);
+
+            function handleMove(e) {
+                if (!isDragging) return;
+                if (e.type === 'touchmove') e.preventDefault();
+
+                const clientX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+                const frequency = getFrequencyFromPosition(clientX);
+                updateFrequency(frequency);
+            }
+
+            function endDrag() {
+                if (!isDragging) return;
+                isDragging = false;
+                freqThumb.style.cursor = 'grab';
+                
+                findNearestStation(RadioState.frequency);
+            }
+
+            function findNearestStation(frequency) {
+                const stations = document.querySelectorAll('.station-card');
+                let nearestStation = null;
+                let nearestDistance = 1.5;
+
+                stations.forEach(station => {
+                    const stationFreq = parseFloat(station.dataset.frequency);
+                    const distance = Math.abs(frequency - stationFreq);
+                    
+                    if (distance < nearestDistance) {
+                        nearestDistance = distance;
+                        nearestStation = station;
+                    }
+                });
+
+                if (nearestStation && nearestDistance < 1.2) {
+                    selectStation(nearestStation);
+                }
+            }
+
+            updateThumbPosition(300.0);
+        }
+
+        function updateFrequency(frequency) {
+            RadioState.frequency = frequency;
+            document.getElementById('freqValue').textContent = frequency.toFixed(1);
+            
+            const freqThumb = document.getElementById('freqThumb');
+            const freqControl = document.getElementById('freqControl');
+            
+            if (freqThumb && freqControl) {
+                const percent = (frequency - 300.0) / (325.0 - 300.0);
+                const controlRect = freqControl.getBoundingClientRect();
+                const trackWidth = controlRect.width - 50;
+                const position = 25 + (percent * trackWidth);
+                
+                freqThumb.style.left = position + 'px';
+            }
+        }
+
+        function setupVolumeControl() {
+            const volumeKnob = document.getElementById('volumeKnob');
+            const volumeValue = document.getElementById('volumeValue');
+            const volumeTrack = document.querySelector('.volume-track');
+            
+            let isDragging = false;
+            let startAngle = 0;
+            let startVolume = 0;
+
+            function updateVolume(volume) {
+                RadioState.volume = Math.max(0, Math.min(100, Math.round(volume)));
+                volumeValue.textContent = RadioState.volume;
+                
+                volumeTrack.style.setProperty('--volume-percent', RadioState.volume);
+                
+                const rotation = (RadioState.volume / 100) * 270 - 135;
+                volumeKnob.style.setProperty('--knob-rotation', rotation + 'deg');
+                
+                const audioPlayer = document.getElementById('audioPlayer');
+                if (audioPlayer && !RadioState.isMuted) {
+                    audioPlayer.volume = RadioState.volume / 100;
+                }
+                
+                audioManager.setVolume(RadioState.volume);
+            }
+
+            function getAngleFromCoords(centerX, centerY, clientX, clientY) {
+                const deltaX = clientX - centerX;
+                const deltaY = clientY - centerY;
+                let angle = Math.atan2(deltaY, deltaX) * (180 / Math.PI);
+                
+                if (angle < 0) angle += 360;
+                
+                if (angle >= 225) {
+                    angle = angle - 225;
+                } else if (angle <= 135) {
+                    angle = angle + 135;
+                } else {
+                    return null;
+                }
+                
+                return Math.max(0, Math.min(270, angle));
+            }
+
+            function getVolumeFromAngle(angle) {
+                if (angle === null) return RadioState.volume;
+                return Math.round((angle / 270) * 100);
+            }
+
+            volumeKnob.addEventListener('mousedown', startDrag);
+            volumeKnob.addEventListener('touchstart', startDrag, { passive: false });
+
+            function startDrag(e) {
+                if (!RadioState.isPowered) return;
+                
+                isDragging = true;
+                
+                const rect = volumeKnob.getBoundingClientRect();
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
+                
+                const clientX = e.type === 'mousedown' ? e.clientX : e.touches[0].clientX;
+                const clientY = e.type === 'mousedown' ? e.clientY : e.touches[0].clientY;
+                
+                startAngle = getAngleFromCoords(centerX, centerY, clientX, clientY);
+                startVolume = RadioState.volume;
+                
+                if (e.type === 'touchstart') e.preventDefault();
+                
+                volumeKnob.style.transform = 'translate(-50%, -50%) scale(1.1)';
+            }
+
+            document.addEventListener('mousemove', handleMove);
+            document.addEventListener('touchmove', handleMove, { passive: false });
+            document.addEventListener('mouseup', endDrag);
+            document.addEventListener('touchend', endDrag);
+
+            function handleMove(e) {
+                if (!isDragging || startAngle === null) return;
+                if (e.type === 'touchmove') e.preventDefault();
+
+                const rect = volumeKnob.getBoundingClientRect();
+                const centerX = rect.left + rect.width / 2;
+                const centerY = rect.top + rect.height / 2;
+                
+                const clientX = e.type === 'mousemove' ? e.clientX : e.touches[0].clientX;
+                const clientY = e.type === 'mousemove' ? e.clientY : e.touches[0].clientY;
+                
+                const currentAngle = getAngleFromCoords(centerX, centerY, clientX, clientY);
+                if (currentAngle === null) return;
+                
+                let angleDiff = currentAngle - startAngle;
+                
+                if (angleDiff > 180) angleDiff -= 360;
+                if (angleDiff < -180) angleDiff += 360;
+                
+                const sensitivity = 0.5;
+                const newVolume = startVolume + (angleDiff * sensitivity * 100 / 270);
+                
+                updateVolume(newVolume);
+            }
+
+            function endDrag() {
+                if (!isDragging) return;
+                isDragging = false;
+                
+                volumeKnob.style.transform = 'translate(-50%, -50%) scale(1)';
+            }
+
+            volumeKnob.addEventListener('wheel', (e) => {
+                if (!RadioState.isPowered) return;
+                e.preventDefault();
+                
+                const delta = e.deltaY > 0 ? -2 : 2;
+                updateVolume(RadioState.volume + delta);
+            });
+
+            updateVolume(25);
+        }
+
+        function setupControlButtons() {
+            const muteButton = document.getElementById('muteButton');
+            if (muteButton) {
+                muteButton.addEventListener('click', () => {
+                    if (!RadioState.isPowered) return;
+                    
+                    RadioState.isMuted = !RadioState.isMuted;
+                    
+                    const audioPlayer = document.getElementById('audioPlayer');
+                    if (audioPlayer) {
+                        audioPlayer.volume = RadioState.isMuted ? 0 : (RadioState.volume / 100);
+                    }
+                    
+                    muteButton.classList.toggle('active', RadioState.isMuted);
+                    muteButton.textContent = RadioState.isMuted ? 'UNMUTE' : 'MUTE';
+                    
+                    updateNowPlaying(RadioState.isMuted ? 'AUDIO MUTED' : 'AUDIO ACTIVE', 
+                        RadioState.currentStation ? RadioState.currentStation.querySelector('.station-name').textContent : '');
+                });
+            }
+
+            const ambientButton = document.getElementById('ambientButton');
+            if (ambientButton) {
+                ambientButton.addEventListener('click', () => {
+                    if (!RadioState.isPowered) return;
+                    
+                    ambientButton.classList.toggle('active');
+                    
+                    updateNowPlaying(ambientButton.classList.contains('active') ? 'AMBIENT MODE ON' : 'AMBIENT MODE OFF');
+                });
+            }
+
+            const scanButton = document.getElementById('scanButton');
+            if (scanButton) {
+                scanButton.addEventListener('click', () => {
+                    if (!RadioState.isPowered) return;
+                    
+                    if (RadioState.isScanning) {
+                        RadioState.isScanning = false;
+                        scanButton.classList.remove('active');
+                        scanButton.textContent = 'SCAN';
+                        updateNowPlaying('SCAN CANCELLED');
+                        return;
+                    }
+                    
+                    RadioState.isScanning = true;
+                    scanButton.classList.add('active');
+                    scanButton.textContent = 'SCANNING';
+                    updateNowPlaying('SCANNING FREQUENCIES...', 'SEARCHING FOR ACTIVE SIGNALS');
+                    
+                    let scanFreq = 300.0;
+                    const scanInterval = setInterval(() => {
+                        if (!RadioState.isScanning) {
+                            clearInterval(scanInterval);
+                            return;
+                        }
+                        
+                        scanFreq += 0.5;
+                        if (scanFreq > 325.0) scanFreq = 300.0;
+                        
+                        updateFrequency(scanFreq);
+                        updateNowPlaying(`SCANNING ${scanFreq.toFixed(1)} MHz...`, 'SIGNAL DETECTION IN PROGRESS');
+                    }, 200);
+                    
+                    setTimeout(() => {
+                        if (!RadioState.isScanning) return;
+                        
+                        clearInterval(scanInterval);
+                        const stations = document.querySelectorAll('.station-card');
+                        const availableStations = Array.from(stations).filter(s => s !== RadioState.currentStation);
+                        
+                        if (availableStations.length > 0) {
+                            const randomStation = availableStations[Math.floor(Math.random() * availableStations.length)];
+                            selectStation(randomStation);
+                        } else {
+                            updateNowPlaying('NO STATIONS FOUND', 'SCAN COMPLETE');
+                        }
+                        
+                        RadioState.isScanning = false;
+                        scanButton.classList.remove('active');
+                        scanButton.textContent = 'SCAN';
+                    }, 4000);
+                });
+            }
+
+            const newsBtn = document.getElementById('newsButton');
+            const missionBtn = document.getElementById('missionButton');
+            const tradeBtn = document.getElementById('tradeButton');
+            const marketBtn = document.getElementById('marketButton');
+            const holoviewerBtn = document.getElementById('holoviewerButton');
+            
+            console.log('🔧 Setting up data panel buttons:', {
+                news: !!newsBtn,
+                missions: !!missionBtn,
+                trade: !!tradeBtn,
+                market: !!marketBtn,
+                holoviewer: !!holoviewerBtn
+            });
+            
+            if (newsBtn) {
+                newsBtn.addEventListener('click', () => {
+                    if (!RadioState.isPowered) return;
+                    console.log('📰 News button clicked');
+                    toggleDataPanel('news');
+                });
+            }
+
+            if (missionBtn) {
+                missionBtn.addEventListener('click', () => {
+                    if (!RadioState.isPowered) return;
+                    console.log('🎯 Missions button clicked');
+                    toggleDataPanel('missions');
+                });
+            }
+
+            if (tradeBtn) {
+                tradeBtn.addEventListener('click', () => {
+                    if (!RadioState.isPowered) return;
+                    console.log('💰 Trade button clicked');
+                    toggleDataPanel('trade');
+                });
+            }
+
+            if (marketBtn) {
+                marketBtn.addEventListener('click', () => {
+                    if (!RadioState.isPowered) return;
+                    console.log('📊 Market button clicked');
+                    toggleDataPanel('market');
+                });
+            }
+
+            if (holoviewerBtn) {
+                holoviewerBtn.addEventListener('click', () => {
+                    if (!RadioState.isPowered) return;
+                    console.log('📺 Holoviewer button clicked');
+                    toggleDataPanel('holoviewer');
+                });
+            }
+
+            const fullscreenButton = document.getElementById('fullscreenButton');
+            if (fullscreenButton) {
+                fullscreenButton.addEventListener('click', () => {
+                    if (!RadioState.isPowered) return;
+                    toggleFullscreen();
+                });
+            }
+        }
+
+        function toggleDataPanel(panelType) {
+            console.log('🔧 toggleDataPanel called with type:', panelType);
+            
+            const dataPanel = document.getElementById('dataPanel');
+            const panelHeader = document.getElementById('panelHeader');
+            const panelContent = document.getElementById('panelContent');
+            
+            if (!dataPanel || !panelHeader || !panelContent) {
+                console.error('❌ Data panel elements not found');
+                return;
+            }
+            
+            const buttonIdMap = {
+                'news': 'newsButton',
+                'missions': 'missionButton',
+                'trade': 'tradeButton', 
+                'market': 'marketButton',
+                'holoviewer': 'holoviewerButton'
+            };
+            
+            const button = document.getElementById(buttonIdMap[panelType]);
+            
+            if (!button) {
+                console.error('Button not found for panel type:', panelType);
+                return;
+            }
+
+            // Clear other active buttons
+            document.querySelectorAll('.control-button').forEach(btn => {
+                if (btn !== button && 
+                    !btn.id.includes('mute') && 
+                    !btn.id.includes('ambient') && 
+                    !btn.id.includes('scan') && 
+                    !btn.id.includes('fullscreen')) {
+                    btn.classList.remove('active');
+                }
+            });
+
+            // Toggle panel
+            if (RadioState.activePanelType === panelType) {
+                console.log('🔧 Closing panel:', panelType);
+                dataPanel.classList.remove('visible');
+                button.classList.remove('active');
+                RadioState.activePanelType = null;
+                return;
+            }
+
+            console.log('🔧 Opening panel:', panelType);
+            RadioState.activePanelType = panelType;
+            button.classList.add('active');
+            
+            panelHeader.textContent = 'LOADING...';
+            panelContent.innerHTML = '<div class="loading-animation"></div>';
+            
+            setTimeout(() => {
+                switch (panelType) {
+                    case 'news':
+                        populateNewsPanel(panelHeader, panelContent);
+                        break;
+                    case 'missions':
+                        populateMissionsPanel(panelHeader, panelContent);
+                        break;
+                    case 'trade':
+                        populateTradePanel(panelHeader, panelContent);
+                        break;
+                    case 'market':
+                        populateMarketPanel(panelHeader, panelContent);
+                        break;
+                    case 'holoviewer':
+                        populateHoloviewerPanel(panelHeader, panelContent);
+                        break;
+                    default:
+                        panelHeader.textContent = 'ERROR';
+                        panelContent.innerHTML = '<div class="error-message"><div class="error-title">UNKNOWN PANEL TYPE</div><div class="error-text">Panel type not recognized: ' + panelType + '</div></div>';
+                        break;
+                }
+            }, 800);
+
+            dataPanel.classList.add('visible');
+        }
+
+        // Data panel population functions with real API calls
+        async function populateNewsPanel(header, content) {
+            header.textContent = 'HCN NEWS NETWORK';
+            
+            try {
+                const newsData = await dataManager.fetchNewsData();
+                
+                if (newsData && newsData.headlines && Array.isArray(newsData.headlines)) {
+                    let html = `
+                        <div class="data-item">
+                            <div class="data-title">Live News Feed</div>
+                            <div class="data-text">Source: HCN API Network • <span class="data-value">Connected</span><br>
+                            Last Update: <span class="data-value">${new Date().toLocaleTimeString()}</span><br>
+                            Headlines: <span class="data-value">${newsData.headlines.length}</span></div>
+                        </div>
+                    `;
+                    
+                    newsData.headlines.slice(0, 8).forEach((headline, index) => {
+                        const priority = headline.priority || (index === 0 ? 'BREAKING' : index < 3 ? 'HIGH' : 'NORMAL');
+                        const priorityColor = priority === 'BREAKING' ? '#ff4400' : 
+                                             priority === 'HIGH' ? '#ffaa00' : '#00ff00';
+                        
+                        html += `
+                            <div class="data-item">
+                                <div class="data-title">${headline.title || `News Story ${index + 1}`}</div>
+                                <div class="data-text">Priority: <span style="color: ${priorityColor};">${priority}</span><br>
+                                ${headline.summary || headline.text || headline.description || 'Details available on full report'}<br>
+                                <span class="data-value">Source: ${headline.source || headline.author || 'HCN Correspondent'}</span></div>
+                            </div>
+                        `;
+                    });
+                    
+                    content.innerHTML = html;
+                } else {
+                    throw new Error('Invalid news data format');
+                }
+                
+            } catch (error) {
+                console.error('News panel error:', error);
+                content.innerHTML = `
+                    <div class="error-message">
+                        <div class="error-title">NEWS FEED ERROR</div>
+                        <div class="error-text">Unable to load news data from API<br>Error: ${error.message}</div>
+                    </div>
+                    <div class="data-item">
+                        <div class="data-title">System Status</div>
+                        <div class="data-text">API Endpoint: <span class="data-value">Vercel/GitHub Hybrid</span><br>
+                        <span style="color: #ff4400;">Connection failed - check API configuration</span></div>
+                    </div>
+                `;
+            }
+        }
+
+        async function populateMissionsPanel(header, content) {
+            header.textContent = 'ACTIVE CONTRACTS';
+            
+            try {
+                const missions = await dataManager.fetchMissionsData();
+                
+                let html = `
+                    <div class="data-item">
+                        <div class="data-title">Contract Database</div>
+                        <div class="data-text">Source: HCN Mission Network • <span class="data-value">Connected</span><br>
+                        Active Contracts: <span class="data-value">${missions.length}</span><br>
+                        Last Sync: <span class="data-value">${new Date().toLocaleTimeString()}</span></div>
+                    </div>
+                `;
+                
+                missions.slice(0, 6).forEach(mission => {
+                    const difficultyColor = mission.difficulty === 'EXTREME' ? '#ff0000' : 
+                                          mission.difficulty === 'HIGH' ? '#ff4400' : 
+                                          mission.difficulty === 'MEDIUM' ? '#ffaa00' : '#00ff00';
+                    
+                    html += `
+                        <div class="data-item">
+                            <div class="data-title">${mission.title}</div>
+                            <div class="data-text">${mission.description}<br>
+                            <span class="data-value">Reward: ${mission.reward}</span><br>
+                            Location: ${mission.location}<br>
+                            Difficulty: <span style="color: ${difficultyColor};">${mission.difficulty}</span><br>
+                            Status: ${mission.status}</div>
+                        </div>
+                    `;
+                });
+                
+                content.innerHTML = html;
+                
+            } catch (error) {
+                console.error('Missions panel error:', error);
+                content.innerHTML = `
+                    <div class="error-message">
+                        <div class="error-title">CONTRACTS UNAVAILABLE</div>
+                        <div class="error-text">Unable to load mission data from API<br>Error: ${error.message}</div>
+                    </div>
+                `;
+            }
+        }
+
+        async function populateTradePanel(header, content) {
+            header.textContent = 'TRADE ROUTES';
+            
+            try {
+                const trades = await dataManager.fetchTradeData();
+                
+                let html = `
+                    <div class="data-item">
+                        <div class="data-title">Trade Route Database</div>
+                        <div class="data-text">Source: UEX Corporation API • <span class="data-value">Connected</span><br>
+                        Routes Available: <span class="data-value">${trades.length}</span><br>
+                        Data Source: <span class="data-value">Live Market Feed</span></div>
+                    </div>
+                `;
+                
+                trades.slice(0, 6).forEach(trade => {
+                    const changeColor = parseFloat(trade.change) > 0 ? '#00ff00' : '#ff4400';
+                    const changeSign = parseFloat(trade.change) > 0 ? '+' : '';
+                    
+                    html += `
+                        <div class="data-item">
+                            <div class="data-title">${trade.name}</div>
+                            <div class="data-text"><span class="data-value">${trade.price} aUEC/unit</span><br>
+                            Change: <span style="color: ${changeColor};">${changeSign}${trade.change}%</span><br>
+                            Route: ${trade.route}<br>
+                            Profit: <span class="data-value">${trade.profit} aUEC</span></div>
+                        </div>
+                    `;
+                });
+                
+                content.innerHTML = html;
+                
+            } catch (error) {
+                console.error('Trade panel error:', error);
+                content.innerHTML = `
+                    <div class="error-message">
+                        <div class="error-title">TRADE DATA ERROR</div>
+                        <div class="error-text">Unable to load trade data from API<br>Error: ${error.message}</div>
+                    </div>
+                `;
+            }
+        }
+
+        async function populateMarketPanel(header, content) {
+            header.textContent = 'COMMODITY MARKET';
+            
+            try {
+                const marketData = await dataManager.fetchMarketData();
+                
+                let html = `
+                    <div class="data-item">
+                        <div class="data-title">Market Status</div>
+                        <div class="data-text">Source: UEX Corporation API • <span class="data-value">Connected</span><br>
+                        Commodities Listed: <span class="data-value">${marketData.length}</span><br>
+                        Market Status: <span class="data-value">Active</span></div>
+                    </div>
+                `;
+                
+                marketData.slice(0, 8).forEach(item => {
+                    const changeColor = parseFloat(item.change) > 0 ? '#00ff00' : '#ff4400';
+                    const changeSign = parseFloat(item.change) > 0 ? '+' : '';
+                    const demandColor = item.demand === 'Critical' ? '#ff0000' : 
+                                       item.demand === 'Very High' ? '#ff4400' : 
+                                       item.demand === 'High' ? '#00ff00' : '#ffaa00';
+                    
+                    const locations = Array.isArray(item.locations) ? item.locations.join(', ') : 'Various';
+                    
+                    html += `
+                        <div class="data-item">
+                            <div class="data-title">${item.name}</div>
+                            <div class="data-text">Price: <span class="data-value">${item.price} aUEC</span><br>
+                            Change: <span style="color: ${changeColor};">${changeSign}${item.change}%</span><br>
+                            Locations: ${locations}<br>
+                            Demand: <span style="color: ${demandColor};">${item.demand}</span></div>
+                        </div>
+                    `;
+                });
+                
+                content.innerHTML = html;
+                
+            } catch (error) {
+                console.error('Market panel error:', error);
+                content.innerHTML = `
+                    <div class="error-message">
+                        <div class="error-title">MARKET DATA ERROR</div>
+                        <div class="error-text">Unable to load market data from API<br>Error: ${error.message}</div>
+                    </div>
+                `;
+            }
+        }
+
+        async function populateHoloviewerPanel(header, content) {
+            header.textContent = 'PROGRAMMING GUIDE';
+            
+            try {
+                const guideData = await dataManager.fetchProgrammingGuide();
+                
+                const now = new Date();
+                const currentDay = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT'][now.getDay()];
+                const currentHour = now.getHours();
+                const currentTime = `${currentHour.toString().padStart(2, '0')}:00`;
+                
+                let html = `
+                    <div class="data-item">
+                        <div class="data-title">Current Time</div>
+                        <div class="data-text">UEC Standard Time: <span class="data-value">${new Date().toLocaleTimeString()}</span><br>
+                        Broadcasting live from Stanton System<br>
+                        Current Day: <span class="data-value">${currentDay}</span></div>
+                    </div>
+                `;
+                
+                if (guideData.channels) {
+                    Object.entries(guideData.channels).forEach(([channelId, channel]) => {
+                        const dayPrograms = channel.programs && channel.programs[currentDay];
+                        const currentProgram = dayPrograms && dayPrograms[currentTime];
+                        
+                        // Find next program
+                        let nextProgram = null;
+                        if (dayPrograms) {
+                            const times = Object.keys(dayPrograms).sort();
+                            const currentIndex = times.indexOf(currentTime);
+                            if (currentIndex >= 0 && currentIndex < times.length - 1) {
+                                nextProgram = dayPrograms[times[currentIndex + 1]];
+                            } else if (times.length > 0) {
+                                nextProgram = dayPrograms[times[0]]; // Wrap to first program
+                            }
+                        }
+                        
+                        html += `
+                            <div class="data-item">
+                                <div class="data-title">${channel.name} • ${channel.frequency}</div>
+                                <div class="data-text">Now: <span class="data-value">${currentProgram ? currentProgram.title : 'Programming Information Unavailable'}</span>${currentProgram ? ' • LIVE' : ''}<br>
+                                ${currentProgram ? `DJ: ${currentProgram.dj}<br>` : ''}
+                                ${nextProgram ? `Next: ${nextProgram.title} • <span class="data-value">${Object.keys(dayPrograms).find(time => dayPrograms[time] === nextProgram)}</span><br>` : ''}
+                                ${channel.description || 'Broadcast details unavailable'}</div>
+                            </div>
+                        `;
+                    });
+                } else {
+                    // Fallback station information
+                    const stations = [
+                        { id: 'HCN-01', name: 'Radio One', freq: '305.5 AM', genre: 'News, Talk, Current Affairs' },
+                        { id: 'HCN-02', name: 'Radio Two', freq: '315.0 AM', genre: 'Jazz, Electronic, Ambient' },
+                        { id: 'HCN-03', name: 'Investigative', freq: '319.7 AM', genre: 'Investigative, Documentary' },
+                        { id: 'HCN-04', name: 'Music', freq: '320.0 AM', genre: 'Synthwave, Electronic, Dance' }
+                    ];
+                    
+                    stations.forEach((station, index) => {
+                        const programs = ['Morning Brief', 'Midday Report', 'Evening Analysis', 'Night Watch'];
+                        const currentProgram = programs[index % programs.length];
+                        
+                        html += `
+                            <div class="data-item">
+                                <div class="data-title">${station.id} • ${station.name}</div>
+                                <div class="data-text">Frequency: <span class="data-value">${station.freq}</span><br>
+                                Now: <span class="data-value">${currentProgram}</span> • LIVE<br>
+                                Genre: ${station.genre}</div>
+                            </div>
+                        `;
+                    });
+                }
+                
+                html += `
+                    <div class="data-item">
+                        <div class="data-title">Emergency Broadcast System</div>
+                        <div class="data-text">Status: <span class="data-value">All Clear</span><br>
+                        Last Alert: None active<br>
+                        Next Test: <span class="data-value">${new Date(Date.now() + 86400000).toLocaleDateString()}</span></div>
+                    </div>
+                `;
+                
+                content.innerHTML = html;
+                
+            } catch (error) {
+                console.error('Programming guide error:', error);
+                content.innerHTML = `
+                    <div class="error-message">
+                        <div class="error-title">PROGRAMMING GUIDE ERROR</div>
+                        <div class="error-text">Unable to load programming data<br>Error: ${error.message}</div>
+                    </div>
+                `;
+            }
+        }
+
+        function hideDataPanel() {
+            const dataPanel = document.getElementById('dataPanel');
+            document.querySelectorAll('.control-button').forEach(btn => {
+                if (!btn.id.includes('mute') && 
+                    !btn.id.includes('ambient') && 
+                    !btn.id.includes('scan') && 
+                    !btn.id.includes('fullscreen')) {
+                    btn.classList.remove('active');
+                }
+            });
+            dataPanel.classList.remove('visible');
+            RadioState.activePanelType = null;
+        }
+
+        function updateNowPlaying(text, metadata = '') {
+            document.getElementById('nowPlayingText').textContent = text;
+            document.getElementById('nowPlayingMeta').textContent = metadata;
+        }
+
+        function updateStardate() {
+            const now = new Date();
+            const startOfYear = new Date(now.getFullYear(), 0, 1);
+            const diff = now - startOfYear;
+            const dayOfYear = Math.floor(diff / (1000 * 60 * 60 * 24)) + 1;
+            const gameYear = 2925 + now.getFullYear() - 1995;
+            
+            document.getElementById('stardate').textContent = gameYear + '.' + dayOfYear.toString().padStart(3, '0');
+        }
+
+        function toggleFullscreen() {
+            const container = document.querySelector('.monitor-container');
+            
+            if (!document.fullscreenElement) {
+                container.requestFullscreen().then(() => {
+                    document.getElementById('fullscreenButton').textContent = 'EXIT FULL';
+                    document.getElementById('fullscreenButton').classList.add('active');
+                }).catch(err => {
+                    console.log('Fullscreen failed:', err);
+                });
+            } else {
+                document.exitFullscreen().then(() => {
+                    document.getElementById('fullscreenButton').textContent = 'FULLSCREEN';
+                    document.getElementById('fullscreenButton').classList.remove('active');
+                });
+            }
+        }
+
+        function startAnimationLoop() {
+            function animate() {
+                if (RadioState.isPowered) {
+                    updateEQBars();
+                }
+                
+                requestAnimationFrame(animate);
+            }
+            animate();
+        }
+
+        function setupKeyboardShortcuts() {
+            document.addEventListener('keydown', (e) => {
+                if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
+                
+                if (e.key.toLowerCase() === 'p' && e.ctrlKey) {
+                    e.preventDefault();
+                    document.getElementById('powerButton').click();
+                    return;
+                }
+                
+                if (!RadioState.isPowered) return;
+                
+                switch(e.key.toLowerCase()) {
+                    case ' ':
+                        e.preventDefault();
+                        document.getElementById('scanButton').click();
+                        break;
+                    case 'm':
+                        e.preventDefault();
+                        document.getElementById('muteButton').click();
+                        break;
+                    case 'f':
+                        e.preventDefault();
+                        document.getElementById('fullscreenButton').click();
+                        break;
+                    case 'a':
+                        e.preventDefault();
+                        document.getElementById('ambientButton').click();
+                        break;
+                    case 'escape':
+                        e.preventDefault();
+                        if (RadioState.activePanelType) {
+                            hideDataPanel();
+                        }
+                        break;
+                    case '1':
+                    case '2':
+                    case '3':
+                    case '4':
+                        e.preventDefault();
+                        const stationIndex = parseInt(e.key) - 1;
+                        const stations = document.querySelectorAll('.station-card');
+                        if (stations[stationIndex]) {
+                            selectStation(stations[stationIndex]);
+                        }
+                        break;
+                }
+            });
+        }
+
+        function initializeRadio() {
+            console.log("🚀 Initializing HCN Radio - Complete API Integration");
+            console.log("🔗 API Configuration:", API_CONFIG);
+
+            // Debug: Check station cards
+            const stationCards = document.querySelectorAll('.station-card');
+            console.log(`📻 Found ${stationCards.length} station cards:`);
+            stationCards.forEach((card, index) => {
+                const stationName = card.querySelector('.station-name')?.textContent || 'Unknown';
+                const stationId = card.querySelector('.station-id')?.textContent || 'Unknown';
+                const frequency = card.dataset.frequency || 'Unknown';
+                console.log(`  ${index + 1}. ${stationId} - ${stationName} (${frequency} MHz)`);
+            });
+
+            // Initialize ticker with real data
+            updateNewsTicker();
+            setInterval(updateNewsTicker, 300000); // Update every 5 minutes
+
+            updateStardate();
+            setInterval(updateStardate, 60000);
+
+            setupFrequencyControl();
+            setupVolumeControl();
+            setupControlButtons();
+            setupKeyboardShortcuts();
+
+            const powerButton = document.getElementById('powerButton');
+            if (powerButton) {
+                powerButton.addEventListener('click', togglePower);
+            }
+
+            stationCards.forEach((card, index) => {
+                card.addEventListener('click', () => {
+                    console.log(`📻 Station ${index + 1} clicked:`, card.querySelector('.station-name')?.textContent);
+                    selectStation(card);
+                });
+            });
+
+            const audioPlayer = document.getElementById('audioPlayer');
+            if (audioPlayer) {
+                audioPlayer.addEventListener('error', (e) => {
+                    updateNowPlaying('TRANSMISSION ERROR');
+                    console.error('Audio error:', e);
+                });
+                
+                audioPlayer.addEventListener('loadstart', () => {
+                    updateNowPlaying('CONNECTING...');
+                });
+                
+                audioPlayer.addEventListener('canplay', () => {
+                    if (RadioState.currentStation) {
+                        const stationName = RadioState.currentStation.querySelector('.station-name').textContent;
+                        updateNowPlaying('SIGNAL LOCKED', stationName);
+                    }
+                });
+            }
+
+            startAnimationLoop();
+
+            // Close data panel when clicking outside
+            document.addEventListener('click', (e) => {
+                if (RadioState.activePanelType && 
+                    !e.target.closest('.data-panel') && 
+                    !e.target.closest('.control-button')) {
+                    hideDataPanel();
+                }
+            });
+
+            document.addEventListener('touchstart', async function() {
+                await audioManager.resume();
+            }, { once: true });
+
+            document.addEventListener('click', async function() {
+                await audioManager.resume();
+            }, { once: true });
+
+            console.log("✅ HCN Radio initialized successfully");
+            console.log("🎮 Controls: Ctrl+P (Power), Space (Scan), M (Mute), F (Fullscreen), 1-4 (Stations)");
+            console.log("📊 Data Panels: NEWS, MISSIONS, TRADE, MARKET, HOLOVIEWER");
+            console.log("🔗 Make sure to update API_CONFIG.baseUrl to your Vercel deployment!");
+        }
+
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeRadio);
+        } else {
+            initializeRadio();
+        }
+
+        window.addEventListener('resize', () => {
+            if (RadioState.isPowered) {
+                updateFrequency(RadioState.frequency);
+                createEQBars();
+            }
+        });
+
+        document.addEventListener('fullscreenchange', () => {
+            if (!document.fullscreenElement && RadioState.isFullscreen) {
+                const fullscreenButton = document.getElementById('fullscreenButton');
+                if (fullscreenButton) {
+                    fullscreenButton.textContent = 'FULLSCREEN';
+                    fullscreenButton.classList.remove('active');
+                }
+                RadioState.isFullscreen = false;
+            }
+        });
+
+        document.addEventListener('visibilitychange', () => {
+            if (document.hidden) {
+                if (RadioState.animationFrame) {
+                    cancelAnimationFrame(RadioState.animationFrame);
+                }
+            } else {
+                if (RadioState.isPowered) {
+                    drawOscilloscope();
+                }
+            }
+        });
+
+    </script>
+</body>
+</html>
