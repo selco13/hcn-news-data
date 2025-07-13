@@ -36,7 +36,7 @@
             height: 100vh;
         }
 
-        /* Subtle CRT Effect - keeping your original feel */
+        /* CRT Effect */
         body::before {
             content: '';
             position: fixed;
@@ -61,7 +61,6 @@
             100% { transform: translateY(4px); }
         }
 
-        /* Keeping your original grid layout */
         .container {
             height: 100vh;
             display: grid;
@@ -76,7 +75,6 @@
             background: var(--border-color);
         }
 
-        /* Header - refined but keeping your style */
         .header {
             grid-area: header;
             background: var(--bg-panel);
@@ -118,7 +116,6 @@
             letter-spacing: 2px;
         }
 
-        /* Breaking News - keeping your ticker */
         .breaking-news {
             position: absolute;
             bottom: 0;
@@ -142,7 +139,6 @@
             100% { transform: translateX(-100%); }
         }
 
-        /* Panel Styles - keeping your original design */
         .panel {
             background: var(--bg-panel);
             border: 2px solid var(--border-color);
@@ -179,7 +175,6 @@
             padding-bottom: 8px;
         }
 
-        /* News Panel - keeping your style */
         .news-panel {
             grid-area: news;
         }
@@ -211,7 +206,6 @@
             line-height: 1.3;
         }
 
-        /* Player Panel - keeping your centered design */
         .player-panel {
             grid-area: player;
             display: flex;
@@ -309,7 +303,6 @@
             box-shadow: 0 0 8px var(--primary-green);
         }
 
-        /* Market Panel - keeping your layout */
         .market-panel {
             grid-area: market;
         }
@@ -357,7 +350,6 @@
             color: var(--red);
         }
 
-        /* Trade Panel - keeping your style */
         .trade-panel {
             grid-area: trade;
         }
@@ -387,7 +379,6 @@
             color: var(--text-dim);
         }
 
-        /* Missions Panel - keeping your design */
         .missions-panel {
             grid-area: missions;
         }
@@ -425,7 +416,6 @@
             color: var(--text-dim);
         }
 
-        /* Scrollable content - keeping your scrollbars */
         .scrollable {
             max-height: calc(100vh - 200px);
             overflow-y: auto;
@@ -450,7 +440,6 @@
             background: var(--primary-green);
         }
 
-        /* Status indicators - keeping your style */
         .status-indicator {
             display: inline-block;
             width: 8px;
@@ -480,7 +469,6 @@
             51%, 100% { opacity: 0.4; }
         }
 
-        /* Loading animation - keeping simple */
         .loading {
             display: inline-block;
             width: 18px;
@@ -495,7 +483,6 @@
             to { transform: rotate(360deg); }
         }
 
-        /* Responsive design - keeping your breakpoints */
         @media (max-width: 1200px) {
             .container {
                 grid-template-areas: 
@@ -539,7 +526,6 @@
             }
         }
 
-        /* Error states - keeping minimal */
         .error-message {
             color: var(--red);
             text-align: center;
@@ -673,7 +659,6 @@
             }
 
             initializePlayer() {
-                // Audio player event listeners
                 this.audioPlayer.addEventListener('loadstart', () => {
                     this.updateStatus('CONNECTING...', 'loading');
                 });
@@ -701,18 +686,15 @@
                     console.error('Audio error:', e);
                 });
 
-                // Control button listeners
                 this.playBtn.addEventListener('click', () => this.togglePlay());
                 this.stopBtn.addEventListener('click', () => this.stop());
                 this.muteBtn.addEventListener('click', () => this.toggleMute());
 
-                // Volume control
                 this.volumeSlider.addEventListener('input', (e) => {
                     const volume = e.target.value;
                     this.setVolume(volume);
                 });
 
-                // Set initial volume
                 this.setVolume(50);
             }
 
@@ -838,7 +820,6 @@
             displayNews(data) {
                 const container = document.getElementById('newsContent');
                 
-                // Check for breaking news
                 if (data.breaking && data.breaking.active) {
                     this.showBreakingNews(data.breaking.text);
                 }
@@ -941,7 +922,6 @@
                 breakingText.textContent = `BREAKING: ${text}`;
                 breakingNews.style.display = 'block';
                 
-                // Hide after 30 seconds
                 setTimeout(() => {
                     breakingNews.style.display = 'none';
                 }, 30000);
@@ -965,14 +945,12 @@
             }
 
             startDataRefresh() {
-                // Refresh data every 5 minutes
                 setInterval(() => {
                     this.loadData();
                 }, 5 * 60 * 1000);
             }
         }
 
-        // Initialize the radio when page loads
         let hcnRadio;
         document.addEventListener('DOMContentLoaded', () => {
             hcnRadio = new HCNRadio();
