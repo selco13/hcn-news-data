@@ -1,0 +1,53 @@
+{
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
+  "mainStory": {
+    "category": "SECURITY",
+    "title": "UPDATE: Virus Laced Quantum Gear Spurs UEE Advocacy Crackdown",
+    "subtitle": "Navigation technology sourced through shops in Stanton and tied to black market sales has been found to be infected by a virus.",
+    "author": "Ragaar Ashnod | Pyro Correspondent",
+    "date": "Stardate: 2955.07.15",
+    "content": "<p>Last week the UEE Advocacy issued a recall on all equipment bought in the last month within Stanton and the result of their initial investigations into the matter found a computer virus in quantum equipment sourced through black market channels. Pilots who bought the equipment began noticing glitches in Quantum travel within days of purchasing the new modules, later these glitches began affecting other systems such as targeting and waypointing.<p><p>These issues were first noticed by long-distance haulers, finding odd navigational quirks such as arriving 250km from a location rather than the standard 20km or their quantum computer not holding onto quantum markers and aborting flight mid-jump. The haulers then had an immediate worsening of navigational systems in the form of no longer being able to target for jumps and their routing systems not computing correctly, essentially stranding the pilots in deep space until rescue could arrive.<p><p>These circumstances have been reported nearly 100 times by pilots throughout Nyx, Pyro, Stanton, and now Terra. This has led the UEE Advocacy to issue a quarantine on the systems until the navigational equipment has been tracked down and replaced by cleared equipment.<p><p>‘This is speculation, but the virus seems to be rewriting small samples of code from within the navigational systems, which changes how the system interprets quantum jump data. This kind of thing doesn’t happen without an author, a code writer or hacker. Black market sales do not always mean that the equipment is inferior either, the altered code is incredibly sophisticated. These components could have been sold through back channels but it seems the original supplier could have been anyone. The UEE hasn’t made an official statement on this matter but from the data being collected on the equipment they are undoubtedly investigating this possibility as well.’ - Micea Dravnic, Technology Correspondent<p><p>It is currently unclear if this issue is going to persist or transfer to other flight or combat equipment through the navigational systems, but there have been no reports of the virus affecting other systems at this time.<p><p>The advocacy is not allowing anyone through the jump gates until their systems have been fully cleared. Thus far, some pilots have reported losing completely viable equipment due to the forced recall because of the virus, meaning that the virus has been able to jump between vessels in some unknown manner.<p><p>One thing has been made blindingly clear, the UEE Advocacy still holds the power to halt all jump point travel between systems, even into and out of Pyro. This revelation has caused considerable unrest among frontier settlers and antiu-UEE factions, who claim that the Advocacy’s actions hint at a deeper authoritarian control.<p>"
+  },
+  "quickUpdates": [
+    {
+      "title": "MicroTech Weather Satelite Down for Recalibration",
+      "summary": "The Empire Cartography Center announced a temporary blackout of weather services after last week's heavy snowfall over New Babbage in order to realign the satelite to its optimal position."
+    },
+    {
+      "title": "Early Protests Observed throughout Pyro",
+      "summary": "An unknown protest has been observed spreading through Pyro, no group has claimed responsibility or named a demand but there are observations of protestors blocking doorways and walkways with their arms straight out to their sides near port stations."
+    },
+    {
+      "title": "Supply Delays Cause Drake Interplanetary to Delay Cutlass Assembly",
+      "summary": "Drake Interplanetary made a statement about the delay of dozens of Cutlass variants due to a supply delay in their turbine nozzle manufacturing plant."
+    }
+  ],
+  "marketWatch": [
+    {
+      "title": "HYDF",
+      "summary": "↑ 1.3% - Hydrogen Fuel is up due to another leak at a storage facility in Crusader."
+    },
+    {
+      "title": "PICE",
+      "summary": "↓ 2.2% - Pressurized Ice is down due to a newly found ice formation in the Aaron Asteroid Belt."
+    },
+    {
+      "title": "GOLD",
+      "summary": "↓ 11.9% - Gold is down again as large amounts flood the market because of incidental collection increases after Crusader Industries' mining campaign on Cellin."
+    }
+  ],
+  "secondaryStories": [
+    {
+      "category": "BUSINESS",
+      "title": "Roberts Space Industries Announces New Interdiction Vessel",
+      "subtitle": "Roberts Space Industries (RSI), a leader in both military and civilian vessels, announces the new RSI Meteor, a new vessel based on the RSI Mantis platform.",
+      "author": "Micea Dravnic | Technology Correspondent",
+      "date": "Stardate: 2955.07.10",
+      "content": "<p>RSI announced a new vessel named the Meteor, based on the successful RSI Mantis platform, the Meteor trades its predecessor’s limited focus for a more combat-capable role, adding firepower and improved survivability for long-range interdiction missions.<p><p>The Meteor retains the Mantis’ Quantum Dampener of the original Mantis design and slightly improves upon the shielding, cooling, and weaponry of the Mantis design. This new variant sports two Size 1 shield slots, two size 1 cooler slots, and two size 5 hardpoints for various weaponry. This vessel is being marketed towards security contractors or professional mercenaries as the price is considerably higher than the Mantis.<p><p>Many mercenary groups and bounty hunters have already voiced their interest in the new vessel, noting that they will be buying them on the first day of sales later this week. Some UEE Navy units have also expressed publicly that the vessels would be a welcome addition to any Carrier Battle Group or the smaller Patrol Formations. While some are advocating that this is a significant overreach for civilians to be able to purchase such a weapon, others are keen to use this as a replacement for the aging Mantis design.<p><p>RSI’s Public Relations Director, Jaren Huckley, helped announce the Meteor and explained that the Meteor is as much about defense as it is about offense. The Meteor, in any fleet context, makes a statement to a hostile actor; leave the area peacefully or stick around and face the might of the fleet. Either way, it marks a new powerful presence on the battlefield. With the Meteor poised to launch into indiscriminate hands later this week, RSI’s latest offering may redefine what it means to patrol the fringes of the ‘verse.<p>"
+    }
+  ]
+}
