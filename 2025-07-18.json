@@ -1,0 +1,53 @@
+{
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
+  "mainStory": {
+    "category": "COMMUNITY",
+    "title": "The Humanitarian Communications Network to begin Advertisement Campaign Next Month",
+    "subtitle": "The Humanitarian Communications Network (HCN) will begin accepting advertisement applications for rotating marketing slots on their website at the beginning of next month.",
+    "author": "Micea Dravnic | Technology Correspondent",
+    "date": "Stardate: 2955.07.16",
+    "content": "<p>This week and next week will be filled with work from the HCN crew as the website and radio is being prepped for upcoming releases and new formats. One of the most significant changes will be to the use of advertisement slots for organizations or individuals both on the radio and the news site. With over 400 average listeners per week, one simple advertisement might make the airwaves needed to grow an organization or an aspiring business.<p><p>The on-air advertisements need to be around 30 seconds long and provide a clear sense of what you want listeners to do. The audio advertisements should be in .ogg or .mp3 format to be integrated into the radio. Vague or misleading advertisements will not be accepted.<p><p>The advertisement images need to be in one of two formats. Either 1200x400 pixels for a banner advertisement or 300x600 pixels for a rectangle sidebar advertisement. Both of these will be displayed on the news site in rotation depending on the level of advertisement package.<p><p>Text based advertisements will also be accepted on a case by case basis and need to be 250 words or less in a .docx or .txt format.<p><p>All advertisements should be submitted directly to Selco13 or Ragaar via Discord. It will take approximately 48 hours for your advertisements to be reviewed and accepted or denied. You will receive a confirmation and the deployment details of your advertisement after that 48 hour period.<p><p>All advertisements payments will be processed through your mobiGlas aUEC wallet. You can contact any of the staff through Discord or the email at the bottom of the web page for more information on the advertisement campaign. HCN’s radio is about to get a little louder and a bit more lively with your advertisements gracing the airtime.<p>"
+  },
+  "quickUpdates": [
+    {
+      "title": "Associated Sciences and Development Refutes Claims of Wrongdoing",
+      "summary": "Despite the UEE attempts to investigate ASD's Lazarus research facility, finding evidence of animal experimentation, ASD stands firm that they have comitted no crimes within the UEE."
+    },
+    {
+      "title": "Many Unsettled by Imperator Addison's Administration",
+      "summary": "The rise in security issues, the regen crisis, and the wrongful research being conducted have left the majority of the UEE population concerned for the future of the Empire."
+    },
+    {
+      "title": "Snowstorms, Sandstorms, and Radiation",
+      "summary": "Weather satellites from Stanton and Pyro have reported a marked increase in storm activity through both systems, with radiation storms increasing in potency on Pyro I."
+    }
+  ],
+  "marketWatch": [
+    {
+      "title": "COBA",
+      "summary": "↓ 12.5% - Cobalt is down due to a recent spike in incidental mining from the Stanton Resource Drive."
+    },
+    {
+      "title": "LARA",
+      "summary": "→ 0% - Laranite remains steady in the market."
+    },
+    {
+      "title": "TARA",
+      "summary": "→ 0% - Taranite has remained steady in the market for over 6 months."
+    }
+  ],
+  "secondaryStories": [
+    {
+      "category": "SECURITY",
+      "title": "BlackJac Security Warns of Increased Trends Among Pirate Activity in Stanton",
+      "subtitle": "BlackJac Security identified a rise in coordinated pirate activity across the Stanton System, a trend now echoed by other security agencies and private entities as far as Pyro IV.",
+      "author": "Kaveh Virtanen | Military Correspondent",
+      "date": "Stardate: 2955.07.17",
+      "content": "<p>BlackJac Security made a joint request to other local security agencies about the appearance of trends they have observed through their investigations last week. These trends were then confirmed by two of the three other local agencies and BlackJac Security made a public statement this morning regarding the issue.<p><p>‘Our investigators noted a mysterious trend in the early hours of this past weekend. After a thorough review and confirmation from the other security agencies within Stanton, we have concluded that several pirate organizations operating within Stanton space are beginning to communicate to a large degree. This has shown itself in numerous ways, the primary factor being coordinated tactics and a more standardized way of operating. Recent reports have indicated, even up to this morning, that the Pirate groups have two new primary methods of taking cargo from haulers.’ - Jac Ngo Jr., CEO BlackJac Security<p><p>The in-depth statement made by Mr. Ngo Jr. detailed some of the security agency’s findings. Two key pieces of information were shared for the safety of all pilots throughout the ‘verse during this press conference.<p><p>Pirates are operating numerous quantum interdiction raiding parties on popular trade routes, stopping haulers out of quantum travel and either forcing them to pay or lose their cargo under threat of death. These pirates usually run a small two to five vessel fleet, led by a Mantis, for these operations.<p><p>Pirates are also posing as legitimate cargo haulers at ground logistics stations, landing nearby active stations. The pirates will have a mostly manned cargo vessel and will wait until another hauler has landed and bought materials. Usually the cargo hauler will call up the materials on the cargo elevator and begin the process of loading their vessel. They  use the cargo hauler’s distraction to strike, forcing the hauler to retreat into their own vessel while other pirates either manually using tractor beams, or manning tractor turrets load the stolen cargo into their own vessel. The pirates will then leave the area to target a different ground location and other materials.<p><p>The coming introduction of harsher security consequences by the UEE Advocacy and local Security Agencies, alongside the sales of the new RSI Meteor, are both expected to exacerbate these issues. Pushing pirates out of the stations and their operations out further still may look good on paper, but it very well might make life for cargo haulers much more difficult in the coming months.<p><p>Previously, pirate activity was isolated to individual cells or smaller groups but with the new adoption of shared techniques, routes, and equipment usage, security analysts at BlackJac and other agencies are beginning to worry about a formal communication network among the pirate community.<p>"
+    }
+  ]
+}
