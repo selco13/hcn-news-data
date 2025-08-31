@@ -1,0 +1,53 @@
+{
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
+  "mainStory": {
+    "category": "POLITICS",
+    "title": "Second Guessing the Second Life Initiative",
+    "subtitle": " The UEE Advocacy has hailed the Second Life Initiative as a success in Stanton, where resource shipments have surged, even as pirates exploit the chaos to build stockpiles of their own.",
+    "author": "Micea Dravnic | Technology Correspondent",
+    "date": "Stardate: 2955.08.30",
+    "content": "<p>The UEE Advocacy is lauding the Resource Drive as a phenomenal success with 6.3 times more resources being collected than initially projected. The Addison administration announced an extension for the resource drive due to the turnout across the UEE, allowing an extra few weeks of resource collection. The resources from the drive are bound for medical facilities throughout the UEE, meant to assist in research against the Regen Crisis. During the extension window, shipments continued from the outlying systems through shipping hubs at extremely elevated rates while site-level details remained limited to just committee level staff. The administration points to numbers as proof of success but closer examination reveals less certainty about where, and how, the resources are being used. Procurement notices from the shipping hubs referenced external partner compliance, alongside notices of the non-standard adjustment of shipping lanes for unspecified reasons. UEE Advocacy officials declined comment when asked if that external partner compliance included Banu or Xi'an liaisons.<p><p>Over the previous two weeks, the Imperator’s office has posted 11 updates about the Second Life Initiative (SLI), repeating the widened parameters and swift resolution of the Regen Crisis. None included research details or progress updates regarding the investigation into the start of the Regen Crisis. Yet public updates have focused more on participation metrics than progress in solving the issue at hand.<p><p>As of 2955.08.30, Hurston in the Stanton System is still in the lead across the entire UEE with almost 280 million SCU of different materials collected for the resource drive. While site lists have not been released publicly, civilian watchdog activists have reported routing records that show repeat deliveries to research labs with current or previous Associated Science & Development (ASD) contracts. Even as regions like Stanton lead in contribution volume, some have begun raising questions about the final destinations of those shipments.<p><p>Regeneration within the UEE is based on a highly confidential imprint that is stored in a novel data sphere, called an Ibrahim Sphere. In the event of catastrophic injury or death a new body is restored from the imprint that is stored on the sphere. The regeneration crisis started earlier this year when imprints began reading as unstable within medical facilities across the UEE. While the cause has still yet to be found, the Addison administration has made this tragedy into a political point.<p><p>During the recent Resource Drive, the Addison Administration levied their SLI in order to loosen research restrictions. The Senate Innovation Subcommittee held a closed-door hearing with a whistleblower from ASD regarding the research, which may have led to the lift on research restrictions. During the hearing it was reported that ASD also denied any wrongdoing related to their Lazarus Research Facility on Pyro I. HCN was the first to cover the UEE Investigation into Lazarus in mid July. In parallel with mounting medical concerns, government response shifted from regulatory caution to accelerated exceptions. Much of what has been seen in regards to the ASD research facilities has been pointed at illegal experimentation against animal and alien species. Protect All Wildlife, an animal rights activist group, began an undercover investigation early this month and released their findings just this last week. They released a video showing illegal animal experimentation inside one of their research facilities. Some question the legitimacy of the video, arguing that such practices would require either fringe rogue actors, or foreign involvement.<p><p>During the same week that the SLI waivers took effect, multiple interstellar travel requests were filed with the Central Trade Office in the Rhetor System. Records show several of these were submitted by Xi’an Trade Office liaisons, who hold standing access to a select group of UEE academic facilities. Officials declined to comment on whether those liaisons were briefed under SLI. No public record exists of whether the requests were granted. The timing overlap has drawn the attention of many, not for what it confirms but instead for what it may suggest: that diplomatic corridors may be running parallel to scientific ones, hidden behind doors that few are authorized to open.<p><p>A few pirate factions within the Stanton system have seen the Resource Drive as a way to collect their own private stockpiles of the same resources. Not all actors involved are diplomatic. In the shadows of the initiative’s momentum, opportunistic factions have begun building stockpiles of their own.<p><p>“Pirate activity in the system has reached a level similar to 2953 with the Ninetails Siege of Orison.  We’ve all requested representatives from the UEE to come observe, but they’ve so far denied our requests.” - BlackJac Security Public Affairs Officer<p><p>The status of the Regen Crisis research remains inaccessible and no audit has been conducted for SLI contributions. With no audit and no research disclosures, the routing trails point less to real answers and more to engineered obfuscations. When emergency logistics evolve into unchecked infrastructure, the risk shifts from technical failure to the erosion of safeguards meant to protect us.<p>"
+  },
+  "quickUpdates": [
+    {
+      "title": "Resource Surge Spurs Unauthorized Salvage Ops",
+      "summary": "Salvagers in Stanton report missing cargo marked for the Second Life Initiative, raising questions about misrouted shipments and black market interception."
+    },
+    {
+      "title": "Protect All Wildlife Plans Direct Action",
+      "summary": "Following their leaked footage of illegal research, the activist group has announced a public demonstration near a known ASD affiliate site."
+    },
+    {
+      "title": "Foreign Liaison Transit Records Sealed",
+      "summary": "A new ruling has locked down public access to diplomatic transit logs in Rhetor, further halting investigations into the unorthodox travel surrounding Rhetor."
+    }
+  ],
+  "marketWatch": [
+    {
+      "title": "AGRS",
+      "summary": "→ 0% - Agricultural Supplies remain steady at a higher than usual rate due to demand from settlements in Pyro."
+    },
+    {
+      "title": "MEDS",
+      "summary": "↑ 3.7% - Medical Supplies sees another slight rise in the market due to the Regen Crisis."
+    },
+    {
+      "title": "STIM",
+      "summary": "→ 0% - Medical Stims remain consistent in the market after a large increase in price in October last year."
+    }
+  ],
+  "secondaryStories": [
+    {
+      "category": "COMMUNITY",
+      "title": "A Cult in Hurston Rescued from Cave After Eating Native Underground Fungi",
+      "subtitle": "An anti-labor cult on Hurston found unconscious and hallucinating by Hurston Security after a member sends up a universal distress signal.",
+      "author": "Kaveh Virtanen | Military Correspondent",
+      "date": "Stardate: 2955.08.29",
+      "content": "<p>A cult on Hurston ran out of food and water rations after fleeing from the city of Lorville last month. The cult, formerly a portion of Hurston Dynamic’s (HD) labor force, left Lorville after a dispute between the labor unions and the heads of HD. The members of the cult took what they could carry from their meager habitation units and bought a few food supplies before leaving for the windswept plains of Hurston in hopes of finding a new home. Eventually the cult stumbled upon a cave about a hundred kilometers from Lorville and decided to settle the location. Weeks later their food supply was running low and they were relying off of the water in a natural spring at the bottom of the cave to survive.<p><p>Last Sunday their food was gone and they decided to eat the natural fungi that was growing on the walls of the cave near the spring. Without testing the fungi, or having a botanist among them, they ate the fungi heartily. Approximately an hour later most of the cult members were unconscious or dreaming while they were walking around awake. One member of the cult, in a spurt of lucidity after falling 30 meters in the dangerous cave, sent up a distress beacon in hopes that someone would receive it.<p><p>Hurston Dynamics Security received the distress call and immediately sent a team to investigate. The team found 45 civilians hallucinating and in a poor state of health in the cave and requested medical assistance. When the medical teams entered the cave a number of the cult members began bowing to the medics and chanting an unknown language in rhythm. A few of the more alert cult members fought with the security team and were subdued both physically and later medically so that the entire cult could be transported to Mariah Pure of Heart Hospital in Lorville together.<p><p>After a brief investigation it was found that the cult members ingested an evolved version of Amantia Muscaria, a bright red mushroom with white flecks. The mushroom contains a high amount of ibotenic acid and muscimol, which provides hallucinogenic effects but can also damage the stomach lining, give permanent paranoia, or in some rare cases prove fatal for those with pre-existing heart conditions.<p><p>HD is using this incident to further discourage workers from fleeing major cities, citing the cult’s fate as something that was a common occurrence among the human population of Hurston before the company settled the planet. HD Security has also been posting banners throughout the living areas of Lorville warning of the dangers of native fungi outside of the city.<p><p>The members of the cult are recovering within Mariah Pure of Heart and are expected to all return to the work force within a few weeks. A few of the members are in critical care, but are also expected to make a full recovery before the end of August. Despite the health conditions many of the cult members who have recovered are urging those who are thinking of leaving to heed HD warnings, pointing to the risks of native fungi alone.<p>"
+    }
+  ]
+}
