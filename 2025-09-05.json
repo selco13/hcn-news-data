@@ -1,0 +1,53 @@
+{
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
+  "mainStory": {
+    "category": "SECURITY",
+    "title": "No CDF, No Problem: Stanton Security Groups Unite Against Pirate Threat",
+    "subtitle": "Over 100 civilians from numerous security agencies banded together to protect the citizens of the UEE against a pirate strike in Stanton last weekend, using shared intelligence to pinpoint targets and coordinate a preemptive response.",
+    "author": "Kaveh Virtanen | Military Correspondent",
+    "date": "Stardate: 2955.09.02",
+    "content": "<p>Pirate activity has been on the rise in the Stanton System since January, with many raids focusing on civilian mining or salvaging operations. Recently, pirates have been targeting the Second Life Initiative, placing numerous civilians at risk, even those who are working towards the betterment of the entire UEE. There is no doubt that the pirate risk is well over acceptable levels in a UEE controlled system such as Stanton, but despite this a group of civilian security contractors banded together to defend the civilian populace against a targeted attack against Capital-class vessels within the system.<p><p>With no official support from the Civilian Defense Force (CDF) or the UEE, citizens across Stanton responded to a growing pirate threat with a civilian-organized coalition of over 100 bounty hunters, privateers, security operatives, and civilians, forming a militia spanning more than 17 organizations in total. This alignment of organizations was spurred after the UEE made an announcement regarding the details of heightened pirate activity in the Stanton System, immediately organizing an intelligence operation to gain further fidelity on the scarce details.<p><p>Virtanen Intergalactic and Brothers of Tyr spearheaded the operation by rallying multiple security groups across Stanton, sharing intelligence and forming strike cells that could respond at any time within the system. The 12th Battle Group, 12th Armada, Brothers of Tyr, HLN Group, Nightingale Industries, Order 66, and various members of other groups were all heavily involved with the operation over the weekend.<p><p>The militia stopped over five attacks during the kinetic operation across the Stanton System and destroyed upwards of 120,000 tons of pirate assets. Rowena Dulli, the Special Agent In Charge (SAIC) of the Stanton System, made a statement regarding the action yesterday.<p><p>“While the UEE and Civilian Defense Force were not directly involved in the operation, we were impressed by the coordination and effectiveness displayed by the civilian coalition,” SAIC Dulli went on, “We welcome any participants willing to identify themselves for potential commendation and further cooperation in future security efforts. We commend these individuals for their unprecedented coordination during this time of unrest.”<p><p>HCN News has gained a clear picture of the tactics utilized by the pirate groups during the operation through interviews with some of the personnel who participated in the counter-piracy operation. The pirates rallied for their strike near Everus Harbor above Hurston. Initial reporting stated that they were planning on utilizing a mix of fighters and Constellation-class vessels to fight the Capital-class vessels they were targeting, but the majority of the vessels encountered by the coalition were other Capital-class vessels escorted by a handful of fighters. The pirates utilized civilian variants of the Idris-M and Polaris vessels during the strikes, with only occasional groups utilizing the planned strategy. Planning team members confirmed attacks throughout the week on civilians transporting their Capital-class vessels from drydock to orbital stations, but the number of unreported attacks remains unclear.<p><p>At the beginning of the counter-operation the coalition engaged an Idris-M, alongside numerous fighters, that were harassing the citizens of Hurston by attacking any vessels traveling in and out of Everus Harbor. The coalition arrived just after the attacks were reported and engaged the pirate group. Because of their superior numbers the battle was over within only minutes and the coalition stood victorious, imprisoning 15 or more pirates in the Klescher Rehabilitation Facility on Aberdeen. This is one of many stories that have been reported to HCN News that all follow a similar result.<p><p>While this coalition was organized, the information operation that began after the UEE announcement of heightened security measures in Stanton continued on. A dozen reports have surfaced of other civilian organizations defending the citizens of the UEE since the operation, all acting independently of the coalition’s planning. The silence from the UEE on this matter is glaring and this counter-piracy operation highlights the inaction of the UEE Advocacy during their meeting with the Stanton leadership on increasing the system’s security procedures just last month. This marks the first time a civilian populace has stood in such numbers against piracy without UEE or CDF command, a reminder of the human spirit when standing in defense of others.<p>"
+  },
+  "quickUpdates": [
+    {
+      "title": "Second Life Convoy Departs Orison",
+      "summary": "Transport vessels launched from Orison with over two million SCU of research supplies combined, heading for the inner UEE systems and research centers."
+    },
+    {
+      "title": "ASD Data Terminal Found on Calliope",
+      "summary": "Independent investigators salvaged a sealed ASD data terminal inside a derelict research center approximately 100km from the nearest landing zone."
+    },
+    {
+      "title": "Turbulent Skies over Aberdeen",
+      "summary": "UEE weather satelites detected a rare electromagnetic storm forming over the skies of Aberdeen, grounding vessels in an out of the Rehabilitation Facility located there."
+    }
+  ],
+  "marketWatch": [
+    {
+      "title": "IODI",
+      "summary": "→ 0% - Iodine remains steady as the necessity for more traditional medical supplies continues."
+    },
+    {
+      "title": "POTA",
+      "summary": "→ 0% - Potassium also remains steady due to the need for traditional medical supplies."
+    },
+    {
+      "title": "CHLO",
+      "summary": "↑ 1.1% - Chlorine is slightly up in the market as it returns to utilization for purifying water in remote outsposts."
+    }
+  ],
+  "secondaryStories": [
+    {
+      "category": "COMMUNITY",
+      "title": "ASD and the Abandoned Billions",
+      "subtitle": "Dozens of abandoned Associated Sciences and Development (ASD) facilities have been found throughout the Stanton System after an investigation into the Lazarus Research Facility in Pyro.",
+      "author": "Micea Dravnic | Technology Correspondent",
+      "date": "Stardate: 2955.09.01",
+      "content": "<p>Beneath the low atmosphere moons of Stanton, ASD has been building facilities to quietly conduct illegal research. Public mapping has confirmed dozens, but estimates suggest closer to 100 based on regional density. These facilities have been subsequently abandoned with no regard to safety. Each facility, not including the research being conducted, would have cost nearly 20-30 million UEC just to build.<p><p>Independent entities have begun to investigate the sites in coordination with the UEE Advocacy. Early investigation teams have read minor levels of radiation leaking from the facilities, reaching a few kilometers above the surface. Teams have reported mutated kopion, decomposed remains of researchers, and partially sealed wings with intense radiation.<p><p>Despite the apparent abandonment, the facilities sit active under the surface. They are biological hazards with unlocked systems, hostile creatures, and technological anomalies which have been left humming on reactors that are less than stable, leaking radiation into the soil, air, and everyone who flies near them. ASD’s construction was no secret to the big four. Permits, materials, and property had to move through local layers of approval, yet the big four have said nothing about the facilities since their discovery. With reactors pouring out radiation and containment nowhere in sight, the responsibility for cleanup has become increasingly difficult to pin down.<p><p>HCN News reached out to Hurston Dynamics and Crusader Industries for a statement. Hurston Dynamics declined to provide a statement, continuing their established pattern of non-engagement following incidents on Hurston controlled grounds. Crusader Industries stated that they were never notified of the facilities, despite having no less than 20 facilities built on planetary bodies that the corporation owns.<p><p>The UEE has yet to make an official statement on the new facilities, now that their existence is public, but this many facilities were not built in a day and someone had to approve the research being conducted within. Investigators are still assessing the damage. HCN has been granted limited access to some of the early reports and will publish exclusive interviews with the investigators in the coming weeks.<p><p>With billions in abandoned ASD assets falling apart beneath Stanton and no ownership in sight, the question is not whether someone knew about them, it is how long they can waive off ownership. HCN will follow this story as field investigations unfold and pressure mounts on the UEE Administration to finally respond to the rumors surrounding ASD.<p>"
+    }
+  ]
+}
