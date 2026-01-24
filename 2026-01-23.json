@@ -1,0 +1,29 @@
+{
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
+  "mainStory": {
+    "category": "SECURITY",
+    "title": "Reports of Major Engagement Near Megumi Refueling Prompt Investigation",
+    "subtitle": "Numerous messages sent out from haulers leaving Megumi Refueling on 09 January 2956 stated that the area was not safe and for others to flee and not return. Further reports indicated 12 capital-class vessels were clashing in the vicinity of the station. HCN later verified the wreckage of 9 vessels near Megumi Refueling.",
+    "author": "Kaveh Virtanen | Military Correspondent",
+    "date": "Stardate: 2956.01.22",
+    "content": "<p>Megumi Refueling is a major refueling node within the large expanse of Pyro, despite its solitary position in the system. Instability in or around the station could cause delays in travel, hauling, and could even halt the minimal emergency services that exist within the lawless system. According to the rumors, pilots inbound to Megumi on the 16th were issued warnings from other pilots to vacate the area while the station remained silent on the issue.<p><p>Messages reviewed by HCN described approximately 6 capital-class vessels engaged with another 6 capital-class vessels within 20km of the Megumi Refueling Station, directly on the quantum lane. The messages stated that the capital-class vessels ranged from the newly updated Perseus to the massive Idris and that each was escorted by a number of fighters. After digging through the messages our analysts estimate that there were over 100 combatants in the fray and there were at least three sides to the conflict.<p><p>The timing of this clash aligned directly with an incident that occurred near Crusader space in the Stanton System. On the 16th, at around the same time as the incident in Pyro, a small team of mercenaries apprehended a pirate outfit that was interdicting a shipping lane between Crusader and CRU-L2. While these events may be unrelated, the timing of both incidents aligns in a way that is likely to be a coordinated effort.<p><p>Due to these incidents and the lack of apparent safety controls at Megumi Refueling, the UEE Navy has issued a warning to the public and is conducting an official investigation into the events. UEE Navy officials have not stated if they will be entering Pyro to conduct the investigation directly or if they will be conducting interviews of those who posted the messages as of yet.<p><p>HCN News sent out an escorted vessel to Megumi Refueling in order to further verify the claims. There were 16 capital-class vessels destroyed in the vicinity of the station and upwards of 25 fighter-class vessels that were in pieces around the larger wrecks. Our team told us that salvagers had already begun stripping some of the hulls and they observed no remains anywhere in or near the wrecks. In order to remain safe the team returned to the Stanton System quickly after arriving at the location of the engagement.<p><p>UEE Navy officials have not provided further details on scope or timeline. HCN advises all civilian traffic to avoid Megumi Refueling and the nearby quantum lane until more information is available. HCN News will continue to verify additional claims and publish updates as the investigation progresses.<p>"
+  },
+  "quickUpdates": [
+    {
+      "title": "External Freight Elevators Roll Out Across Stanton Stations",
+      "summary": "The long-awaited external freight elevators have been added throughout the Stanton System to all of the major stations. however, “Overloaded” errors are being reported at a lot of these stations due to an unknown software glitch."
+    },
+    {
+      "title": "Stanton Markets Whiplash After Commodity Trade Boost and Recent Price Rebalances",
+      "summary": "The end of 2955 saw record a numbers of haulers moving cargo throughout Stanton and Pyro, this hauling boom has caused a significant dip in contract payouts and commodity trading in the beginning of quarter 1."
+    },
+    {
+      "title": "Daymar Rally 2956 Broadcast Set for Jan. 24 as Racers Prep for Full-Route Run",
+      "summary": "Find all of the details for the Daymar Rally, as well as the live broadcast, on the Official Daymar Rally Spectrum Page and make sure you tune in to watch your favorite racers as they gear up for the race this Saturday."
+    }
+  ]
+}
