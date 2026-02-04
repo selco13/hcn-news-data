@@ -1,0 +1,25 @@
+{
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
+  "mainStory": {
+    "category": "COMMUNITY",
+    "title": "UEE Navy Opens Recruitment Drive Tied to Recent Nyx Station Struggles",
+    "subtitle": "The UEE Navy is pushing recruitment at frontier stations across the empire as these stations face heavy strains on staffing, security, and maintenance. The Nyx system is the example that everyone is watching.",
+    "author": "Kaveh Virtanen | Military Correspondent",
+    "date": "Stardate: 2956.01.30",
+    "content": "<p>Levski Station in the Nyx System is facing dozens of issues on the frontier of UEE space from severe health concerns to maintenance failures. In the past month, Levski Station has had a compounding issue that began with the filters for air recyclers within the station. There were air quality complaints throughout the station and citizens were becoming ill after being on the station for more than a few hours. This issue was found to be mold spores growing within a new type of recycler filter. The spores rapidly grew throughout the station and residents began having severe health complications. The station was then placed in lockdown.<p><p>The UEE Navy has looked into the issues in Levski and noted that the lack of personnel on the station compounded the issue to the level that it is today. The Navy has enacted a push to activate a coalition of civilian contractors to deliver filters to Levski in order to scrub the spores from the air within the station.<p><p>While the coalition is active, the UEE Navy is pushing for recruitment among the more remote areas of the UEE so that this problem does not happen elsewhere and also to stabilize the issues within the Nyx System.<p><p>The recruitment drive is focused on finding qualified personnel who want to serve within the UEE Navy in both the logistics and engineering pipelines. The intention of this boost in personnel is to allow the coalition to be disbanded and the fringes of the UEE to become a bit more stable in the near future. Furthermore, the UEE Navy is not turning away applicants that have skills in other areas, accepting applications for any of the available seats within the local UEE Navy fleet.<p><p>UEE Navy Recruitment Officials stated that in the short term, these new applicants will be placed on a training status with their local fleet and will learn how to do their assigned career on the job while the Navy attempts to stabilize the stations like Levski. Once the immediate issues are resolved, the applicants will be sent to the nearest UEE Navy academy for their official training and will be obligated to serve a multi-year contract within their home region of the UEE. Many of these applicants will have station-based contracts and will likely not end up in fleet positions.<p><p>“We are happy that folks from around the UEE are so willing to help, but we will be very relieved when a more permanent fix is here.” - Carina Malgrove, Levski Medical Staff Supervisor<p><p>The recruitment drive staff are traveling with local UEE Naval Fleets in the outer systems, visiting and recruiting from the more remote locations within the UEE. If you are actively looking to join the UEE Navy you can speak to a recruiter on Spectrum or you can find the local fleet while they are docked at a nearby station and they will get you in contact with recruitment staff.<p><p>The UEE Navy is accepting accelerated applications for the next 90 days and pilots should verify their documentation and handle personal affairs before traveling to join. HCN will continue to monitor official guidance and any additional Nyx station advisories.<p>"
+  },
+  "quickUpdates": [
+    {
+      "title": "External Freight Elevators See Spike in Reported Delays",
+      "summary": "Heavy use of external freight elevators at Levksi Station in Nyx and both Everus Harbor and Port Tressler in Stanton have been the cause of ire for many haulers recently due to delays to cargo delivery and partial or imperfect manifests"
+    },
+    {
+      "title": "Hull-C Maintenance Spikes in the Stanton System",
+      "summary": "Many commercial vessels are holding the majority of maintenance bays within the Stanton System at present, this is causing a massive backlog in routine vessel maintenance."
+    }
+  ]
+}
