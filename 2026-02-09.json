@@ -1,0 +1,25 @@
+{
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
+  "mainStory": {
+    "category": "SECURITY",
+    "title": "Asteroid Outposts in Stanton Report Spike in Pirate Raids",
+    "subtitle": "Stanton asteroid outposts have reported a significant increase in harassing attacks on standard flight vectors causing local mining companies to hire security contractors.",
+    "author": "Kaveh Virtanen | Military Correspondent",
+    "date": "Stardate: 2956.02.05",
+    "content": "<p>The reports from the outposts show a clear increase in pirate activity during times of increased mining. Our analysts suggest that the attacks are targeting locations with less external activity because the vessels are more isolated and there may be less security nearby. The asteroid outposts generally work on a predictable schedule as well, which may be a secondary cause.<p><p>Reports show that groups of three to eight pirate vessels will drop out of quantum to interdict the traffic enroute to the asteroid outposts. Most of the reports show that the pirates utilize small or medium fighter craft, with an occasional large vessel accompanying the groups. The pirates will harass the vessels in and out of the asteroid stations until they can render the vessel inoperable. The pirates will then remove whatever cargo the vessels may have on them and immediately quantum out of the area.<p><p>Thus far it seems the pirates are targeting the smaller mining crews and ships with small cargo capacity. It is likely that the pirates are operating around a moderately sized cargo vessel as they will often take only certain valuable types of mined materials.<p><p>The asteroid outposts themselves have been placing security contracts on Spectrum in order to slow the pirate attacks. The security contracts can be taken by any citizen that can assist and are usually placed within seconds of the pirate attacks. The security response has shown success and the attacks are becoming less frequent, but the attacks that are still happening are becoming much more severe. Recent reports show a secondary group of pirates responding to the locations with security escorts. Those groups will harass the security specifically and allow the initial group to continue attacking the mining or hauling vessels.<p><p>HCN recommends that any pilots wishing to take on the security contracts travel in pairs and do not linger at the contract locations. The HCN crew encourages any para-military or security contracting companies that are in the area to make a showing at the asteroid outposts to further dissuade the pirates in the region.<p>"
+  },
+  "quickUpdates": [
+    {
+      "title": "Clinics Report Rise in Combat Casualties in Frontier Systems",
+      "summary": "Medical staff at several frontier clinics report a marked increase in walk-in trauma cases tied to unreported combat engagements, with many patients refusing to file formal incident reports."
+    },
+    {
+      "title": "Quantum Lanes Through Nyx Become Hostile Overnight",
+      "summary": "Increased cargo traffic moving in and out of the Nyx system has become the target of a pirate interdiction campaign since yesterday, prompting haulers on Spectrum to request additional security support."
+    }
+  ]
+}
