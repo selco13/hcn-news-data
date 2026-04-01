@@ -1,11 +1,11 @@
 {
   "breaking": {
-    "active": false,
-    "text": "",
-    "mainStoryIsBreaking": false
+    "active": true,
+    "text": "BREAKING: Three Major Bounties for Mr. O, a Known Pyro Swindler, Set to Post on Saturday",
+    "mainStoryIsBreaking": true
   },
   "mainStory": {
-    "category": "SECURITY",
+    "category": "BREAKING",
     "title": "Three Major Bounties for Mr. O, a Known Pyro Swindler, Set to Post on Saturday",
     "subtitle": "Mr. O has become the face of a swath of deadly incidents surrounding the large-scale sale of contaminated Valakkar eggs that were being sold as Weevil eggs throughout the Pyro System. A manhunt is expected to begin near Jackson’s Swap on Monox this Saturday after the bounties post.",
     "author": "Kaveh Virtanen | Military Correspondent",
