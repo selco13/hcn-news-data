@@ -1,0 +1,29 @@
+{
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
+  "mainStory": {
+    "category": "SECURITY",
+    "title": "Orison Braces for Renewed Nine Tails Siege as Civilian Defense Forces Mobilize",
+    "subtitle": "Nine Tails activity has again placed Crusader's floating city on alert, with civilian defenders being directed toward Inspiration Park as security forces prepare for another attempt to reclaim the platforms from the outlaw gang.",
+    "author": "Marcus Caine | Network Anchor",
+    "date": "Stardate: 2956.08.08",
+    "content": "<p>Security conditions around Crusader have deteriorated again as Nine Tails forces renew pressure on Orison and the sprawling network of platforms surrounding Inspiration Park. The outlaw gang has repeatedly demonstrated the ability to seize commercial platforms, disrupt local airspace, and force Crusader Security to rely on the Civilian Defense Force for additional manpower. With fresh warnings now circulating across Stanton, residents and travelers are being urged to treat the situation as an active security threat rather than another routine disturbance.<p><p>The Civilian Defense Force, operating under UEE Advocacy authority, has begun directing qualified civilian pilots and ground personnel toward the Orison response. The CDF was created specifically to supplement law-enforcement resources during large-scale threats, and the recurring Nine Tails occupation of Inspiration Park has become one of its most demanding operations. Veterans of previous actions describe the fighting as a combined ground and air campaign where local control can shift quickly from one platform to another.<p><p>At the center of the threat is Nine Tails' use of modified Identify Friend or Foe infrastructure to deny legitimate traffic access to contested airspace. In earlier sieges, the gang used these systems to create hostile no-fly zones around occupied platforms while keeping its own aircraft free to maneuver. That tactic forces defenders to advance platform by platform, disable local defenses, and eventually restore control of the central identification network before normal flight operations can resume.<p><p>HCN News is advising volunteers not to treat the operation as a simple bounty contract. The environment around Inspiration Park combines close-quarters fighting, anti-air defenses, exposed transit routes, and the possibility of being cut off from conventional evacuation. Defenders should arrive with sufficient ammunition, medical supplies, armor, and a clear extraction plan. Small teams are strongly encouraged to establish communications before entering the contested zone rather than attempting to move independently through the platforms.<p><p>Commercial traffic may also feel the effects even outside the immediate combat area. Any sustained disruption around Orison can produce delays for passenger traffic, freight movement, refueling operations, and local deliveries throughout Crusader space. Haulers working contracts into or out of Orison should confirm their destination remains accessible before committing to final approach and should maintain enough quantum fuel to divert if security restrictions change without warning.<p><p>The return of Nine Tails pressure is especially notable because Stanton is already carrying the effects of months of overlapping criminal activity, mining-related security operations, and frontier instability. Every major CDF mobilization draws independent pilots away from normal freight, mining, salvage, and escort work. Even a localized siege can therefore create secondary effects across the system as security contractors and civilian crews redirect toward Crusader.<p><p>For now, HCN News recommends that nonessential civilian traffic avoid the Inspiration Park combat zone and that anyone responding to CDF calls arrive prepared for an extended operation. Pilots elsewhere in Stanton should expect increased security traffic around Crusader and possible changes to local routing as the situation develops. HCN News will continue monitoring activity around Orison and will issue an immediate update if the fighting expands beyond the currently affected platforms.<p>"
+  },
+  "quickUpdates": [
+    {
+      "title": "Foundation Festival Enters Final Weekend",
+      "summary": "Foundation Festival continues through August 10, bringing an influx of new pilots into the 'verse and renewed activity in the Guide System as veteran citizens volunteer to train newcomers. Free-fly access remains available during the event."
+    },
+    {
+      "title": "Recco Battaglia Expands Levski Mining Contract Network",
+      "summary": "Independent mining coordinator Recco Battaglia is offering a growing slate of prospecting, mining, recovery, salvage, investigation, and ship-reclamation work from Levski, with higher standing unlocking increasingly valuable equipment and specialized rewards."
+    },
+    {
+      "title": "Ship Showdown 2956 Draws Eight-Way Fight for the Top Sixteen",
+      "summary": "Ship Showdown 2956 is underway through August 14, with citizens rallying behind fighters, freighters, industrial craft, explorers, ground vehicles, alien designs, and warships. Two vehicles from each of eight divisions will advance to the Top 16."
+    }
+  ]
+}
