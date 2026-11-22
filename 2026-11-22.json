@@ -1,0 +1,67 @@
+{
+  "breaking": {
+    "active": false,
+    "text": "",
+    "mainStoryIsBreaking": false
+  },
+  "mainStory": {
+    "title": "Gatac brings a mining and salvage ship to the New Babbage expo",
+    "subtitle": "Gatac’s single-pilot Hyūn puts two kinds of recovery work on one hull. Independent operators will want to know what that saves between jobs.",
+    "author": "HCN Industry Desk · New Babbage, microTech",
+    "category": "business",
+    "date": "2956.11.22",
+    "content": "<p>NEW BABBAGE, MICROTECH — Gatac Manufacture has introduced the Hyūn at the Intergalactic Aerospace Expo, giving independent pilots a ship built to work rock and recover material from wrecks. The Xi’an manufacturer designed the ship for one pilot. Its debut at the Tobin Expo Center puts a question usually left to working crews on the show floor. What is it worth to take a second kind of job without returning home for another hull?</p><p>Mining and salvage both turn a find into saleable material. Their work starts differently. A mining run depends on finding a deposit worth breaking and recovering. A salvage run starts with access to a wreck and enough usable material to justify the time on site. A ship equipped for both gives its operator another option when the original job comes up short, or when work near the destination changes.</p><p>How often that option pays is a separate question. A pilot running the same profitable route most days can judge a ship against that one job. An operator ranging farther from a home hangar has more reason to weigh the cost of an empty leg or a trip back to change ships. Both will still have to find buyers and allow time to unload.</p><p>The Hyūn’s case rests on what pilots can do with the hours they already spend travelling. The expo can show how the equipment works. A useful comparison will track an entire working day, including the time spent picking up the job and getting paid at the other end.</p>"
+  },
+  "editorial": {
+    "title": "The fare home belongs in the quote",
+    "subtitle": "A job board shows what the client is paying. The carrier still has to price the return leg.",
+    "author": "HCN Editorial Desk · Opinion",
+    "category": "business",
+    "date": "2956.11.22",
+    "content": "<p>On a freight board the job ends at delivery. For the crew it ends when the ship is back somewhere it can take another paying load. That distinction gets expensive when the destination has little outbound work or when the next cargo needs a different hold.</p><p>A fair rate needs to cover the complete trip. Take the time to reach the pickup, wait for the load, fly the leg and unload. Then add the likely cost of getting to the next decent job. A driver who has to return empty can still take the contract. The decision is easier when the crew knows what that empty leg costs before somebody accepts the offer.</p><p>This matters especially when a crew shares the proceeds. Settle the costs before the work starts and agree on what the split applies to. If a berth opens late, or the cargo sends the ship to a different landing point, the extra hours belong in the settlement too.</p><p>The advertised payout is the client’s number. The complete trip is the crew’s business.</p>"
+  },
+  "secondaryStories": [
+    {
+      "title": "The old mine that became Nyx’s busiest port",
+      "subtitle": "Levski grew out of a mining facility on Delamar. The same belt that drew the first miners still supplies much of the settlement’s work.",
+      "author": "HCN Frontier Desk · Delamar, Nyx",
+      "category": "politics",
+      "date": "2956.11.22",
+      "content": "<p>DELAMAR, NYX — Levski occupies an old mining site on Delamar, an inhabited asteroid in the Glaciem Ring. Political dissenters founded the settlement in 2655 SEY and formed the People’s Alliance. They made a home beyond Imperial governance in a place the mining industry had already equipped for people to work.</p><p>Delamar remains the most heavily trafficked location in Nyx and a base for crews still working the surrounding asteroids. That history helps explain why a mining stop, a place to pick up a local job and the main settlement can all be the same port. Crews arriving from Stanton are coming into a community whose political arrangements and economy developed together over centuries.</p><p>The September HCN report on prospective contract expansion looked at what a wider spread of local work might mean to visiting pilots. The longer view starts with what was already there. Levski was built by people who wanted to make their own decisions about how they worked and governed themselves. A visit begins with learning how the port and its residents do business.</p>"
+    },
+    {
+      "title": "Orison’s city grew out of a repair yard",
+      "subtitle": "From Providence Platform to Cloudview Center, Crusader’s floating city still follows the layout of the shipyards that came first.",
+      "author": "HCN Stanton Desk · Orison, Crusader",
+      "category": "science",
+      "date": "2956.11.22",
+      "content": "<p>ORISON, CRUSADER — The Skyway ride from August Dunlow Spaceport connects two sides of Orison’s history. Providence Platform is its shipbuilding district. Cloudview Center is where much of the city’s daily life takes place, from shops and residences to the hospital. The route makes sense once you know which part of Orison came first.</p><p>The Imperial Navy built platforms in Crusader’s upper atmosphere to repair capital ships. Crusader Industries acquired the planet in 2865 and turned the main repair dock at Providence into a commercial shipyard. The wider city followed the industrial operation. Today the shipyard and the residential district still sit on the same interconnected system of platforms.</p><p>The platforms carry large thrusters to maintain the city’s position. Holding that height is part of what makes the place workable for a shipyard and habitable for the people who live around it. Visitors can see the pattern from the shuttle. The way between the spaceport and the city takes them past the reason the city was built there.</p>"
+    },
+    {
+      "title": "SR-7 public frequencies for Stanton, Pyro and Nyx",
+      "subtitle": "The station desk has posted the three system channels for crews setting up a first call on Vantaforge’s radio.",
+      "author": "HCN Network Desk · Service notice",
+      "category": "science",
+      "date": "2956.11.22",
+      "content": "<p>Pilots meeting a crew on SR-7 Public can use 0001.00 MHz for Stanton, 0002.00 MHz for Pyro or 0003.00 MHz for Nyx. ORION General is on 0000.00 MHz. Vantaforge operates SR-7 and is part of HLN Corporation, HCN’s parent company.</p><p>The system channels are shared meeting points. Listeners can join from any system. Give your location by voice if the other crew needs it. Agree on a channel and a time before you leave, give your callsign on the first transmission and allow the other crew time to answer.</p><p>Guard is on 2000.00 MHz. Use a working channel for a routine radio check or to sort out a rendezvous.</p>"
+    }
+  ],
+  "quickUpdates": [
+    {
+      "title": "Tobin Expo Center remains open through 27 November",
+      "summary": "The Intergalactic Aerospace Expo continues in New Babbage through 27 November SEY. Visitors landing at the city’s spaceport can follow the expo signs from the hangars."
+    },
+    {
+      "title": "Aurora Mk II available to expo visitors",
+      "summary": "The Aurora Mk II is available for the duration of the expo. The hall’s exhibitor selection rotates, with many of the displayed ships also available on short-term loan."
+    },
+    {
+      "title": "Esperia brings historic airframes to the expo floor",
+      "summary": "Esperia’s display looks to Tevarin and Vanduul designs for its reproductions. The stand offers a look at a business built around bringing older or difficult-to-obtain designs back into circulation."
+    },
+    {
+      "title": "Genesis terraforming work dates to 2954 on Nyx I",
+      "summary": "Experimental terraforming has been under way on Nyx I since 2954 SEY under Genesis Terraforming. The project is on the system’s first planet. Levski sits separately on Delamar in the Glaciem Ring."
+    }
+  ]
+}
